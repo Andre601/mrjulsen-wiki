@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "iron_ingot",
+            "5": "iron_ingot"
+        },
+        "amount": 4,
+        "shapeless": false
+    },
+    "name": "Iron Rod",
+    "lore": ""
+}

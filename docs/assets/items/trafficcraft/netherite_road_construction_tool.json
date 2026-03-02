@@ -1,0 +1,9 @@
+{
+    "smithing": {
+        "template": "netherite_upgrade_smithing_template",
+        "item": "trafficcraft:diamond_road_construction_tool",
+        "material": "netherite_block"
+    },
+    "name": "Netherite Road Construction Tool",
+    "lore": "<gray>When in Main Hand:\n  <dark_green>5.5 Attack Damage\n  <dark_green>1 Attack Speed"
+}

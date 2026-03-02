@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "iron_ingot",
+            "2": "trafficcraft:hammer"
+        },
+        "amount": 1,
+        "shapeless": true
+    },
+    "name": "Iron Plate",
+    "lore": ""
+}

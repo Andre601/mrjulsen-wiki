@@ -1,0 +1,19 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "red_stained_glass_pane",
+            "2": "redstone",
+            "3": "iron_ingot",
+            "4": "yellow_stained_glass_pane",
+            "5": "redstone_lamp",
+            "6": "comparator",
+            "7": "green_stained_glass_pane",
+            "8": "redstone",
+            "9": "iron_ingot"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Traffic Light",
+    "lore": ""
+}

@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "5": "trafficcraft:bitumen_block"
+        },
+        "amount": 9,
+        "shapeless": true
+    },
+    "name": "Raw Bitumen",
+    "lore": ""
+}

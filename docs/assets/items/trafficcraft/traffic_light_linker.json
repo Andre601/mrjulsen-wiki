@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "redstone_torch",
+            "4": "glass_pane",
+            "5": "repeater",
+            "6": "copper_ingot",
+            "7": "trafficcraft:iron_plate",
+            "8": "gold_nugget",
+            "9": "trafficcraft:iron_plate"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Traffic Light Linker",
+    "lore": "<gray>Not linked\n<gray>Mode: <green>Link\n<white><italic>Sneak + Scroll</italic> <gray>to change mode."
+}

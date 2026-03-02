@@ -1,0 +1,15 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "iron_ingot",
+            "3": "iron_nugget",
+            "5": "stick",
+            "6": "iron_ingot",
+            "7": "stick"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Hammer",
+    "lore": "<gray>When in Main Hand:\n  <dark_green>4 Attack Damage\n  <dark_green>1 Attack Speed"
+}

@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "feather",
+            "5": "iron_nugget",
+            "8": "stick"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Paint Brush",
+    "lore": ""
+}

@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "iron_ingot",
+            "5": "copper_ingot",
+            "6": "iron_ingot",
+            "7": "iron_ingot"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Wrench",
+    "lore": ""
+}

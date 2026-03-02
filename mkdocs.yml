@@ -1,0 +1,71 @@
+site_name: "MrJulsen's Mods Wiki"
+site_description: "Wiki hosting pages about all of MrJulsen's mods"
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+extra_css:
+  - assets/stylesheets/tooltip.css
+
+extra_javascript:
+  - assets/js/tooltip.js
+
+plugins:
+  - search
+  - glightbox:
+      skip_classes:
+        - arrow
+        - shapeless
+        - fire
+        - no-glight
+  - macros:
+      module_name: docs/.macros/macros
+
+markdown_extensions:
+  - attr_list:
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+  - pymdownx.magiclink:
+  - pymdownx.superfences:
+  - pymdownx.tilde:
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+        - download
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.blocks.html:
+  - pymdownx.blocks.caption:
+
+nav:
+  - Home: index.md
+  - TrafficCraft:
+    - trafficcraft/index.md
+    - Items:
+      - trafficcraft/items/index.md
+      - trafficcraft/items/iron_plate.md
+      - trafficcraft/items/road_construction_tool.md
+      - trafficcraft/items/traffic_light.md
+      - trafficcraft/items/traffic_light_controller.md
+      - trafficcraft/items/traffic_light_linker.md

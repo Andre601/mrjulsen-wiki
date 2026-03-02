@@ -1,0 +1,16 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "iron_nugget",
+            "2": "iron_block",
+            "5": "trafficcraft:iron_rod",
+            "6": "iron_block",
+            "7": "trafficcraft:iron_rod",
+            "9": "iron_nugget"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Iron Road Construction Tool",
+    "lore": "<gray>When in Main Hand:\n  <dark_green>3.5 Attack Damage\n  <dark_green>1 Attack Speed"
+}

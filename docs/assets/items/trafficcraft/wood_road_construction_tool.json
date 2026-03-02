@@ -1,0 +1,16 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "iron_nugget",
+            "2": "any_log",
+            "5": "trafficcraft:iron_rod",
+            "6": "any_log",
+            "7": "trafficcraft:iron_rod",
+            "9": "iron_nugget"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Wooden Road Construction Tool",
+    "lore": "<gray>When in Main Hand:\n  <dark_green>1.5 Attack Damage\n  <dark_green>1 Attack Speed"
+}

@@ -1,0 +1,19 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "redstone_torch",
+            "2": "comparator",
+            "3": "redstone_torch",
+            "4": "redstone",
+            "5": "gold_ingot",
+            "6": "redstone",
+            "7": "copper_ingot",
+            "8": "iron_block",
+            "9": "copper_ingot"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Traffic Light Controller",
+    "lore": ""
+}
