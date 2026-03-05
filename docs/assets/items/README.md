@@ -24,6 +24,11 @@ Here is an example of a JSON files possible structure:
     "smelting": {
         "input": "<input>",
         "experience": <experience>
+    },
+    "smithing": {
+        "template": "<item>",
+        "item": "<item>",
+        "material": "<item>"
     }
 }
 ```
@@ -40,6 +45,10 @@ Here is an example of a JSON files possible structure:
 - smelting: Contains the smelting recipe for the Item.
     - input: The Item to put in to smelt. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
     - experience: Amount of Experience points you get per item smelted. This is a float number, so decimal points can be used.
+- smithing: Contains the smithing recipe for the Item.
+    - template: The template item to use. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
+    - item: The main item to apply the template and material on. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
+    - material: The Item to apply. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
 
 ### Formatting
 
