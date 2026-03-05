@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "redstone_torch",
+            "2": "light_weighted_pressure_plate",
+            "3": "redstone_torch",
+            "4": "redstone",
+            "5": "copper_ingot",
+            "6": "redstone",
+            "8": "trafficcraft:traffic_sign_post"
+        }
+    },
+    "name": "Traffic Light Request Button"
+}

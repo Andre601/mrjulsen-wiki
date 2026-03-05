@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "iron_nugget",
+            "5": "iron_ingot",
+            "6": "iron_nugget",
+            "7": "glass_pane",
+            "8": "glowstone_dust",
+            "9": "glass_pane"
+        },
+        "amount": 4
+    },
+    "name": "Steet Light"
+}

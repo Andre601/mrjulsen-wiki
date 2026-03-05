@@ -1,4 +1,4 @@
-# Pain Brush
+# Paint Brush
 
 The **Paint Brush** is an item that can be used to paint patterns on Asphalt and Concrete Blocks and Slopes.
 

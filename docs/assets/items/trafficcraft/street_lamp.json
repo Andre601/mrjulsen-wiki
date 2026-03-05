@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "iron_ingot",
+            "2": "iron_ingot",
+            "4": "trafficcraft:street_light",
+            "5": "trafficcraft:traffic_sign_post",
+            "8": "trafficcraft:traffic_sign_post"
+        },
+        "amount": 3
+    },
+    "name": "Street Lamp"
+}

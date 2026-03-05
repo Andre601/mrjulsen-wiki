@@ -100,9 +100,11 @@ nav:
       - trafficcraft/blocks/concrete_slope.md
       - trafficcraft/blocks/manhole.md
       - trafficcraft/blocks/salt.md
+      - trafficcraft/blocks/street_lamps.md
       - trafficcraft/blocks/traffic_blocks.md
       - trafficcraft/blocks/traffic_light.md
       - trafficcraft/blocks/traffic_light_controller.md
+      - trafficcraft/blocks/traffic_light_request_button.md
       - trafficcraft/blocks/traffic_sign_workbench.md
     - Items:
       - trafficcraft/items/index.md

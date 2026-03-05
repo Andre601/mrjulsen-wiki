@@ -30,10 +30,6 @@ The default time is 11:30[^4].
 
 {{ crafting_recipe("trafficcraft:street_lamp_config_card") }}
 
-## Advancements
-
-{{ advancement("trafficcraft:let_there_be_light") }}
-
 [^1]:
     **12 Hours:** 12:00AM  
     **Ticks:** 18,000

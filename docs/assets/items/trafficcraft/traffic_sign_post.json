@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "trafficcraft:iron_rod",
+            "5": "trafficcraft:iron_rod"
+        },
+        "amount": 6
+    },
+    "name": "Traffic Sign Post"
+}

@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "iron_nugget",
+            "2": "iron_ingot",
+            "3": "iron_nugget",
+            "4": "glowstone_dust",
+            "5": "glowstone_dust",
+            "6": "glowstone_dust",
+            "7": "glass_pane",
+            "8": "glass_pane",
+            "9": "glass_pane"
+        },
+        "amount": 3
+    },
+    "name": "Fluorescent Tube Lamp"
+}

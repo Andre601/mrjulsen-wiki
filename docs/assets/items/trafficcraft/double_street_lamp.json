@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:street_lamp",
+            "2": "trafficcraft:street_lamp"
+        },
+        "shapeless": true
+    },
+    "name": "Double Street Lamp"
+}
