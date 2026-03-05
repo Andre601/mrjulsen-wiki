@@ -32,7 +32,7 @@ The buttons in this section allow you to switch between Asphalt and Concrete Blo
 {{ crafting_recipe("trafficcraft:wood_road_construction_tool", footer=False) }}
 {{ crafting_recipe("trafficcraft:stone_road_construction_tool", header=False, footer=False) }}
 {{ crafting_recipe("trafficcraft:iron_road_construction_tool", header=False, footer=False) }}
-{{ crafting_recipe("trafficcraft:golden_road_construction_tool", header=False, footer=False) }}
+{{ crafting_recipe("trafficcraft:gold_road_construction_tool", header=False, footer=False) }}
 {{ crafting_recipe("trafficcraft:diamond_road_construction_tool", header=False) }}
 
 ### Smithing
