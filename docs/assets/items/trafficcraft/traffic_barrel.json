@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "red_dye",
+            "2": "red_dye",
+            "4": "quartz",
+            "5": "quartz",
+            "7": "trafficcraft:raw_bitumen",
+            "8": "trafficcraft:raw_bitumen"
+        },
+        "amount": 2
+    },
+    "name": "Traffic Barrel"
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Under construction",
+    "icon": "trafficcraft:stone_road_construction_tool",
+    "type": "goal",
+    "description": "Build roads faster using a Road Construction Tool.",
+    "requirements": "Use any Road Construction tool to build a road."
+}

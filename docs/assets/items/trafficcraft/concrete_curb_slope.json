@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "trafficcraft:concrete_curb",
+            "5": "trafficcraft:concrete_curb"
+        },
+        "amount": 8
+    },
+    "name": "Concrete with Curb Slope"
+}

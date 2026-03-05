@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "trafficcraft:concrete",
+            "5": "trafficcraft:concrete"
+        },
+        "amount": 8
+    },
+    "name": "Concrete Slope"
+}

@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "stone_brick_wall",
+            "2": "ladder",
+            "3": "stone_brick_wall",
+            "4": "stone_brick_wall",
+            "5": "ladder",
+            "6": "stone_brick_wall",
+            "7": "stone_brick_wall",
+            "8": "ladder",
+            "9": "stone_brick_wall"
+        },
+        "amount": 3
+    },
+    "name": "Mahole"
+}

@@ -1,0 +1,54 @@
+name: "Publish Wiki"
+
+on:
+    workflow_dispatch:
+    push:
+        branches: ["master"]
+        paths:
+          - ".github/workflows/publish_wiki.yml"
+          - "docs/**"
+          - "hooks/**"
+          - "macros/**"
+          - "theeme/**"
+          - "mkdocs.yml"
+          - "requirements.txt"
+        tags-ignore: ["**"]
+
+permissions:
+    actions: read
+    contents: read
+    pages: write
+    id-token: write
+
+concurrency:
+    group: github-pages
+    cancel-in-progress: false
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+            - name: "Checkout Repository"
+              uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+            - name: "Setup Python 3.x"
+              uses: actions/setup-python@v5
+              with:
+                python-version: 3.x
+            - name: "Install dependencies"
+              run: "pip install -r requirements.txt"
+            - name: "Build Wiki"
+              run: "mkdocs build"
+            - name: "Configure GitHub Pages"
+              uses: actions/configure-pages@v5
+            - name: "Upload Pages Artifact"
+              uses: actions/upload-pages-artifact@v3
+              with:
+                path: "site/"
+            - name: "Deploy to GitHub Pages"
+              uses: actions/deploy-pages@v4
+              id: deployment

@@ -1,0 +1,7 @@
+{
+    "name": "Remote-Controlled",
+    "icon": "trafficcraft:traffic_light_controller",
+    "type": "goal",
+    "description": "Place a traffic light controller to control your traffic lights.",
+    "requirements": "Place a traffic light controller."
+}

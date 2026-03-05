@@ -1,0 +1,7 @@
+{
+    "name": "A tool for everything",
+    "type": "goal",
+    "icon": "trafficcraft:wrench",
+    "description": "Craft a wrench to edit all TrafficCraft blocks.",
+    "requirement": "Have a wrench in your inventory."
+}

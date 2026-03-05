@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "iron_nugget",
+            "2": "iron_nugget",
+            "4": "paper",
+            "5": "paper",
+            "7": "paper",
+            "8": "paper"
+        }
+    },
+    "name": "Pattern Catalogue"
+}

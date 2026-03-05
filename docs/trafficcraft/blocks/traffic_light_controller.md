@@ -1,6 +1,6 @@
 # Traffic Light Controller
 
-The **Traffic Light Controller** is a block that allows you to handle multiple Traffic Lights.
+The **Traffic Light Controller** is a block that allows you to handle multiple [Traffic Lights](traffic_light.md).
 
 ## Functionality
 
@@ -11,7 +11,7 @@ The Traffic Light Controller can be configured by right-clicking it with a Wrenc
 
 ### Traffic Light Schedule
 
-The *Edit Traffic Light Schedule...* button will open a GUI that is similar to one used in the Traffic Light itself configure its schedule.
+The *Edit Traffic Light Schedule...* button will open a GUI that is similar to one used in the Traffic Light itself to configure its schedule.
 
 - The top-left button can be clicked to cycle through the activation type, which can be *None* (Default), *On Request* and *Redstone*.
 - The top-right button can be clicked to toggle whether the configured schedule should be looped or only run once when activated.

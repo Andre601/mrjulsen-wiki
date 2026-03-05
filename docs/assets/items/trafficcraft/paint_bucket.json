@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "iron_nugget",
+            "4": "iron_nugget",
+            "5": "bucket",
+            "6": "iron_nugget",
+            "8": "iron_nugget"
+        }
+    },
+    "name": "Paint Bucket"
+}

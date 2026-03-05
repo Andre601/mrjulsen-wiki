@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "gravel",
+            "2": "sand",
+            "4": "sand",
+            "5": "gravel"
+        },
+        "amount": 4
+    },
+    "name": "Concrete"
+}

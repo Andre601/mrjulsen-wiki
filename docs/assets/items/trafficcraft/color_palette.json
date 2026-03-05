@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "quartz",
+            "4": "quartz",
+            "5": "trafficcraft:iron_plate",
+            "6": "quartz",
+            "8": "quartz"
+        }
+    },
+    "name": "Color Palette",
+    "lore": "<gray>No colors stored"
+}

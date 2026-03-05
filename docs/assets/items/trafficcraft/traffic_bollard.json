@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "red_dye",
+            "5": "quartz",
+            "8": "trafficcraft:raw_bitumen"
+        }
+    },
+    "name": "Traffic Bollard"
+}

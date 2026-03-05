@@ -1,0 +1,6 @@
+{
+    "name": "Dynamic Light",
+    "icon": "trafficcraft:street_lamp_config_card",
+    "type": "goal",
+    "description": "Assign a street lamp schedule to a street lamp."
+}

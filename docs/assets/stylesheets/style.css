@@ -1,0 +1,21 @@
+@keyframes warn-glow {
+    0% {
+        color: var(--md-default-fg-color);
+    }
+
+    50% {
+        color: orange;
+    }
+
+    100% {
+        color: var(--md-default-fg-color);
+    }
+}
+
+.md-nav__item--section > .md-nav > .md-nav__list {
+    margin-left: 0.5rem;
+}
+
+.color-warn {
+    animation: 5s ease-in-out infinite warn-glow;
+}

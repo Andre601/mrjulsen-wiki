@@ -1,0 +1,6 @@
+{
+    "name": "Colorful!",
+    "icon": "trafficcraft:color_palette",
+    "description": "Store your selected color in a Color Plaette to use it again later.",
+    "requirements": "Store a color in the Color Palette in the Traffic Sign Workbench."
+}

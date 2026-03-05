@@ -1,0 +1,6 @@
+{
+    "name": "Road Worker",
+    "icon": "trafficcraft:asphalt",
+    "description": "Craft asphalt, concrete or slopes of them.",
+    "requirements": "Have an Asphalt Block in your inventory."
+}

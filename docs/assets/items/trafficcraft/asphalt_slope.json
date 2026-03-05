@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "trafficcraft:asphalt",
+            "5": "trafficcraft:asphalt"
+        },
+        "amount": 8
+    },
+    "name": "Asphalt Slope"
+}

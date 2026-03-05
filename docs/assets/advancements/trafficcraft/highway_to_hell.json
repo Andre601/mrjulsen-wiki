@@ -1,0 +1,7 @@
+{
+    "name": "Highway To Hell",
+    "icon": "trafficcraft:gold_road_construction_tool",
+    "type": "challenge",
+    "description": "Build a road in the nether.",
+    "requirements": "Use any Road Construction Tool in the Nether."
+}

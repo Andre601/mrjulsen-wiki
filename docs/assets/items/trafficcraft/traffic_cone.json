@@ -1,0 +1,14 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "red_dye",
+            "4": "red_dye",
+            "5": "quartz",
+            "6": "red_dye",
+            "7": "trafficcraft:raw_bitumen",
+            "8": "trafficcraft:raw_bitumen",
+            "9": "trafficcraft:raw_bitumen"
+        }
+    },
+    "name": "Traffic Cone"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Please, let me go!",
+    "icon": "trafficcraft:traffic_light_request_button",
+    "type": "challenge",
+    "description": "Use a traffic light request button."
+}

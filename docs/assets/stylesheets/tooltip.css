@@ -53,7 +53,6 @@
 	}
 
 	img {
-		image-rendering: pixelated;
 		width: 32px;
 		height: 32px;
 	}
@@ -99,9 +98,17 @@
 }
 
 .crafting-table {
-	> img {
+	img {
 		width: 100%;
 		height: auto;
+		image-rendering: optimizeSpeed;
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: optimize-contrast;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -o-crisp-edges;
+		image-rendering: crisp-edges;
+		image-rendering: pixelated;
+		-ms-interpolation-mode: nearest-neighbor;
 	}
 	padding: 16px 36px;
 	display: grid;
@@ -113,24 +120,40 @@
 }
 
 .furnace {
-	> img {
+	img {
 		width: 100%;
 		height: auto;
+		image-rendering: optimizeSpeed;
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: optimize-contrast;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -o-crisp-edges;
+		image-rendering: crisp-edges;
+		image-rendering: pixelated;
+		-ms-interpolation-mode: nearest-neighbor;
 	}
 	
 	padding: 16px 36px;
 	display: grid;
 	grid-template-columns: 36px 72px 36px;
 	grid-template-areas: 
-	"slot1 . ."
+	"slot1 exp exp"
 	"fire arrow slot0"
-	"slot2 exp exp";
+	"slot2 time time";
 }
 
 .smithing {
-	> img {
+	img {
 		width: 100%;
 		height: auto;
+		image-rendering: optimizeSpeed;
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: optimize-contrast;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -o-crisp-edges;
+		image-rendering: crisp-edges;
+		image-rendering: pixelated;
+		-ms-interpolation-mode: nearest-neighbor;
 	}
 	
 	padding: 16px 36px;
@@ -141,6 +164,7 @@
 
 .arrow {
 	grid-area: arrow;
+
 }
 
 .shapeless {
@@ -160,6 +184,15 @@
 	color: #555555;
 	text-align: right;
 	font-size: .7rem;
+	align-self: center;
+}
+
+.time {
+	grid-area: time;
+	color: #555555;
+	text-align: right;
+	font-size: .7rem;
+	align-self: center;
 }
 
 .slot0 {

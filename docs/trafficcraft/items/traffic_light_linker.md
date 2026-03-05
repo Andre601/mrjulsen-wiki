@@ -1,8 +1,8 @@
 # Traffic Light Linker
 
-The **Traffic Light Linker** is an item that is used to link one or multiple Traffic Lights and Traffic Light Request Buttons to a Traffic Light Controller.
+The **Traffic Light Linker** is an item that is used to link one or multiple [Traffic Lights](traffic_light.md) and Traffic Light Request Buttons to a Traffic Light Controller.
 
-## Functionality
+## Usage
 
 By holding the sneak button (Shift by default) and using the scroll wheel, you can toggle between *Link* and *Unlink* Mode.  
 In Link Mode can you connect one or multiple Target Blocks to a Source Block, while in Unlink Mode, you can remove the connections.
@@ -27,3 +27,7 @@ Clicking the Traffic Light followed by the Traffic Light Controller won't work.
 ### Crafting
 
 {{ crafting_recipe("trafficcraft:traffic_light_linker") }}
+
+## Advancements
+
+{{ advancement("trafficcraft:a_link_between_blocks") }}

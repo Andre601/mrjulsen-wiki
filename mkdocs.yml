@@ -3,14 +3,22 @@ site_description: "Wiki hosting pages about all of MrJulsen's mods"
 
 theme:
   name: material
+  custom_dir: theme
   palette:
     scheme: slate
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - content.tooltips
+    - content.footnote.tooltips
 
 extra_css:
   - assets/stylesheets/tooltip.css
+  - assets/stylesheets/style.css
+  - assets/stylesheets/admonitions.css
+  - assets/stylesheets/advancements.css
 
 extra_javascript:
   - assets/js/tooltip.js
@@ -24,12 +32,28 @@ plugins:
         - fire
         - no-glight
   - macros:
-      module_name: docs/.macros/macros
+      module_name: macros/macros
+  - redirects:
+      redirect_maps:
+        'trafficcraft/blocks/asphalt_curb.md': 'trafficcraft/blocks/asphalt.md'
+        'trafficcraft/blocks/asphalt_curb_slope.md': 'trafficcraft/blocks/asphalt_slope.md'
+        'trafficcraft/blocks/concrete_curb.md': 'trafficcraft/blocks/concrete.md'
+        'trafficcraft/blocks/concrete_curb_slope.md': 'trafficcraft/blocks/concrete_slope.md'
+        'trafficcraft/blocks/manhole_cover.md': 'trafficcraft/blocks/manhole.md'
+        'trafficcraft/blocks/road_gully.md': 'trafficcraft/blocks/manhole.md'
+        'trafficcraft/blocks/traffic_cone.md': 'trafficcraft/blocks/traffic_blocks.md'
+        'trafficcraft/blocks/traffic_bollard.md': 'trafficcraft/blocks/traffic_blocks.md'
+        'trafficcraft/blocks/traffic_barrel.md': 'trafficcraft/blocks/traffic_blocks.md'
+        'trafficcraft/blocks/road_barrier_fence.md': 'trafficcraft/blocks/traffic_blocks.md'
+
+hooks:
+  - hooks/interwiki.py
 
 markdown_extensions:
   - attr_list:
   - toc:
       permalink: true
+  - footnotes:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -51,21 +75,44 @@ markdown_extensions:
         - bug
         - example
         - quote
-        - download
+        - redirect
   - pymdownx.blocks.details:
   - pymdownx.blocks.tab:
       alternate_style: true
   - pymdownx.blocks.html:
   - pymdownx.blocks.caption:
 
+extra:
+  interwiki:
+    mc: 'https://minecraft.wiki/w/{target}'
+
 nav:
   - Home: index.md
   - TrafficCraft:
     - trafficcraft/index.md
+    - Blocks:
+      - trafficcraft/blocks/index.md
+      - trafficcraft/blocks/asphalt.md
+      - trafficcraft/blocks/asphalt_slope.md
+      - trafficcraft/blocks/bitumen_block.md
+      - trafficcraft/blocks/bitumen_ore.md
+      - trafficcraft/blocks/concrete.md
+      - trafficcraft/blocks/concrete_slope.md
+      - trafficcraft/blocks/manhole.md
+      - trafficcraft/blocks/salt.md
+      - trafficcraft/blocks/traffic_blocks.md
+      - trafficcraft/blocks/traffic_light.md
+      - trafficcraft/blocks/traffic_light_controller.md
+      - trafficcraft/blocks/traffic_sign_workbench.md
     - Items:
       - trafficcraft/items/index.md
+      - trafficcraft/items/color_palette.md
       - trafficcraft/items/iron_plate.md
+      - trafficcraft/items/iron_rod.md
+      - trafficcraft/items/paint_brush.md
+      - trafficcraft/items/pattern_catalogue.md
+      - trafficcraft/items/raw_bitumen.md
       - trafficcraft/items/road_construction_tool.md
-      - trafficcraft/items/traffic_light.md
-      - trafficcraft/items/traffic_light_controller.md
+      - trafficcraft/items/road_salt.md
+      - trafficcraft/items/street_lamp_config_card.md
       - trafficcraft/items/traffic_light_linker.md

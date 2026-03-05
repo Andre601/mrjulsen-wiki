@@ -1,0 +1,7 @@
+{
+    "smelting": {
+        "item": "trafficcraft:deepslate_bitumen_ore",
+        "exp": 0.1
+    },
+    "name": "Raw Bitumen"
+}

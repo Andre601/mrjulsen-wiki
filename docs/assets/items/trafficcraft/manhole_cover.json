@@ -1,0 +1,9 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "iron_trapdoor",
+            "5": "trafficcraft:manhole"
+        }
+    },
+    "name": "Mahole Cover"
+}

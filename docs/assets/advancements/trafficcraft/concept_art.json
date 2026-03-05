@@ -1,0 +1,7 @@
+{
+    "name": "Concept Art",
+    "icon": "trafficcraft:pattern_catalogue",
+    "type": "goal",
+    "description": "Create your first custom traffic sign!",
+    "requirements": "Save a Traffic Sign Pattern in the Traffic Sign Workbench."
+}

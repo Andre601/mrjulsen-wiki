@@ -1,0 +1,16 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:raw_bitumen",
+            "2": "trafficcraft:raw_bitumen",
+            "3": "trafficcraft:raw_bitumen",
+            "4": "trafficcraft:raw_bitumen",
+            "5": "trafficcraft:raw_bitumen",
+            "6": "trafficcraft:raw_bitumen",
+            "7": "trafficcraft:raw_bitumen",
+            "8": "trafficcraft:raw_bitumen",
+            "9": "trafficcraft:raw_bitumen"
+        }
+    },
+    "name": "Bitumen Block"
+}

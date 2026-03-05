@@ -1,0 +1,6 @@
+{
+    "name": "A Link Between Blocks",
+    "icon": "trafficcraft:traffic_light_linker",
+    "type": "goal",
+    "description": "Link a traffic light to a traffic light controller using a traffic light linker."
+}

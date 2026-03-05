@@ -1,0 +1,7 @@
+{
+    "name": "Final Destination",
+    "icon": "trafficcraft:netherite_road_construction_tool",
+    "type": "challenge",
+    "description": "Build a road in the end in the dragon's den.",
+    "requirements": "Use any Road Construction Tool on the main End Island."
+}

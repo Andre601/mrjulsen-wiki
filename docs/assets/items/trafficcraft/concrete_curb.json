@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "trafficcraft:concrete",
+            "5": "trafficcraft:concrete",
+            "6": "stone_bricks"
+        },
+        "amount": 3
+    },
+    "name": "Concrete with Curb"
+}

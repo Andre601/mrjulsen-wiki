@@ -1,1 +1,2 @@
-docs/.macros/__pycache__/
+macros/__pycache__
+hooks/__pycache__

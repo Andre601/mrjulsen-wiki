@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "copper_ingot",
+            "5": "redstone",
+            "8": "trafficcraft:iron_plate"
+        },
+        "amount": 1,
+        "shapeless": false
+    },
+    "name": "Street Lamp Configuration Card",
+    "lore": "<gray>Undefined"
+}

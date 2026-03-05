@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "trafficcraft:asphalt",
+            "5": "trafficcraft:asphalt",
+            "6": "stone_bricks"
+        },
+        "amount": 3
+    },
+    "name": "Asphalt"
+}

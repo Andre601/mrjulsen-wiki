@@ -1,0 +1,9 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "iron_bars",
+            "5": "trafficcraft:manhole"
+        }
+    },
+    "name": "Road Gully"
+}

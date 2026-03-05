@@ -1,7 +1,7 @@
 # Road Construction Tool
 
 The **Road Construction Tool** is an item that can be used for the quick creation of roads, including slopes.  
-The item comes in Tool tiers (Wood, Stone, Iron, Gold, Diamond and Netherite) which offer higher durability each.
+The item comes in Tool tiers Wood, Stone, Iron, Gold, Diamond and Netherite which each offer higher durability.
 
 ## Functionality
 
@@ -38,3 +38,9 @@ The buttons in this section allow you to switch between Asphalt and Concrete Blo
 ### Smithing
 
 {{ smithing_recipe("trafficcraft:netherite_road_construction_tool") }}
+
+## Advancements
+
+{{ advancement("trafficcraft:under_construction", footer=False) }}
+{{ advancement("trafficcraft:highway_to_hell", header=False, footer=False) }}
+{{ advancement("trafficcraft:final_destination", header=False) }}

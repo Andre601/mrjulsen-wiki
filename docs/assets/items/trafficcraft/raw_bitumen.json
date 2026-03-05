@@ -6,6 +6,9 @@
         "amount": 9,
         "shapeless": true
     },
-    "name": "Raw Bitumen",
-    "lore": ""
+    "smelting": {
+        "item": "trafficcraft:bitumen_ore",
+        "exp": 0.1
+    },
+    "name": "Raw Bitumen"
 }

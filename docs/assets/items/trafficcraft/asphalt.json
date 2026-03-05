@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:raw_bitumen",
+            "2": "gravel",
+            "3": "trafficcraft:raw_bitumen",
+            "4": "gravel",
+            "5": "trafficcraft:raw_bitumen",
+            "6": "gravel",
+            "7": "trafficcraft:raw_bitumen",
+            "8": "gravel",
+            "9": "trafficcraft:raw_bitumen"
+        },
+        "amount": 8
+    },
+    "name": "Asphalt"
+}

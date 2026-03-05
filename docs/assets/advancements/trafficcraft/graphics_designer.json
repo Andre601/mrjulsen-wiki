@@ -1,0 +1,6 @@
+{
+    "name": "Graphics Designer",
+    "icon": "trafficcraft:traffic_sign_workbench",
+    "description": "Place a Traffic Sign Workbench and start drawing your own traffic sign textures.",
+    "requirements": "Place a Traffic Sign Workbench."
+}

@@ -24,12 +24,6 @@ Clicking the button allows you to toggle between different modes:
 - Own Schedule: Allows you to configure a Schedule that the Traffic Light is following and whether it's enabled or not.
 - Traffic Light Controller: Allows you to set an ID that is then used in the Traffic Light Controller to remotely change the Traffic Light. Note that this requires you to link the Traffic Light to the Controller using a Traffic Light Linker.
 
-## Obtaining
-
-### Crafting
-
-{{ crafting_recipe("trafficcraft:traffic_light") }}
-
 ## Redstone output
 
 Using a Comparator, you can read the Traffic Light's curren state as a redstone signal.
@@ -44,3 +38,13 @@ The Signal Strength is based on what signals are currently active, with multiple
 | Green         | 2                        |
 
 As an example, Red and Yellow would output a Signal Strength of 12 (8 + 4) while Green and Yellow would output 6 (2 + 4).
+
+## Obtaining
+
+### Crafting
+
+{{ crafting_recipe("trafficcraft:traffic_light") }}
+
+## Advancements
+
+{{ advancement("trafficcraft:you_shall_not_pass") }}

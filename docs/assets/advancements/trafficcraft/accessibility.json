@@ -1,0 +1,6 @@
+{
+    "name": "Accessibility?",
+    "icon": "trafficcraft:traffic_cone",
+    "description": "Craft a traffic cone or a similar block.",
+    "requirements": "Have a Traffic Cone, Traffic Bollard, Traffic Barrel or Road Barrier Fence in your inventory."
+}

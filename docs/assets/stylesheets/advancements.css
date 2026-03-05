@@ -1,0 +1,29 @@
+.advancement-background {
+    display: inline-block;
+    position: relative;
+    width: 52px;
+    height: 52px;
+}
+
+.advancement-icon {
+    > img {
+        width: 32px;
+        height: 32px;
+    }
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    line-height: 0;
+}
+
+.pixelated {
+	image-rendering: optimizeSpeed;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;
+}
