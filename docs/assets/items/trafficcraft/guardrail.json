@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "trafficcraft:iron_plate",
+            "5": "trafficcraft:iron_plate",
+            "6": "trafficcraft:iron_plate",
+            "8": "trafficcraft:traffic_sign_post"
+        },
+        "amount": 6
+    },
+    "name": "Guardrail"
+}

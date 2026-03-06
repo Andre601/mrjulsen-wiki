@@ -3,7 +3,7 @@
 /// redirect | `Traffic Cone`, `Traffic Bollard`, `Traffic Barrel` and `Raod Barrier Fence` redirect to here.
 ///
 
-This page is a collection of the **Traffic Cone**, **Traffic Bollard**, **Traffic Barrel** and **Road Barrier Fence** which all provide the same functionality, being a decorative block having a 1.5 block high collission block similar to a [[mc:Fence|Fence]].
+This page is a collection of the **Traffic Cone**, **Traffic Bollard**, **Traffic Barrel** and **Road Barrier Fence** which all provide the same functionality, being a decorative block having a 1.5 block high collission block similar to a [[mc:Fence]].
 
 ## Usage
 

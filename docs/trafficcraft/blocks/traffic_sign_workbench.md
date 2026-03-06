@@ -1,11 +1,11 @@
 # Traffic Sign Workbench
 
-The **Traffic Sign Workbench** is a block that allows you to create designs for [Traffic Signs](traffic_sign.md) using a [Pattern Catalogue](../items/pattern_catalogue.md).
+The **Traffic Sign Workbench** is a block that allows you to create designs for [[Traffic Sign|Traffic Signs]] using a [[Pattern Catalogue]].
 
 ## Usage
 
 After placing the Traffic Sign Workbench, right-clicking it will open a UI.  
-On the top-left is a slot where you place your Pattern Catalogue, while on the top-right is a slot for an optional [Color Palette](../items/color_palette.md).
+On the top-left is a slot where you place your Pattern Catalogue, while on the top-right is a slot for an optional [[Color Palette]].
 
 In the center is a large area appearing similar to a Pattern Catalogue. Placing a Pattern Catalogue in its designated slot will display the 1st saved pattern, if any and allows you to cycle through all saved ones.  
 Additionally will buttons appear on the left-hand side which allow to add, edit and delete Patterns.

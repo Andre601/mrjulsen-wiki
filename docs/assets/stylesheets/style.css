@@ -16,6 +16,27 @@
     margin-left: 0.5rem;
 }
 
+.md-typeset h1 {
+    margin: 0;
+}
+
+.md-typeset a {
+    transition: color 125ms, text-decoration 125ms;
+}
+
+.md-typeset a:hover {
+    text-decoration: underline;
+}
+
 .color-warn {
     animation: 5s ease-in-out infinite warn-glow;
+}
+
+.red-link {
+    color: #ff5252;
+    transition: text-decoration 125ms;
+}
+
+.red-link:hover {
+    text-decoration: underline;
 }

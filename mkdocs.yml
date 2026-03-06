@@ -1,5 +1,6 @@
 site_name: "MrJulsen's Mods Wiki"
 site_description: "Wiki hosting pages about all of MrJulsen's mods"
+site_url: https://mrjulsen.andre601.ch
 
 theme:
   name: material
@@ -11,6 +12,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
+    - navigation.instant.preview
     - content.tooltips
     - content.footnote.tooltips
 
@@ -45,6 +47,12 @@ plugins:
         'trafficcraft/blocks/traffic_bollard.md': 'trafficcraft/blocks/traffic_blocks.md'
         'trafficcraft/blocks/traffic_barrel.md': 'trafficcraft/blocks/traffic_blocks.md'
         'trafficcraft/blocks/road_barrier_fence.md': 'trafficcraft/blocks/traffic_blocks.md'
+        'trafficcraft/blocks/white_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/yellow_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/red_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/small_white_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/small_yellow_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/reflector.md': 'trafficcraft/blocks/delineators.md'
 
 hooks:
   - hooks/interwiki.py
@@ -84,7 +92,7 @@ markdown_extensions:
 
 extra:
   interwiki:
-    mc: 'https://minecraft.wiki/w/{target}'
+    mc: 'https://minecraft.wiki/w/{page}'
 
 nav:
   - Home: index.md
@@ -97,7 +105,9 @@ nav:
       - trafficcraft/blocks/bitumen_block.md
       - trafficcraft/blocks/bitumen_ore.md
       - trafficcraft/blocks/concrete.md
+      - trafficcraft/blocks/concrete_barrier.md
       - trafficcraft/blocks/concrete_slope.md
+      - trafficcraft/blocks/delineators.md
       - trafficcraft/blocks/manhole.md
       - trafficcraft/blocks/salt.md
       - trafficcraft/blocks/street_lamps.md
@@ -105,6 +115,7 @@ nav:
       - trafficcraft/blocks/traffic_light.md
       - trafficcraft/blocks/traffic_light_controller.md
       - trafficcraft/blocks/traffic_light_request_button.md
+      - trafficcraft/blocks/traffic_sign.md
       - trafficcraft/blocks/traffic_sign_workbench.md
     - Items:
       - trafficcraft/items/index.md

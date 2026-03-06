@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "quartz",
+            "5": "glow_ink_sac",
+            "6": "quartz"
+        },
+        "amount": 2
+    },
+    "name": "Reflector"
+}

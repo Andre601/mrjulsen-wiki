@@ -1,6 +1,6 @@
 {
     "name": "This must be a sign!",
-    "icon": "trafficcraft:street_sign",
+    "icon": "trafficcraft:traffic_sign",
     "description": "Craft a traffic sign.",
     "requirements": "Have a traffic sign in your inventory."
 }

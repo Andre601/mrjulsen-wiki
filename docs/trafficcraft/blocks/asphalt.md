@@ -3,7 +3,7 @@
 /// redirect | `Asphalt with Curb` redirects here.
 ///
 
-**Asphalt** is a Block that can be painted with the [Paint Brush](../items/paint_brush.md).
+**Asphalt** is a Block that can be painted with the [[Paint Brush]].
 
 ## Usage
 
@@ -24,6 +24,4 @@ Asphalt with Curb cannot be painted
 ## Advancements
 
 {{ advancement("trafficcraft:road_worker", footer=False) }}
-{{ advancement("trafficcraft:highway_to_hell", header=False, footer=False) }}
-{{ advancement("trafficcraft:final_destination", header=False, footer=False) }}
 {{ advancement("trafficcraft:country_roads_take_me_home", header=False) }}

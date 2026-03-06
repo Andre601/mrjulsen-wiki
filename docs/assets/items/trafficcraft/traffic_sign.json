@@ -1,0 +1,15 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:iron_plate",
+            "2": "trafficcraft:iron_plate",
+            "3": "trafficcraft:iron_plate",
+            "4": "trafficcraft:iron_plate",
+            "5": "trafficcraft:iron_plate",
+            "6": "trafficcraft:iron_plate",
+            "8": "trafficcraft:traffic_sign_post"
+        },
+        "amount": 3
+    },
+    "name": "Traffic Sign"
+}

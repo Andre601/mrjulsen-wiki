@@ -7,9 +7,9 @@ This page is a collection of the **Street Lamp**, **Double Street Lamp**, **Smal
 
 ## Usage
 
-Right-clicking a Street Lamp with a [Wrench](../items/wrench.md) allows to toggle its state between on and off with the on state emiting a Light level of 15.
+Right-clicking a Street Lamp with a [[Wrench]] allows to toggle its state between on and off with the on state emiting a Light level of 15.
 
-Using a [Street Lamp Configuration Card](../items/street_lamp_config_card.md) a automatic enabling and disabling can be configured based on the ingane world's time.  
+Using a [[street lamp config card|Street Lamp Configuration Card]] a automatic enabling and disabling can be configured based on the ingane world's time.  
 To do this is a time to be configured in the Street Lamp Configuration Card and then be applied on the lamp by right-clicking it.
 
 ## Obtaining

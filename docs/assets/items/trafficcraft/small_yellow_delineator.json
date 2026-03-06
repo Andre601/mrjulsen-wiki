@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:small_white_delineator",
+            "2": "yellow_dye"
+        },
+        "shapeless": true
+    },
+    "name": "Small Yellow Delineator"
+}

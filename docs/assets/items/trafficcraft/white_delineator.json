@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "trafficcraft:reflector",
+            "5": "stick",
+            "8": "stick"
+        },
+        "amount": 2
+    },
+    "name": "White Delineator"
+}

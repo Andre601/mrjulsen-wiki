@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:reflector",
+            "2": "red_dye",
+            "4": "stick",
+            "7": "stick"
+        },
+        "amount": 2
+    },
+    "name": "Red Delineator"
+}

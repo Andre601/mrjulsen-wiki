@@ -1,6 +1,6 @@
 # Traffic Light Controller
 
-The **Traffic Light Controller** is a block that allows you to handle multiple [Traffic Lights](traffic_light.md).
+The **Traffic Light Controller** is a block that allows you to handle multiple [[Traffic Light|Traffic Lights]].
 
 ## Functionality
 

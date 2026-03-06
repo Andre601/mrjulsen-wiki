@@ -1,0 +1,6 @@
+{
+    "name": "This is art",
+    "icon": "trafficcraft:paint_bucket",
+    "description": "Paint other blocks from TrafficCraft using a paint brush.",
+    "requirements": "Paint a Concrete Barrier, Street Sign, House Number Sign, Traffic Light, Guardrail, any of the Traffic Blocks or a Reflector with the Paint Brush."
+}

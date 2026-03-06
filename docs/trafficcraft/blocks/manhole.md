@@ -3,8 +3,8 @@
 /// redirect | `Mahole Cover` and `Road Gully` redirect here.
 ///
 
-**Mahole** is a Block that functions similar to a [[mc:Ladder|Ladder]], allowing you to climb up and down.  
-The Manhole Cover and Road Gully also allow to be opened and closed using a [Wrench](../items/wrench.md).
+**Mahole** is a Block that functions similar to a [[mc:Ladder]], allowing you to climb up and down.  
+The Manhole Cover and Road Gully also allow to be opened and closed using a [[Wrench]].
 
 ## Usage
 

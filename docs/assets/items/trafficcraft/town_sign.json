@@ -1,0 +1,9 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "trafficcraft:traffic_sign"
+        },
+        "shapeless": true
+    },
+    "name": "Town Sign"
+}

@@ -3,7 +3,7 @@
 /// redirect | `Concrete with Curb Slope` redirects here.
 ///
 
-**Concrete Slope** is a Block that can be painted with the [Paint Brush](../items/paint_brush.md) and stacked similar to [[mc:Snow|Snow]].
+**Concrete Slope** is a Block that can be painted with the [[Paint Brush]] and stacked similar to [[mc:Snow]].
 
 ## Usage
 
@@ -26,5 +26,4 @@ Concrete with Curb Slopes cannot be painted
 ## Advancements
 
 {{ advancement("trafficcraft:road_worker", footer=False) }}
-{{ advancement("trafficcraft:highway_to_hell", header=False, footer=False) }}
-{{ advancement("trafficcraft:final_destination", header=False) }}
+{{ advancement("trafficcraft:country_roads_take_me_home", header=False) }}

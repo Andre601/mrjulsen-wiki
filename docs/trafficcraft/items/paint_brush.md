@@ -16,3 +16,8 @@ Right-clicking a block with a Pattern rotates the pattern clock-wise by 90°.
 ### Crafting
 
 {{ crafting_recipe("trafficcraft:paint_brush") }}
+
+## Advancements
+
+{{ advancement("trafficcraft:street_artist", footer=False) }}
+{{ advancement("trafficcraft:this_is_art", header=False) }}

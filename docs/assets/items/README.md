@@ -11,19 +11,19 @@ As an example, the Traffic Light of TrafficCraft is stored as [`trafficcraft/tra
 Here is an example of a JSON files possible structure:
 ```json
 {
-    "name": "<item_name>",
-    "lore": "<lore>",
-    "gif": <gif>,
+    "name": "<string>",
+    "lore": "<string>",
+    "gif": <boolean>,
     "crafting": {
         "ingredients": {
-            "<slot>": "<ingredient>"
+            "<slot>": "<item>"
         },
-        "amount": <amount>,
-        "shapeless": <shapeless>
+        "amount": <integer>,
+        "shapeless": <boolean>
     },
     "smelting": {
-        "input": "<input>",
-        "experience": <experience>
+        "input": "<item>",
+        "experience": <float>
     },
     "smithing": {
         "template": "<item>",
@@ -33,24 +33,31 @@ Here is an example of a JSON files possible structure:
 }
 ```
 
-- name: Name of the Item to display. See [Formatting](#formatting) for formatting options.
-- lore: Lore of the Item to display. See [Formatting](#formatting) for formatting options.
-- gif: Whether the image to display is actually a gif and not a png.
-- crafting: Contains the crafting recipe for the Item.
-    - ingredients: Contains the individual ingredients for the Crafting recipe.
-        -   &lt;slot&gt;: Slot number the item should be displayed in. Should be between 1 and 9.  
-            The value itself should be the item-id in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
-    - amount: The number of items you obtain from this recipe. Defaults to 1.
-    - shapeless: Whether the order of items does not matter. Default is false.
-- smelting: Contains the smelting recipe for the Item.
-    - input: The Item to put in to smelt. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
-    - experience: Amount of Experience points you get per item smelted. This is a float number, so decimal points can be used.
-- smithing: Contains the smithing recipe for the Item.
-    - template: The template item to use. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
-    - item: The main item to apply the template and material on. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
-    - material: The Item to apply. Should be in the `namespace:id` format. Not providing a namespace assumes the `minecraft` one.
+(Note: A `?` suffix indicates the option to be optional.)
+
+- `name`: The Item Name to display. Supports [formatting options](#formatting).
+- `lore`?: Item Description to display. Supports [formatting options](#formatting).
+- `gif`?: Whether the image to display is a Gif or not. Default: false.
+- `crafting`:
+    - `ingredients`: Contains the individual ingredients used in the Recipe. Each entry uses the slot number (1-9) as key and the [Item ID](#item-ids) as value.
+    - `amount`?: Amount of items this crafting recipe gives. Default: 1
+    - `shapeless`?: Whether the recipe is shapeless (Order of items doesn't matter). Default: false.
+- `smelting`:
+    - `input`: The [Item ID](#item-ids) of the Item that gets smelted.
+    - `experience`: Number of XP points a player gets per smelted item. This can be a float number and contain decimal points.
+- `smithing`:
+    - `template`: The [Item ID](#item-ids) of the Item used as the template ingredient.
+    - `item`: The [Item ID](#item-ids) of the Item used to apply the template and material on.
+    - `material`: The [Item ID](#item-ids) of the Item used as the material to apply on the item.
+
+### Item IDs
+
+When referencing an item as an ingredient or input can either just the item name (i.e. `stick`) be used, or a namespaced ID (i.e. `minecraft:stick`) be used for it.  
+The name/ID should match the file name of the actual item while the namespace should match the name of the folder it's located in.  
+Not providing a Namespace assumes the `minecraft` namespace is used.
 
 ### Formatting
 
-The `name` and `lore` options allow usage of MiniMessage-inspired formatting tags, such as `<blue>`, `<aqua>`, `<bold>`, etc.  
-Additionally may `\n` be used for line breaks, which primarely would be used within lore.
+The `name` and `lore` options allow the usage of formatting tags.  
+These tags are inspired by the [MiniMessage formatting](https://docs.papermc.io/adventure/minimessage/format/) and use the same naming.  
+`\n` may also be used to indicate a line break to apply.

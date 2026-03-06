@@ -1,12 +1,11 @@
 # Traffic Light
 
-The **Traffic Light** is a decorative block that can be used for roads, crosswalks and similar.
+The **Traffic Light** is a decorative block that can be used for roads, crosswalks and similar.  
+It can display colored lights or symbols, or white symbols if set to *Tram* mode.
 
-## Functionality
+## Usage
 
-The Traffic Light can display either colored lights or symbols, or white symbols when set to *Tram* mode.
-
-Right-clicking the Traffic Light with a Wrench will open up a GUI containing various features to edit.
+Right-clicking the Traffic Light with a [[Wrench]] will open up a GUI containing various features to edit.
 
 ### General Traffic Light Settings
 
@@ -22,22 +21,34 @@ Clicking the button allows you to toggle between different modes:
 
 - Static (Default): Lights either are on or off based on what is configured. They can be toggled by pressing the corresponding icon shown underneath the button.
 - Own Schedule: Allows you to configure a Schedule that the Traffic Light is following and whether it's enabled or not.
-- Traffic Light Controller: Allows you to set an ID that is then used in the Traffic Light Controller to remotely change the Traffic Light. Note that this requires you to link the Traffic Light to the Controller using a Traffic Light Linker.
+- [[Traffic Light Controller]]: Allows you to set an ID that is then used in the Traffic Light Controller to remotely change the Traffic Light. Note that this requires you to link the Traffic Light to the Controller using a Traffic Light Linker.
 
 ## Redstone output
 
-Using a Comparator, you can read the Traffic Light's curren state as a redstone signal.
+Using a Comparator, the current state of the Traffic Light can be read as a Redstone Signal Strength.
 
-The Signal Strength is based on what signals are currently active, with multiple ones having their individual signal strengths added together.
+The outputed signal strength depends on the lights that are currently turned on:
 
-| Active Signal | Redstone Signal Strength |
-|---------------|--------------------------|
-| Off (None)    | 0                        |
-| Red           | 8                        |
-| Yellow        | 4                        |
-| Green         | 2                        |
+| Lights             | Redstone Signal Strength |
+|--------------------|-------------------------:|
+| ![all_off]         | 0                        |
+| ![green_on]        | 2                        |
+| ![yellow_on]       | 4                        |
+| ![yellow_green_on] | 6                        |
+| ![red_on]          | 8                        |
+| ![red_green_on]    | 10                       |
+| ![red_yellow_on]   | 12                       |
+| ![all_on]          | 14                       |
 
-As an example, Red and Yellow would output a Signal Strength of 12 (8 + 4) while Green and Yellow would output 6 (2 + 4).
+
+[all_off]: ../../assets/img/ui/trafficcraft/traffic_light_all_off.png
+[green_on]: ../../assets/img/ui/trafficcraft/traffic_light_green_on.png
+[yellow_on]: ../../assets/img/ui/trafficcraft/traffic_light_yellow_on.png
+[yellow_green_on]: ../../assets/img/ui/trafficcraft/traffic_light_yellow_green_on.png
+[red_on]: ../../assets/img/ui/trafficcraft/traffic_light_red_on.png
+[red_green_on]: ../../assets/img/ui/trafficcraft/traffic_light_red_green_on.png
+[red_yellow_on]: ../../assets/img/ui/trafficcraft/traffic_light_red_yellow_on.png
+[all_on]: ../../assets/img/ui/trafficcraft/traffic_light_all_on.png
 
 ## Obtaining
 

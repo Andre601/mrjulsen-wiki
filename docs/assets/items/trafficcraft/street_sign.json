@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "quartz",
+            "5": "trafficcraft:iron_plate",
+            "6": "quartz"
+        },
+        "amount": 4
+    },
+    "name": "Street Sign"
+}

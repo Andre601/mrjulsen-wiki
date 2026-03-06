@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "smooth_stone_slab",
+            "5": "smooth_stone_slab",
+            "7": "smooth_stone_slab",
+            "8": "smooth_stone",
+            "9": "smooth_stone_slab"
+        },
+        "amount": 6
+    },
+    "name": "Concrete Barrier"
+}
