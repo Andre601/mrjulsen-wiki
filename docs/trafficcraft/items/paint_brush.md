@@ -1,11 +1,11 @@
 # Paint Brush
 
-The **Paint Brush** is an item that can be used to paint patterns on Asphalt and Concrete Blocks and Slopes.
+The **Paint Brush** is an item that can be used to paint patterns on [[Asphalt]] and [[Concrete]] Blocks and Slopes.
 
 ## Usage
 
 Right-clicking the air with a Paint Brush opens a GUI where you can select the pattern to paint on the Asphalt or Concrete Blocks.  
-To actually paint the pattern, color needs to be added by right-clicking a Paint Bucket filled with dye with the Paint Brush. Paint Brushes with color already applied will have it overriden.
+To actually paint the pattern, color needs to be added by right-clicking a [[Paint Bucket]] filled with dye with the Paint Brush. Paint Brushes with color already applied will have it overriden.
 
 A full Paint Brush allows 128 Blocks to be painted.
 

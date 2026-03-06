@@ -1,7 +1,7 @@
 # Road Construction Tool
 
 The **Road Construction Tool** is an item that can be used for the quick creation of roads, including slopes.  
-The item comes in Tool tiers Wood, Stone, Iron, Gold, Diamond and Netherite which each offer higher durability.
+The item comes in [[mc:Tiers|Tool tiers]] Wood, Stone, Iron, Gold, Diamond and Netherite which each offer higher durability.
 
 ## Functionality
 
@@ -23,7 +23,7 @@ The range can go from 1 to 9 with 7 being the default width.
 
 ### Road Building Blocks
 
-The buttons in this section allow you to switch between Asphalt and Concrete Blocks and slopes to be used.
+The buttons in this section allow you to switch between [[Asphalt]] and [[Concrete]] Blocks and slopes to be used.
 
 ## Obtaining
 

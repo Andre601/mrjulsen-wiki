@@ -1,11 +1,13 @@
 # Traffic Light Linker
 
-The **Traffic Light Linker** is an item that is used to link one or multiple [Traffic Lights](traffic_light.md) and Traffic Light Request Buttons to a Traffic Light Controller.
+The **Traffic Light Linker** is an item that is used to link one or multiple [[Traffic Light|Traffic Lights]] and [[Traffic Light Request Button|Traffic Light Request Buttons]] to a [[Traffic Light Controller]].
 
 ## Usage
 
 By holding the sneak button (Shift by default) and using the scroll wheel, you can toggle between *Link* and *Unlink* Mode.  
 In Link Mode can you connect one or multiple Target Blocks to a Source Block, while in Unlink Mode, you can remove the connections.
+
+Right-clicking while sneaking removes any currently configured source block.
 
 Valid Source Blocks are:
 

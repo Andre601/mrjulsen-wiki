@@ -6,8 +6,8 @@
 
 ### Mining
 
-Mining [Bitumen Ore](../blocks/bitumen_ore.md) and its Deepslate Variant with a pickaxe of Stone Tier or higher yields between 2 and 8 Raw Bitumen.  
-Mining the Block with a Pickaxe enchanted with Silk Touch yields the Ore block itself.
+Mining [[Bitumen Ore]] and its Deepslate Variant with a pickaxe of Stone Tier or higher yields between 2 and 8 Raw Bitumen.  
+Mining the Block with a Pickaxe enchanted with [[mc:Silk Touch]] yields the Ore block itself.
 
 ### Crafting
 
