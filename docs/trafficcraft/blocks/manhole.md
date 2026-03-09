@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/wrenchable
+---
+
 # Manhole
 
 /// redirect | `Mahole Cover` and `Road Gully` redirect here.

@@ -1,9 +1,11 @@
 {
     "crafting": {
         "ingredients": {
-            "4": "quartz",
-            "5": "trafficcraft:iron_plate",
-            "6": "quartz"
+            "2": "iron_nugget",
+            "4": "iron_nugget",
+            "5": "quartz",
+            "6": "iron_nugget",
+            "8": "iron_nugget"
         },
         "amount": 4
     },

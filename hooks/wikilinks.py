@@ -11,8 +11,13 @@
 #
 import re
 import posixpath
+import logging
+from collections import defaultdict
+from pathlib import Path
 
 WIKILINK_PATTERN = re.compile(r"\[\[([^|\]]+)(?:\|([^\]]+))?]]")
+
+log = logging.getLogger("mkdocs")
 
 pages_map = {}
 interwiki = {}
@@ -20,10 +25,12 @@ interwiki = {}
 def on_config(config):
     global interwiki
     interwiki = config.get("extra", {}).get("interwiki", {})
+
     return config
 
 def on_files(files, config):
     global pages_map
+
     pages_map = {}
 
     for f in files:
@@ -52,27 +59,32 @@ def make_relative(current_file, target_file):
     target = target_file.src_uri
     return posixpath.relpath(target, src_dir)
 
-def on_page_markdown(markdown, page, config, files):
 
+def on_page_markdown(markdown, page, config, files):
     def repl(match):
         target = match.group(1).strip()
         text = match.group(2)
-
+        
         if ":" in target:
             prefix, rest = target.split(":", 1)
+            label = text or rest
 
             if prefix in interwiki:
                 url = interwiki[prefix].format(page=rest.replace(" ", "_"))
-                label = text or rest
-                return f"[{label}]({url}){{ target=\"_blank\" rel=\"nofollow\" }}"
+                return f'[{label}]({url}){{ target="_blank" rel="nofollow" }}'
+            else:
+                log.warning(f'[Wikilinks] Unknown Interwiki prefix "{prefix}" in "{page.file.src_uri}"!')
+                return f'<span class="red-link" title="Unknown Interwiki prefix \'{prefix}\'">{text}</span>'
         
         resolved = resolve_internal(target, page.file)
 
+        label = text or target
+
         if resolved:
             link = make_relative(page.file, resolved)
-            label = text or target
-            return f"[{label}]({link})"
+            return f'[{label}]({link})'
         
-        return f'<span class="red-link" title="Unknown page \'{target}\'">{target}</span>'
+        log.warning(f'[Wikilinks] Unknown target page "{target}" in "{page.file.src_uri}"!')
+        return f'<span class="red-link" title="Unknown target page \'{target}\'">{label}</span>'
     
     return WIKILINK_PATTERN.sub(repl, markdown)

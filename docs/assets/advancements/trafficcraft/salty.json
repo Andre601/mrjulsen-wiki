@@ -1,0 +1,6 @@
+{
+    "name": "Salty",
+    "icon": "trafficcraft:road_salt",
+    "description": "Sprinkle salt on your road to clear it of snow and ice.",
+    "requirements": "Place some Road Salt."
+}

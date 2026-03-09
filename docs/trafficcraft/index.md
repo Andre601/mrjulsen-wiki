@@ -21,19 +21,19 @@ Versions `1.2.0` and newer require DragonLib to be installed. Versions `1.1.3` a
 
 /// html | div.grid.cards
 -   ### Road Blocks
-    Adds [Asphalt](blocks/asphalt.md), [Concrete](blocks/concrete.md) and slope variants of the same materials that work like [[mc:Snow|Snow layers]].
+    Adds [[Asphalt]], [[Concrete]] and slope variants of the same materials that work like [[mc:Snow|Snow layers]].
 
 -   ### Traffic Signs
     Choose between hundreds of pre-made signs, or create your own custom ones.
 
 -   ### Traffic Light
-    Create fully customizable and functional [Traffic Light](blocks/traffic_light.md) Systems.
+    Create fully customizable and functional [[Traffic Light]] Systems.
 
 -   ### Paintable Blocks
-    Use a [Paint Brush](items/paint_brush.md) to paint hundreds of different patterns onto Asphalt and Concrete Blocks and Slopes.
+    Use a [[Paint Brush]] to paint hundreds of different patterns onto Asphalt and Concrete Blocks and Slopes.
 
 -   ### Street Lamps
-    Fully configurable [Street Lamps](blocks/street_lamps.md) that turn on and off at specified times.
+    Fully configurable [[Street Lamps]] that turn on and off at specified times.
 
 -   ### Writable Signs
     Write the name of your Streets on Street Name Signs.
@@ -42,5 +42,5 @@ Versions `1.2.0` and newer require DragonLib to be installed. Versions `1.1.3` a
     Guardrails, Traffic Cones, Road Barrier Fences and more.
 
 -   ### Useful tools
-    Practical tools such as the [Road Construction Tool](items/road_construction_tool.md) that help in creating road networks fast and easy.
+    Practical tools such as the [[Road Construction Tool]] that help in creating road networks fast and easy.
 ///

@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/paintable
+---
+
 # Delineators
 
 /// redirect | `White Delineator`, `Yellow Delineator`, `Red Delineator`, `Small White Delineator`, `Small Yellow Delineator` and `Reflector` redirect to this page.

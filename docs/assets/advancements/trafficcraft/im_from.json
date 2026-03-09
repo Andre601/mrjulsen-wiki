@@ -1,0 +1,6 @@
+{
+    "name": "I'm from...",
+    "icon": "trafficcraft:town_sign",
+    "description": "Place a town sign to show in which town you live.",
+    "requirements": "Place a Town Sign."
+}

@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/paintable
+---
+
 # Asphalt
 
 /// redirect | `Asphalt with Curb` redirects here.

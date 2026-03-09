@@ -27,6 +27,9 @@ extra_javascript:
 
 plugins:
   - search
+  - tags:
+      tags_hierarchy: true
+  - meta
   - glightbox:
       skip_classes:
         - arrow
@@ -53,9 +56,10 @@ plugins:
         'trafficcraft/blocks/small_white_delineator.md': 'trafficcraft/blocks/delineators.md'
         'trafficcraft/blocks/small_yellow_delineator.md': 'trafficcraft/blocks/delineators.md'
         'trafficcraft/blocks/reflector.md': 'trafficcraft/blocks/delineators.md'
-
-hooks:
-  - hooks/interwiki.py
+        'trafficcraft/blocks/traffic_sign.md': 'trafficcraft/blocks/signs.md'
+        'trafficcraft/blocks/town_sign.md': 'trafficcraft/blocks/signs.md'
+        'trafficcraft/blocks/street_sign.md': 'trafficcraft/blocks/signs.md'
+        'trafficcraft/blocks/house_number_sign.md': 'trafficcraft/blocks/signs.md'
 
 markdown_extensions:
   - attr_list:
@@ -84,18 +88,31 @@ markdown_extensions:
         - example
         - quote
         - redirect
+        - category
   - pymdownx.blocks.details:
   - pymdownx.blocks.tab:
       alternate_style: true
   - pymdownx.blocks.html:
   - pymdownx.blocks.caption:
 
+hooks:
+  - hooks/wikilinks.py
+
+validation:
+  links:
+    absolute_links: relative_to_docs
+
 extra:
   interwiki:
-    mc: 'https://minecraft.wiki/w/{page}'
+    'mc': 'https://minecraft.wiki/w/{page}'
 
 nav:
-  - Home: index.md
+  - Home:
+    - index.md
+    - contribute.md
+    - Categories:
+      - categories/index.md
+      - categories/trafficcraft.md
   - TrafficCraft:
     - trafficcraft/index.md
     - Blocks:
@@ -108,18 +125,22 @@ nav:
       - trafficcraft/blocks/concrete_barrier.md
       - trafficcraft/blocks/concrete_slope.md
       - trafficcraft/blocks/delineators.md
+      - trafficcraft/blocks/guardrail.md
       - trafficcraft/blocks/manhole.md
+      - trafficcraft/blocks/paint_bucket.md
       - trafficcraft/blocks/salt.md
+      - trafficcraft/blocks/signs.md
       - trafficcraft/blocks/street_lamps.md
       - trafficcraft/blocks/traffic_blocks.md
       - trafficcraft/blocks/traffic_light.md
       - trafficcraft/blocks/traffic_light_controller.md
       - trafficcraft/blocks/traffic_light_request_button.md
-      - trafficcraft/blocks/traffic_sign.md
+      - trafficcraft/blocks/traffic_sign_post.md
       - trafficcraft/blocks/traffic_sign_workbench.md
     - Items:
       - trafficcraft/items/index.md
       - trafficcraft/items/color_palette.md
+      - trafficcraft/items/hammer.md
       - trafficcraft/items/iron_plate.md
       - trafficcraft/items/iron_rod.md
       - trafficcraft/items/paint_brush.md
@@ -129,3 +150,4 @@ nav:
       - trafficcraft/items/road_salt.md
       - trafficcraft/items/street_lamp_config_card.md
       - trafficcraft/items/traffic_light_linker.md
+      - trafficcraft/items/wrench.md

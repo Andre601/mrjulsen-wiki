@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/paintable
+---
+
 # Concrete Barrier
 
 The **Concrete Barrier** is a decorative block with a 1 block high collission box.

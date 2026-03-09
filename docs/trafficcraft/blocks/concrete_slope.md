@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/paintable
+---
+
 # Concrete Slope
 
 /// redirect | `Concrete with Curb Slope` redirects here.

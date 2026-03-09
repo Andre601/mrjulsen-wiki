@@ -1,3 +1,9 @@
+---
+tags:
+  - trafficcraft/wrenchable
+  - trafficcraft/paintable
+---
+
 # Traffic Light
 
 The **Traffic Light** is a decorative block that can be used for roads, crosswalks and similar.  

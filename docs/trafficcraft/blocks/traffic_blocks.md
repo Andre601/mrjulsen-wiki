@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/paintable
+---
+
 # Traffic Blocks
 
 /// redirect | `Traffic Cone`, `Traffic Bollard`, `Traffic Barrel` and `Raod Barrier Fence` redirect to here.

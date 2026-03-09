@@ -1,3 +1,8 @@
+---
+tags:
+  - trafficcraft/wrenchable
+---
+
 # Street Lamps
 
 /// redirect | `Street Lamp`, `Double Street Lamp`, `Small Street Lamp`, `Small Double Street Lamp`, `Street Light` and `Fluorescent Tube Lamp` redirect here.
