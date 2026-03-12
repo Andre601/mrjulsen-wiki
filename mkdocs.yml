@@ -15,6 +15,20 @@ theme:
     - navigation.instant.preview
     - content.tooltips
     - content.footnote.tooltips
+  icon:
+    admonition:
+      note: octicons/tag-24
+      abstract: octicons/checklist-24
+      info: octicons/info-24
+      tip: octicons/thumbsup-24
+      success: octicons/check-24
+      question: octicons/question-24
+      warning: octicons/alert-24
+      failure: octicons/x-circle-24
+      danger: octicons/zap-24
+      bug: octicons/bug-24
+      example: octicons/beaker-24
+      quote: octicons/quote-24
 
 extra_css:
   - assets/stylesheets/tooltip.css
@@ -73,6 +87,9 @@ markdown_extensions:
   - pymdownx.magiclink:
   - pymdownx.superfences:
   - pymdownx.tilde:
+  - pymdownx.snippets:
+      base_path:
+        - 'docs/assets/snippets/'
   - pymdownx.blocks.admonition:
       types:
         - note
@@ -89,6 +106,7 @@ markdown_extensions:
         - quote
         - redirect
         - category
+        - options
   - pymdownx.blocks.details:
   - pymdownx.blocks.tab:
       alternate_style: true
@@ -105,6 +123,7 @@ validation:
 extra:
   interwiki:
     'mc': 'https://minecraft.wiki/w/{page}'
+    'c': 'https://create.fandom.com/wiki/{page}'
 
 nav:
   - Home:
@@ -112,7 +131,12 @@ nav:
     - contribute.md
     - Categories:
       - categories/index.md
+      - categories/createrailwaysnavigator.md
       - categories/trafficcraft.md
+  - Create Railways Navigator:
+    - createrailwaysnavigator/index.md
+    - Blocks:
+      - createrailwaysnavigator/blocks/advanced_displays.md
   - TrafficCraft:
     - trafficcraft/index.md
     - Blocks:
