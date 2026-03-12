@@ -9,7 +9,7 @@ on:
           - "docs/**"
           - "hooks/**"
           - "macros/**"
-          - "theeme/**"
+          - "theme/**"
           - "mkdocs.yml"
           - "requirements.txt"
         tags-ignore: ["**"]
