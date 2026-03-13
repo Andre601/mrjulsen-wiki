@@ -2,6 +2,9 @@ site_name: "MrJulsen's Mods Wiki"
 site_description: "Wiki hosting pages about all of MrJulsen's mods"
 site_url: https://wiki.mrjulsen.net/
 
+repo_url: https://github.com/Andre601/mrjulsen-wiki
+repo_name: Andre601/mrjulsen-wiki
+
 theme:
   name: material
   custom_dir: theme
