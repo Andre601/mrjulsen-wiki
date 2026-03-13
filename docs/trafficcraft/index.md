@@ -8,7 +8,7 @@ TrafficCraft is a Minecraft mod that brings roads, traffic signs, traffic lighs 
 
 ## Dependencies
 
-Versions `1.2.0` and newer require DragonLib to be installed. Versions `1.1.3` and older do not require it.
+Versions `1.2.0` and newer require [DragonLib](https://modrinth.com/mod/dragonlib){ target="_blank" rel="nofollow" } to be installed. Versions `1.1.3` and older do not require it.
 
 ## Downloads
 
