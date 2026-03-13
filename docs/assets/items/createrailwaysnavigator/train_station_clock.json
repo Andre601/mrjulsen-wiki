@@ -1,0 +1,13 @@
+{
+    "crafting": {
+        "ingredients": {
+            "2": "create:iron_sheet",
+            "4": "create:iron_sheet",
+            "5": "clock",
+            "6": "create:iron_sheet",
+            "8": "create:precision_mechanism"
+        }
+    },
+    "name": "Train Station Clock",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

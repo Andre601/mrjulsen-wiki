@@ -16,6 +16,7 @@ def define_env(env):
             id (str): ID of the item to display in the format namespace:id. Omitting namespace assumes the minecraft namespace.
             header (bool): Whether to include the <table>, <thead>, header rows and <tbody> tags in the table. (default True)
             footer (bool): Whether to include the </tbody> and </table> tags in the table. (default True)
+            is_create (bool): Whether the recipe uses Create mechanical crafting or not. (default False)
         
         Returns:  
             String containing a Admonition warning div if something is missing, or the actual table.
@@ -57,10 +58,11 @@ def define_env(env):
             '<td>'
         ]
         
+        create_recipe = crafting.get("create_recipe", False)
         unique_ingredients = {}
         ingredients_names = []
 
-        for num in range(1, 10):
+        for num in range(1, (13 if create_recipe else 10)):
             ingredient_id = ingredients.get(f"{num}")
             if not ingredient_id or unique_ingredients.get(ingredient_id):
                 continue
@@ -77,9 +79,9 @@ def define_env(env):
         ingredients_names.sort()
 
         strings.extend([" + ".join(ingredients_names), "</td>", "<td>"])
-        strings.append("<div class=\"crafting-table tooltips\">")
+        strings.append(f'<div class="crafting-table {"create" if create_recipe else ""} tooltips">')
 
-        for num in range(1, 10):
+        for num in range(1, (13 if create_recipe else 10)):
             ingredient_id = ingredients.get(f"{num}")
             if not ingredient_id or not unique_ingredients.get(ingredient_id):
                 strings.append(f'<span class="invslot-item slot{num}"></span>')
@@ -110,10 +112,18 @@ def define_env(env):
         ]
         strings.append(''.join(result_slot))
 
+        if create_recipe:
+            strings.append(''.join([
+                '<span class="invslot-item slot-crafter" data-minetip-title="Requires 12 Mechanical Crafters">',
+                '<img src="/assets/img/items/create/mechanical_crafter.png" class="no-glight" loading="lazy" alt="" draggable="false">',
+                '<div class="quantity">12</div>',
+                '</span>'
+            ]))
+
         strings.extend([
-            "<img src=\"/assets/img/recipes/arrow.png\" class=\"arrow\" alt=\"\" draggable=\"false\">",
-            "<span class=\"shapeless\" data-minetip-title=\"This recipe is shapeless\">" if "shapeless" in crafting and crafting["shapeless"] else "",
-            "<img src=\"/assets/img/recipes/shapeless.png\" alt=\"\" draggable=\"false\">" if "shapeless" in crafting and crafting["shapeless"] else "",
+            f'<img src="/assets/img/recipes/{"create-arrow" if create_recipe else "arrow"}.png" class="arrow" alt="" draggable="false">',
+            '<span class="shapeless" data-minetip-title="This recipe is shapeless">' if "shapeless" in crafting and crafting["shapeless"] else "",
+            '<img src="/assets/img/recipes/shapeless.png" alt="" draggable="false">' if "shapeless" in crafting and crafting["shapeless"] else "",
             "</span>" if "shapeless" in crafting and crafting["shapeless"] else "",
             "</div>",
             "</td>",

@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "createrailwaysnavigator:advanced_display_small",
+            "6": "createrailwaysnavigator:advanced_display_small",
+            "8": "createrailwaysnavigator:advanced_display_small"
+        },
+        "amount": 3
+    },
+    "name": "Sloped Advanced Display",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

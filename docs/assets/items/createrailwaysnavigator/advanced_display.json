@@ -1,0 +1,18 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "create:andesite_alloy",
+            "2": "create:sturdy_sheet",
+            "3": "create:andesite_alloy",
+            "4": "create:display_board",
+            "5": "create:display_board",
+            "6": "create:display_board",
+            "7": "create:andesite_alloy",
+            "8": "create:sturdy_sheet",
+            "9": "create:andesite_alloy"
+        },
+        "amount": 6
+    },
+    "name": "Advanced Display Board",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "createrailwaysnavigator:advanced_display_panel",
+            "5": "createrailwaysnavigator:advanced_display_panel",
+            "6": "createrailwaysnavigator:advanced_display_panel"
+        },
+        "amount": 6
+    },
+    "name": "Half Advanced Display Panel",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

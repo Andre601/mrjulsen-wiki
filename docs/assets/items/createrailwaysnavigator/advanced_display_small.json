@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "createrailwaysnavigator:advanced_display",
+            "5": "createrailwaysnavigator:advanced_display"
+        },
+        "amount": 4
+    },
+    "name": "Small Advanced Display",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

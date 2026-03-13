@@ -5,5 +5,6 @@ This Wiki hosts information for all of MrJulsen's mods, including crafting recip
 ## Mods
 
 /// html | div.grid.cards
--   ### [TrafficCraft](trafficcraft/index.md)
+- ### [Create Railways Navigator](createrailwaysnavigator/index.md)
+- ### [TrafficCraft](trafficcraft/index.md)
 ///

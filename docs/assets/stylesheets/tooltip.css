@@ -119,6 +119,15 @@
 	"slot7 slot8 slot9 . .";
 }
 
+.crafting-table.create {
+	grid-template-columns: repeat(3, 36px) 36px 36px;
+	grid-template-areas:
+	"slot1 slot2 slot3 . ."
+	"slot4 slot5 slot6 . slot-crafter"
+	"slot7 slot8 slot9 arrow arrow"
+	"slot10 slot11 slot12 . slot0";
+}
+
 .furnace {
 	img {
 		width: 100%;
@@ -164,7 +173,8 @@
 
 .arrow {
 	grid-area: arrow;
-
+	max-height: 32px;
+	max-width: auto;
 }
 
 .shapeless {
@@ -193,6 +203,10 @@
 	text-align: right;
 	font-size: .7rem;
 	align-self: center;
+}
+
+.slot-crafter {
+	grid-area: slot-crafter;
 }
 
 .slot0 {
@@ -233,6 +247,18 @@
 
 .slot9 {
 	grid-area: slot9;
+}
+
+.slot10 {
+	grid-area: slot10;
+}
+
+.slot11 {
+	grid-area: slot11;
+}
+
+.slot12 {
+	grid-area: slot12;
 }
 
 #minetip-tooltip {

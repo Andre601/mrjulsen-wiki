@@ -29,22 +29,28 @@ This option is recommended for displays inside a train.
 Allows displaying info about an arriving/departing train such as the ingame time for when it will arrive/depart.  
 This option is recommended to be used at station platforms and requires data to be provided from a [[c:Display Link]] connected to a [[c:Train Station|Station]].
 
-The configured name in the display link can use Glob patterns to match multiple stations. The name also does not need to match the name of the station it is connected to.  
-Some examples:
+/// details | Glob Patterns supported
+    type: tip
 
-- `Station *`: Display from any Station with a name starting with `Station`
-- `Station [1-3]`: Display from Stations named `Station 1`, `Station 2` and `Station 3`
+Glob Patterns can be used to include multiple stations. Some examples:
+
+- `Station *`: Include any Station starting with `Station`
+- `Station [1-3]`: Include any Station with a name starting with `Station` followed by a number from 1 to 3.
+///
 
 ### Departure Board
 
 Displays all trains that arrive at/depart from a specified Station.  
 This option is recommended to be used as a general info board for arrivals and departures of trains at a station and requires data to be provided from a Display Link connected to a station.
 
-The configured name in the display link can use Glob patterns to match multiple stations. The name also does not need to match the name of the station it is connected to.  
-Some examples:
+/// details | Glob Patterns supported
+    type: tip
 
-- `Station *`: Display from any Station with a name starting with `Station`
-- `Station [1-3]`: Display from Stations named `Station 1`, `Station 2` and `Station 3`
+Glob Patterns can be used to include multiple stations. Some examples:
+
+- `Station *`: Include any Station starting with `Station`
+- `Station [1-3]`: Include any Station with a name starting with `Station` followed by a number from 1 to 3.
+///
 
 ### Static Text
 
@@ -63,11 +69,7 @@ Only the pre-made colors can be selected.
 
 ### Carriage Index Offset
 
-/// info | Availability
-This option is only available for:
-
-- Train Destination (Detailed mode)
-- Passenger Information (Detailed with Schedule mode)
+/// info | Available for [`Train Destination (Detailed mode)`](#train-destination) and [`Passenger Information (Detailed with Schedule mode)`](#passenger-information)
 ///
 
 Allows to offset the displayed carriage number by the specified value.  
@@ -75,11 +77,7 @@ When `Overwrite index` is enabled will the provided number instead be used as th
 
 ### Show 'Do not board' text
 
-/// info | Availability
-This option is only available for:
-
-- Train Destination
-- Passenger Information
+/// info | Available for [`Train Destination`](#train-destination) and [`Passenger Information`](#passenger-information)
 ///
 
 When enabled, displays a `Do not board` message whenever the train reaches the final stop in its schedule.
@@ -91,21 +89,39 @@ The train line color is configured through the global settings and applied throu
 
 ### Train Name Width
 
-/// info | Availability
-This option is only available for:
-
-- Train Destination (Compact and Extended mode)
+/// info | Available for [`Train Destination (Compact and Extended mode)`](#train-destination), [`Platform Display (Focus and Table mode)`](#platform-display) and [`Departure Board`](#departure-board)
 ///
 
 Sets the max width that the displayed train name should have.  
 Any text beyond the max width will result in the text scrolling.
 
+### Platform Width
+
+/// info | Available for [`Platform Display (Focus and Table mode)`](#platform-display)
+///
+
+Sets the max width that the displayed platform should have.  
+Any text beyond the max width will result in the text scrolling.
+
+### Stopovers Section Width
+
+/// info | Available for [`Departure Board`](#departure-board)
+///
+
+Sets the max width that the displayed stopovers should have.  
+Any text beyond the max width will result in the text scrolling.
+
+### Info Section Width
+
+/// info | Available for [`Departure Board`](#departure-board)
+///
+
+Sets the max width that any info about the train (i.e. delays) should have.  
+Any text beyond the max width will result in the text scrolling.
+
 ### Time Display
 
-/// info | Availability
-This option is only available for:
-
-- Passenger Information (Detailed with Schedule mode)
+/// info | Available for [`Passenger Information (Detailed with Schedule mode)`](#passenger-information) and [`Departure Board`](#departure-board)
 ///
 
 Sets the time displayed for when the train arrives at the (next) station.  
@@ -113,20 +129,14 @@ Available options are `ABS` (default) for absolute time (i.e. `13:00`) or `ETA` 
 
 ### Show train stats
 
-/// info | Availability
-This option is only available for:
-
-- Passenger Information
+/// info | Available for [`Passenger Information`](#passenger-information)
 ///
 
 Sets whether Train statistics such as speed should be displayed.
 
 ### Show exit direction
 
-/// info | Availability
-This option is only available for:
-
-- Passenger Information
+/// info | Available for [`Passenger Information`](#passenger-information)
 ///
 
 Sets whether the display should display possible exit directions using an arrow.  
@@ -134,20 +144,14 @@ The direction will be displayed when "Next Stop: ..." is shown.
 
 ### Show next connections
 
-/// info | Availability
-This option is only available for:
-
-- Passenger Information
+/// info | Available for [`Passenger Information`](#passenger-information)
 ///
 
 Sets whether the display should display connections for the station it arrives at.
 
 ### Show train multiple times
 
-/// info | Availability
-This option is only available for:
-
-- Passenger Information
+/// info | Available for [`Passenger Information`](#passenger-information), [`Departure Board`](#departure-board)
 ///
 
 Sets whether the same train can be displayed multiple times in the next connections (i.e. when arriving from different sides).
@@ -164,10 +168,90 @@ Sets what text component should be displayed.
 
 ### Show time and date
 
-/// info | Availability
-This option is only available for:
-
-- Passenger Information (Scrolling Text mode)
+/// info | Available for [`Passenger Information (Scrolling text mode)`](#passenger-information)
 ///
 
 Sets whether the current ingame time and number of ingame days since world creation should be displayed.
+
+### Train Stop Display Type
+
+Sets what kind of train stop should be displayed.
+
+| Option                 | Description                                                           |
+|------------------------|-----------------------------------------------------------------------|
+| `All`                  | Displays Arrivals and Departures.                                     |
+| `Arrivals only`        | Only displays Arrivals.                                               |
+| `Arrivals preferred`   | Prioritizes Arrivals, but falls back to showing Departures otherwise. |
+| `Departures only`      | Only displays Departures.                                             |
+| `Departures preferred` | Prioritizes Departures, but falls back to showing Arrivals otherwise. |
+
+### Displayed Text
+
+/// info | Available only for [Static Text](#static-text)
+///
+
+Allows you to set the text that should be displayed on the Display.  
+The input field accepts normal text, but also Chat Components.
+
+### X/Y Position
+
+/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+///
+
+Sets the X and Y position of the text.  
+The X offset is based on the current [Text Alignment](#text-alignment) with Right alignment using the left side of the text as anchor point, while the Y offset uses the top of the Display Area as anchor point.
+
+### Text Alignment
+
+/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+///
+
+Allows to set the text to either be on the left, center or right of the Display.
+
+### Minimum X Scale/X Scale/Y Scale
+
+/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+///
+
+Sets the Minimum X scale and maximum X and Y scale for the text.  
+The text will be scaled as close as possible and if not possible, apply the configured [Boundary Behaviour](#boundary-behaviour) to the text.
+
+### Text Max Width
+
+/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+///
+
+Sets the max width of the text. The text will be scaled as close as possible and if not possible, apply the configured [Boundary Behaviour](#boundary-behaviour) to the text.
+
+### Boundary Behaviour
+
+/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+///
+
+Sets how text going beyond the [Max text width](#text-max-width) should be handled.
+
+| Option          | Description                                                        |
+|-----------------|--------------------------------------------------------------------|
+| `Cut Off`       | Cuts off any excess text.                                          |
+| `Scale/Scroll`  | Scales the text as good as possible and otherwise makes it scroll. |
+| `Always Scroll` | Makes the text scroll, no matter its actual width.                 |
+
+### Label Background Color
+
+/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+///
+
+Sets the background color that should be used for the text. Custom colors using the Hex Code format are supported.  
+Activating `Full Size` will make the color fill the entire configured area of the text instead of just the text itself.
+
+## Obtaining
+
+### Crafting
+
+{{ crafting_recipe("createrailwaysnavigator:advanced_display", footer=False) }}
+{{ crafting_recipe("createrailwaysnavigator:advanced_display_block", header=False , footer=False) }}
+{{ crafting_recipe("createrailwaysnavigator:advanced_display_small", header=False , footer=False) }}
+{{ crafting_recipe("createrailwaysnavigator:advanced_display_panel", header=False , footer=False) }}
+{{ crafting_recipe("createrailwaysnavigator:advanced_display_slab", header=False , footer=False) }}
+{{ crafting_recipe("createrailwaysnavigator:advanced_display_half_panel", header=False , footer=False) }}
+{{ crafting_recipe("createrailwaysnavigator:advanced_display_sloped", header=False) }}

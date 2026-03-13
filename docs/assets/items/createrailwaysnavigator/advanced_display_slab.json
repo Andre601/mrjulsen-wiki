@@ -1,0 +1,12 @@
+{
+    "crafting": {
+        "ingredients": {
+            "4": "createrailwaysnavigator:advanced_display_block",
+            "5": "createrailwaysnavigator:advanced_display_block",
+            "6": "createrailwaysnavigator:advanced_display_block"
+        },
+        "amount": 6
+    },
+    "name": "Advanced Display Slab",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

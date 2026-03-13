@@ -1,0 +1,17 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "createrailwaysnavigator:advanced_display",
+            "2": "createrailwaysnavigator:advanced_display",
+            "3": "createrailwaysnavigator:advanced_display",
+            "4": "createrailwaysnavigator:advanced_display",
+            "5": "create:zinc_ingot",
+            "6": "createrailwaysnavigator:advanced_display",
+            "7": "createrailwaysnavigator:advanced_display",
+            "8": "createrailwaysnavigator:advanced_display",
+            "9": "createrailwaysnavigator:advanced_display"
+        }
+    },
+    "name": "Advanced Display Block",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}

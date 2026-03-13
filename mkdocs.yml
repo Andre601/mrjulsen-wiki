@@ -135,12 +135,15 @@ nav:
       - categories/trafficcraft.md
   - Create Railways Navigator:
     - createrailwaysnavigator/index.md
+    - createrailwaysnavigator/train_schedule_features.md
     - Blocks:
       - createrailwaysnavigator/blocks/advanced_displays.md
+      - createrailwaysnavigator/blocks/train_station_clock.md
+    - Items:
+      - createrailwaysnavigator/items/navigator.md
   - TrafficCraft:
     - trafficcraft/index.md
     - Blocks:
-      - trafficcraft/blocks/index.md
       - trafficcraft/blocks/asphalt.md
       - trafficcraft/blocks/asphalt_slope.md
       - trafficcraft/blocks/bitumen_block.md
@@ -162,7 +165,6 @@ nav:
       - trafficcraft/blocks/traffic_sign_post.md
       - trafficcraft/blocks/traffic_sign_workbench.md
     - Items:
-      - trafficcraft/items/index.md
       - trafficcraft/items/color_palette.md
       - trafficcraft/items/hammer.md
       - trafficcraft/items/iron_plate.md

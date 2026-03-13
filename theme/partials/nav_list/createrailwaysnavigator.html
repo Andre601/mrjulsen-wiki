@@ -1,0 +1,34 @@
+{% set list = namespace(blocks = [], items = []) %}
+{% for p in nav.pages %}
+  {% if p.url.startswith("createrailwaysnavigator/") and p.url not in ["createrailwaysnavigator/", "createrailwaysnavigator/blocks/", "createrailwaysnavigator/items/"] %}
+    {% if p.url.startswith("createrailwaysnavigator/blocks/") %}
+      {% if p.url == page.url %}
+        {% set list.blocks = list.blocks + ["<strong>" ~ p.title ~ "</strong>"]%}
+      {% else %}
+        {% set list.blocks = list.blocks + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
+      {% endif %}
+    {% elif p.url.startswith("createrailwaysnavigator/items/") %}
+      {% if p.url == page.url %}
+        {% set list.items = list.items + ["<strong>" ~ p.title ~ "</strong>"]%}
+      {% else %}
+        {% set list.items = list.items + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<hr>
+<details class="nav">
+  <summary>Create Railways Navigator</summary>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>Blocks</strong></td>
+        <td>{{ list.blocks | join(" • ") }}</td>
+      </tr>
+      <tr>
+        <td><strong>Items</strong></td>
+        <td>{{ list.items | join(" • ") }}</td>
+      </tr>
+    </tbody>
+  </table>
+</details>

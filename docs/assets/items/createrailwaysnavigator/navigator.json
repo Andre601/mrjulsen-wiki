@@ -1,0 +1,21 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "create:andesite_alloy",
+            "2": "create:iron_sheet",
+            "3": "create:andesite_alloy",
+            "4": "create:iron_sheet",
+            "5": "glass_pane",
+            "6": "create:iron_sheet",
+            "7": "create:iron_sheet",
+            "8": "create:precision_mechanism",
+            "9": "create:iron_sheet",
+            "10": "create:andesite_alloy",
+            "11": "create:copper_sheet",
+            "12": "create:andesite_alloy"
+        },
+        "create_recipe": true
+    },
+    "name": "Navigator",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}
