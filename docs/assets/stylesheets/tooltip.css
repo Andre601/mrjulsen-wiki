@@ -122,8 +122,8 @@
 .crafting-table.create {
 	grid-template-columns: repeat(3, 36px) 36px 36px;
 	grid-template-areas:
-	"slot1 slot2 slot3 . ."
-	"slot4 slot5 slot6 . slot-crafter"
+	"slot1 slot2 slot3 . slot-crafter"
+	"slot4 slot5 slot6 . ."
 	"slot7 slot8 slot9 arrow arrow"
 	"slot10 slot11 slot12 . slot0";
 }
@@ -207,6 +207,8 @@
 
 .slot-crafter {
 	grid-area: slot-crafter;
+	background: none;
+	border: none;
 }
 
 .slot0 {
