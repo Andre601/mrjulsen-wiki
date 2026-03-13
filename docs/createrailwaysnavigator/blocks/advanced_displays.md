@@ -8,7 +8,8 @@
 ## Usage
 
 Placed Advanced Displays of the same type will connect to each other vertically and horizontally when forming a rectangle.  
-Right-clicking the Advanced Display with a Create [[c:Wrench]] opens their GUI, allowing to configure the displayed data based on the selected type.
+Right-clicking the Advanced Display with a Block will apply the block to all sides except the front. Shift-right clicking with a [[c:Wrench]] from Create will remove the block.  
+Only right-clicking with the Wrench opens a GUI allowing to configure how information is to be displayed.
 
 The "Double-sided" option available toggles whether the same info is to be displayed on the fron and back, or only the front.
 

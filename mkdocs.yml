@@ -57,26 +57,35 @@ plugins:
       module_name: macros/macros
   - redirects:
       redirect_maps:
+        # Create Railways Navigator
+        'createrailwaysnavigator/blocks/advanced_display.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        'createrailwaysnavigator/blocks/advanced_display_block.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        'createrailwaysnavigator/blocks/advanced_display_half_panel.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        'createrailwaysnavigator/blocks/advanced_display_panel.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        'createrailwaysnavigator/blocks/advanced_display_slab.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        'createrailwaysnavigator/blocks/advanced_display_small.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        'createrailwaysnavigator/blocks/advanced_sloped.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
+        # TrafficCraft
         'trafficcraft/blocks/asphalt_curb.md': 'trafficcraft/blocks/asphalt.md'
         'trafficcraft/blocks/asphalt_curb_slope.md': 'trafficcraft/blocks/asphalt_slope.md'
         'trafficcraft/blocks/concrete_curb.md': 'trafficcraft/blocks/concrete.md'
         'trafficcraft/blocks/concrete_curb_slope.md': 'trafficcraft/blocks/concrete_slope.md'
+        'trafficcraft/blocks/house_number_sign.md': 'trafficcraft/blocks/signs.md'
         'trafficcraft/blocks/manhole_cover.md': 'trafficcraft/blocks/manhole.md'
+        'trafficcraft/blocks/red_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/reflector.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/road_barrier_fence.md': 'trafficcraft/blocks/traffic_blocks.md'
         'trafficcraft/blocks/road_gully.md': 'trafficcraft/blocks/manhole.md'
+        'trafficcraft/blocks/small_white_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/small_yellow_delineator.md': 'trafficcraft/blocks/delineators.md'
+        'trafficcraft/blocks/street_sign.md': 'trafficcraft/blocks/signs.md'
+        'trafficcraft/blocks/town_sign.md': 'trafficcraft/blocks/signs.md'
         'trafficcraft/blocks/traffic_cone.md': 'trafficcraft/blocks/traffic_blocks.md'
         'trafficcraft/blocks/traffic_bollard.md': 'trafficcraft/blocks/traffic_blocks.md'
         'trafficcraft/blocks/traffic_barrel.md': 'trafficcraft/blocks/traffic_blocks.md'
-        'trafficcraft/blocks/road_barrier_fence.md': 'trafficcraft/blocks/traffic_blocks.md'
+        'trafficcraft/blocks/traffic_sign.md': 'trafficcraft/blocks/signs.md'
         'trafficcraft/blocks/white_delineator.md': 'trafficcraft/blocks/delineators.md'
         'trafficcraft/blocks/yellow_delineator.md': 'trafficcraft/blocks/delineators.md'
-        'trafficcraft/blocks/red_delineator.md': 'trafficcraft/blocks/delineators.md'
-        'trafficcraft/blocks/small_white_delineator.md': 'trafficcraft/blocks/delineators.md'
-        'trafficcraft/blocks/small_yellow_delineator.md': 'trafficcraft/blocks/delineators.md'
-        'trafficcraft/blocks/reflector.md': 'trafficcraft/blocks/delineators.md'
-        'trafficcraft/blocks/traffic_sign.md': 'trafficcraft/blocks/signs.md'
-        'trafficcraft/blocks/town_sign.md': 'trafficcraft/blocks/signs.md'
-        'trafficcraft/blocks/street_sign.md': 'trafficcraft/blocks/signs.md'
-        'trafficcraft/blocks/house_number_sign.md': 'trafficcraft/blocks/signs.md'
 
 markdown_extensions:
   - attr_list:
