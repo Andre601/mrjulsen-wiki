@@ -1,0 +1,7 @@
+{
+    "name": "Thank you for traveling",
+    "icon": "createrailwaysnavigator:navigator",
+    "type": "goal",
+    "description": "Craft a Navigator to search for train connections from one train station to another.",
+    "requirements": "Have a Navigator in your inventory."
+}

@@ -54,3 +54,7 @@ Each Train Line can have a custom background color configured, which can be disp
 ### Crafting
 
 {{ crafting_recipe("createrailwaysnavigator:navigator") }}
+
+## Advancements
+
+{{ advancement("createrailwaysnavigator:thank_you_for_traveling") }}

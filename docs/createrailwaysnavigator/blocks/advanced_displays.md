@@ -256,3 +256,7 @@ Activating `Full Size` will make the color fill the entire configured area of th
 {{ crafting_recipe("createrailwaysnavigator:advanced_display_slab", header=False , footer=False) }}
 {{ crafting_recipe("createrailwaysnavigator:advanced_display_half_panel", header=False , footer=False) }}
 {{ crafting_recipe("createrailwaysnavigator:advanced_display_sloped", header=False) }}
+
+## Advancements
+
+{{ advancement("createrailwaysnavigator:not_quite_4k") }}
