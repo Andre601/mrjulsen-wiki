@@ -15,8 +15,8 @@ categories:
 Placed Advanced Displays of the same type will connect to each other horizontally and vertically (depending on the selected display variant) when forming a rectangle.  
 
 - Right-clicking with a [[c:Wrench]] opens a GUI allowing to configure the display.
-- Right-clicking with a block applies it to all pages except the front page (similar to Copycats).
-- Shift + Right-clicking with a [[c:Wrench]] will remove the copycat block or destroy the display (if it was empty).
+- Right-clicking with a block applies it to all sides except the front side (similar to Copycats).
+- Shift + Right-clicking with a Wrench will remove the copycat block or destroy the display (if it was empty).
 
 The "Double-sided" option toggles whether the content is displayed on both sides or only on the front.
 
