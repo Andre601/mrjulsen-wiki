@@ -12,17 +12,19 @@ categories:
 
 ## Usage
 
-Placed Advanced Displays of the same type will connect to each other vertically and horizontally when forming a rectangle.  
-Right-clicking the Advanced Display with a Block will apply the block to all sides except the front. Shift-right clicking with a [[c:Wrench]] from Create will remove the block.  
-Only right-clicking with the Wrench opens a GUI allowing to configure how information is to be displayed.
+Placed Advanced Displays of the same type will connect to each other horizontally and vertically (depending on the selected display variant) when forming a rectangle.  
 
-The "Double-sided" option available toggles whether the same info is to be displayed on the fron and back, or only the front.
+- Right-clicking with a [[c:Wrench]] opens a GUI allowing to configure the display.
+- Right-clicking with a block applies it to all pages except the front page (similar to Copycats).
+- Shift + Right-clicking with a [[c:Wrench]] will remove the copycat block or destroy the display (if it was empty).
+
+The "Double-sided" option toggles whether the content is displayed on both sides or only on the front.
 
 More options are [explained below](#options).
 
 ### Train Destination
 
-Displays information about the trains next stations and final station.  
+Displays information about the train's next stations and final station.  
 This option is recommended for displays on the outside of a train to show to players information about where it comes from and where it is heading.
 
 ### Passenger Information
@@ -46,7 +48,7 @@ Glob Patterns can be used to include multiple stations. Some examples:
 
 ### Departure Board
 
-Displays all trains that arrive at/depart from a specified Station.  
+Displays all trains that arrive at/depart from a specified station.  
 This option is recommended to be used as a general info board for arrivals and departures of trains at a station and requires data to be provided from a Display Link connected to a station.
 
 /// details | Glob Patterns supported
@@ -86,7 +88,7 @@ When `Overwrite index` is enabled will the provided number instead be used as th
 /// info | Available for [`Train Destination`](#train-destination) and [`Passenger Information`](#passenger-information)
 ///
 
-When enabled, displays a `Do not board` message whenever the train reaches the final stop in its schedule.
+When enabled, displays a `Do not board` message whenever the train reaches the final stop in its schedule. This setting is ignored if the train is about to enter a non-navigable Schedule Section.
 
 ### Show train line color
 

@@ -16,7 +16,6 @@ def define_env(env):
             id (str): ID of the item to display in the format namespace:id. Omitting namespace assumes the minecraft namespace.
             header (bool): Whether to include the <table>, <thead>, header rows and <tbody> tags in the table. (default True)
             footer (bool): Whether to include the </tbody> and </table> tags in the table. (default True)
-            is_create (bool): Whether the recipe uses Create mechanical crafting or not. (default False)
         
         Returns:  
             String containing a Admonition warning div if something is missing, or the actual table.
