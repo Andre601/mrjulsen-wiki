@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Street Lamp Configuration Card
 
 The **Street Lamp Configuration Card** is an item that can be used to configure [[Street Lamps]] turning on and off at specific times of the day.

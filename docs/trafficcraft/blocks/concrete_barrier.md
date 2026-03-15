@@ -1,6 +1,7 @@
 ---
-tags:
-  - trafficcraft/paintable
+categories:
+  - TrafficCraft
+  - TrafficCraft/Paintable
 ---
 
 # Concrete Barrier

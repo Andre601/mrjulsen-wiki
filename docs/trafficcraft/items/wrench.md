@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Wrench
 
 The **Wrench** is an item that can be used to configure various TrafficCraft Blocks.
@@ -9,7 +14,7 @@ Any Item that has the `#c:wrenches` tag may be used to edit TrafficCraft Blocks.
 ## Usage
 
 Right-clicking with the Wrench on supported TrafficCraft Blocks may open a GUI, depending on the clicked block, allowing you to edit them in different ways.  
-For a list of supported blocks, check the [`trafficcraft/wrenchable`](../../categories/trafficcraft.md#tag:trafficcraft/wrenchable) category.
+For a list of supported blocks, check the [`TrafficCraft/Wrenchable`](../../categories/trafficcraft-wrenchable.md) category.
 
 ## Obtaining
 

@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Road Salt
 
 **Road Salt** is an item obtained from breaking [[Salt]].

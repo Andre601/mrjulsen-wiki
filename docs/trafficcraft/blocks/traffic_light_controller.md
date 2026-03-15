@@ -1,6 +1,7 @@
 ---
-tags:
-  - trafficcraft/wrenchable
+categories:
+  - TrafficCraft
+  - TrafficCraft/Wrenchable
 ---
 
 # Traffic Light Controller

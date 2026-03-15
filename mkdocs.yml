@@ -20,7 +20,7 @@ theme:
     - content.footnote.tooltips
   icon:
     admonition:
-      note: octicons/tag-24
+      note: octicons/pencil-24
       abstract: octicons/checklist-24
       info: octicons/info-24
       tip: octicons/thumbsup-24
@@ -44,9 +44,10 @@ extra_javascript:
 
 plugins:
   - search
-  - tags:
-      tags_hierarchy: true
-  - meta
+  #- meta
+  - categories:
+      category_separator: '/'
+      verbose: true
   - glightbox:
       skip_classes:
         - arrow
@@ -137,14 +138,21 @@ extra:
     'mc': 'https://minecraft.wiki/w/{page}'
     'c': 'https://create.fandom.com/wiki/{page}'
 
+not_in_nav: |
+  /assets/**/*.md
+
 nav:
   - Home:
     - index.md
     - contribute.md
     - Categories:
       - categories/index.md
-      - categories/createrailwaysnavigator.md
-      - categories/trafficcraft.md
+      - TrafficCraft:
+        - TrafficCraft: categories/trafficcraft.md
+        - Paintable: categories/trafficcraft-paintable.md
+        - Wrenchable: categories/trafficcraft-wrenchable.md
+      - Create Railways Navigator:
+        - Create Railways Navigator: categories/create-railways-navigator.md
   - Create Railways Navigator:
     - createrailwaysnavigator/index.md
     - createrailwaysnavigator/train_schedule_features.md

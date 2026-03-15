@@ -1,0 +1,10 @@
+{% if page.meta and page.meta.categories %}
+  <hr>
+  <div class="md-tags">
+    <a href='{{ "/categories" | url }}'>Categories:</a>
+    {% for category in page.meta.categories %}
+      {% set link = "/categories/" ~ category|replace("/", "-")|replace(" ", "-") %}
+      <a class="md-tag" href="{{ link | url | lower() }}">{{- category -}}</a>
+    {% endfor %}
+  </div>
+{% endif %}

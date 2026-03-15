@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Navigator
 
 The **Navigator** is an Item allowing you to look up train connections to get from one station to another.  

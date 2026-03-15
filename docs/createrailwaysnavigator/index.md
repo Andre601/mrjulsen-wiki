@@ -1,5 +1,7 @@
 ---
 icon: material/cellphone
+categories:
+  - Create Railways Navigator
 ---
 
 # Create Railways Navigator

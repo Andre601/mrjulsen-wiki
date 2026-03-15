@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Paint Bucket
 
 The **Paint Bucket** is a Block that can be filled with [[mc:Dye|Dyes]] to then apply to a [[Paint Brush]] to paint markings on [[Asphalt]] and [[Concrete]] blocks with.

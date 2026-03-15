@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Traffic Sign Workbench
 
 The **Traffic Sign Workbench** is a block that allows you to create designs for [[Signs|Traffic Signs]] using a [[Pattern Catalogue]].

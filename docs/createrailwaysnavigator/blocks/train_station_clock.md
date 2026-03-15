@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Train Station Clock
 
 The **Train Station Clock** is a decorative block that displays the current ingame time.

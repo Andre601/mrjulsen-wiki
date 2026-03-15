@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Advanced Displays
 
 /// redirect | All Advanced Display Blocks redirect to here.

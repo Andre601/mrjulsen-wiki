@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Bitumen Block
 
 **Bitumen Block** is a Block crafted from [[Raw Bitumen]].

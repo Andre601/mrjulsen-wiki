@@ -1,5 +1,7 @@
 ---
 icon: material/traffic-light-outline
+categories:
+  - TrafficCraft
 ---
 
 # TrafficCraft

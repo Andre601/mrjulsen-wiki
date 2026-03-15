@@ -1,7 +1,8 @@
 ---
-tags:
-  - trafficcraft/wrenchable
-  - trafficcraft/paintable
+categories:
+  - TrafficCraft
+  - TrafficCraft/Paintable
+  - TrafficCraft/Wrenchable
 ---
 
 # Traffic Light

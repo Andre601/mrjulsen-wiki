@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Train Schedule Features
 
 Create Railways Navigator adds a few features to the [[c:Train Schedule]] of Create to allow more customization of a Train and Train Routes.
