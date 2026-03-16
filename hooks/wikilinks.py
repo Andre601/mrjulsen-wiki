@@ -17,7 +17,7 @@ from pathlib import Path
 
 WIKILINK_PATTERN = re.compile(r"\[\[([^|\]]+)(?:\|([^\]]+))?]]")
 
-log = logging.getLogger("mkdocs")
+log = logging.getLogger("properdocs")
 
 pages_map = {}
 interwiki = {}
