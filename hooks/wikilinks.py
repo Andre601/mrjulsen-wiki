@@ -1,23 +1,24 @@
 # 
-# MkDocs hook that handles MediaWiki-like link patterns in MkDocs.
+# ProperDocs hook that handles MediaWiki-like link patterns in ProperDocs.
 # 
 # Supported formats are:
 #   - [[Page]]             - Links to a page on the same site.
 #   - [[Page|Text]]        - Links to a page on the same site, while displaying a different text
 #   - [[prefix:Page]]      - Links to a page on an external site.
-#                            What site it links to is determined by the configured prefix in the "interwiki" option in mkdocs.yml
+#                            What site it links to is determined by the configured prefix in the "interwiki" option in properdocs.yml
 #   - [[prefix:Page|Text]] - Links to a page on an external site, while displaying a different text.
-#                            What site it links to is determined by the configured prefix in the "interwiki" option in mkdocs.yml
+#                            What site it links to is determined by the configured prefix in the "interwiki" option in properdocs.yml
 #
 import re
 import posixpath
 import logging
 from collections import defaultdict
 from pathlib import Path
+from properdocs.plugins import get_plugin_logger
 
 WIKILINK_PATTERN = re.compile(r"\[\[([^|\]]+)(?:\|([^\]]+))?]]")
 
-log = logging.getLogger("properdocs")
+log = get_plugin_logger(__name__)
 
 pages_map = {}
 interwiki = {}
@@ -73,7 +74,7 @@ def on_page_markdown(markdown, page, config, files):
                 url = interwiki[prefix].format(page=rest.replace(" ", "_"))
                 return f'[{label}]({url}){{ target="_blank" rel="nofollow" }}'
             else:
-                log.warning(f'[Wikilinks] Unknown Interwiki prefix "{prefix}" in "{page.file.src_uri}"!')
+                log.warning(f'Unknown Interwiki prefix "{prefix}" in "{page.file.src_uri}"!')
                 return f'<span class="red-link" title="Unknown Interwiki prefix \'{prefix}\'">{text}</span>'
         
         resolved = resolve_internal(target, page.file)
@@ -84,7 +85,7 @@ def on_page_markdown(markdown, page, config, files):
             link = make_relative(page.file, resolved)
             return f'[{label}]({link})'
         
-        log.warning(f'[Wikilinks] Unknown target page "{target}" in "{page.file.src_uri}"!')
+        log.warning(f'Unknown target page "{target}" in "{page.file.src_uri}"!')
         return f'<span class="red-link" title="Unknown target page \'{target}\'">{label}</span>'
     
     return WIKILINK_PATTERN.sub(repl, markdown)
