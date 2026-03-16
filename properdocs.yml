@@ -48,6 +48,7 @@ plugins:
   - categories:
       category_separator: '/'
       verbose: true
+      disable_categories_section: true
   - glightbox:
       skip_classes:
         - arrow
