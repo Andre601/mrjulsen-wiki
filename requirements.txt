@@ -1,4 +1,4 @@
-properdocs==1.6.5
+properdocs==1.6.6
 mkdocs-material==9.7.5
 mkdocs-redirects==1.2.2
 mkdocs-macros-plugin==1.5.0
