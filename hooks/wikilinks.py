@@ -88,4 +88,8 @@ def on_page_markdown(markdown, page, config, files):
         log.warning(f'Unknown target page "{target}" in "{page.file.src_uri}"!')
         return f'<span class="red-link" title="Unknown target page \'{target}\'">{label}</span>'
     
+    if page.meta and page.meta.get("no_wikilinks", False):
+        log.info(f"Skipping ignored page {page.file.src_uri}")
+        return markdown
+    
     return WIKILINK_PATTERN.sub(repl, markdown)

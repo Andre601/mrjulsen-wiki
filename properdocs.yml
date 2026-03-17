@@ -44,7 +44,8 @@ extra_javascript:
 
 plugins:
   - search
-  #- meta
+  - blog:
+      blog_dir: dragonlib/blog
   - categories:
       category_separator: '/'
       verbose: true
@@ -148,12 +149,14 @@ nav:
     - contribute.md
     - Categories:
       - categories/index.md
+      - Create Railways Navigator:
+        - Create Railways Navigator: categories/create-railways-navigator.md
+      - DragonLib:
+        - DragonLib: categories/dragonlib.md
       - TrafficCraft:
         - TrafficCraft: categories/trafficcraft.md
         - Paintable: categories/trafficcraft-paintable.md
         - Wrenchable: categories/trafficcraft-wrenchable.md
-      - Create Railways Navigator:
-        - Create Railways Navigator: categories/create-railways-navigator.md
   - Create Railways Navigator:
     - createrailwaysnavigator/index.md
     - createrailwaysnavigator/train_schedule_features.md
@@ -162,6 +165,44 @@ nav:
       - createrailwaysnavigator/blocks/train_station_clock.md
     - Items:
       - createrailwaysnavigator/items/navigator.md
+  - DragonLib 3:
+    - dragonlib/index.md
+    - dragonlib/getting_started.md
+    - Blog:
+      - dragonlib/blog/index.md
+    - Developers:
+      - dragonlib/developers/index.md
+      - Client:
+        - GUI:
+          - dragonlib/developers/client/gui/index.md
+          - dragonlib/developers/client/gui/component_renderer.md
+          - dragonlib/developers/client/gui/dlguigraphics.md
+          - dragonlib/developers/client/gui/dlsprite.md
+          - dragonlib/developers/client/gui/dltexture.md
+          - dragonlib/developers/client/gui/guiutils.md
+          - dragonlib/developers/client/gui/layout.md
+          - dragonlib/developers/client/gui/rendering.md
+          - dragonlib/developers/client/gui/windows.md
+        - dragonlib/developers/client/block_entity_renderers.md
+        - dragonlib/developers/client/custom_models.md
+        - dragonlib/developers/client/obj_models.md
+        - dragonlib/developers/client/texture_sheets.md
+      - Data:
+        - dragonlib/developers/data/timesystem.md
+      - Events:
+        - dragonlib/developers/events/index.md
+      - Extensions:
+        - dragonlib/developers/extensions/index.md
+      - Networking:
+        - dragonlib/developers/networking/index.md
+      - Utilities:
+        - dragonlib/developers/utilities/index.md
+        - dragonlib/developers/utilities/cache.md
+        - dragonlib/developers/utilities/dlcolor.md
+        - dragonlib/developers/utilities/dltime.md
+        - dragonlib/developers/utilities/properties.md
+        - dragonlib/developers/utilities/textutils.md
+    - Tutorials: dragonlib/tutorials/index.md
   - TrafficCraft:
     - trafficcraft/index.md
     - Blocks:

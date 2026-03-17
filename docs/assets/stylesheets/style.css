@@ -44,3 +44,23 @@
 .red-link:hover {
     text-decoration: underline;
 }
+
+/* DragonLib stuff */
+
+.dl-table--red {
+    background: rgba(255, 0, 0, 0.15);
+}
+
+.dl-table--green {
+    background: rgba(0, 255, 0, 0.15);
+}
+
+.dl-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dl-icon img {
+    width: 48px;
+}

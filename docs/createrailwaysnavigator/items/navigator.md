@@ -18,7 +18,7 @@ At the bottom can buttons be found for closing the GUI, opening the Global Setti
 Once a target and start station have been set, searching will display any connections that allow to travel between these stations.  
 Clicking any entry will display more detailed info, including the option to pin it to your Screen.
 
-## Global Settins
+## Global Settings
 
 The Global Settings allow you to setup Station Tags, blacklist Train Stations and Trains, setup Train Categories and setup Train lines.
 
