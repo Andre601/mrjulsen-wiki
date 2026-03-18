@@ -1,0 +1,22 @@
+nav:
+  - Home:
+    - index.md
+    - contribute.md
+    - Categories:
+      - categories/index.md
+      - Create Railways Navigator:
+        - categories/create-railways-navigator*.md
+      - DragonLib 3:
+        - categories/dragonlib*.md
+      - TrafficCraft:
+        - categories/trafficcraft*.md
+  - Create Railways Navigator:
+    - createrailwaysnavigator/index.md
+    - createrailwaysnavigator/*
+  - DragonLib 3:
+    - dragonlib/index.md
+    - dragonlib/*
+  - TrafficCraft:
+    - trafficcraft/index.md
+    - trafficcraft/*
+    
