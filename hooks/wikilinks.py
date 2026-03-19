@@ -72,7 +72,13 @@ def on_page_markdown(markdown, page, config, files):
 
             if prefix in interwiki:
                 url = interwiki[prefix].format(page=rest.replace(" ", "_"))
-                return f'[{label}]({url}){{ target="_blank" rel="nofollow" }}'
+                title = f"Visit '{rest}' on external Wiki"
+                if "//" in url:
+                    domain = url.split("//", 1)[1]
+                    if "/" in domain:
+                        domain = domain.split("/", 1)[0]
+                    title = f"Visit '{rest}' on {domain}"
+                return f'<span title="{title}"><a href="{url}" target="_blank" rel="nofollow">{label}</a></span>'
             else:
                 log.warning(f'Unknown Interwiki prefix "{prefix}" in "{page.file.src_uri}"!')
                 return f'<span class="red-link" title="Unknown Interwiki prefix \'{prefix}\'">{text}</span>'
