@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Iron Plate
 
 **Iron Plate** is an item that is used within crafting recipes of other TrafficCraft Items.

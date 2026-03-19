@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Traffic Light Linker
 
 The **Traffic Light Linker** is an item that is used to link one or multiple [[Traffic Light|Traffic Lights]] and [[Traffic Light Request Button|Traffic Light Request Buttons]] to a [[Traffic Light Controller]].

@@ -1,3 +1,10 @@
+[data-md-color-primary="indigo"] {
+    /* Allows reuse in RGB and RGBA */
+    --md-primary-fg-color--value: 64, 81, 181;
+    --md-primary-fg-color: rgb(var(--md-primary-fg-color--value));
+    --mx-topbar-bg: rgba(var(--md-primary-fg-color--value), 0.54)
+}
+
 @keyframes warn-glow {
     0% {
         color: var(--md-default-fg-color);
@@ -12,7 +19,7 @@
     }
 }
 
-.md-nav__item--section > .md-nav > .md-nav__list {
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item {
     margin-left: 0.5rem;
 }
 
@@ -32,6 +39,12 @@
     border-radius: .1rem;
 }
 
+.md-tabs {
+    background-color: unset;
+}
+
+/* Colors */
+
 .color-warn {
     animation: 5s ease-in-out infinite warn-glow;
 }
@@ -43,4 +56,24 @@
 
 .red-link:hover {
     text-decoration: underline;
+}
+
+/* DragonLib stuff */
+
+.dl-table--red {
+    background: rgba(255, 0, 0, 0.15);
+}
+
+.dl-table--green {
+    background: rgba(0, 255, 0, 0.15);
+}
+
+.dl-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dl-icon img {
+    width: 48px;
 }

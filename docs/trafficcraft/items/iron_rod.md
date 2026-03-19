@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Iron Rod
 
 **Iron Rod** is an item that is used within crafting recipes of other TrafficCraft Items.

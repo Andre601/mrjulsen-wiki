@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Road Construction Tool
 
 The **Road Construction Tool** is an item that can be used for the quick creation of roads, including slopes.  

@@ -6,7 +6,7 @@ repo_url: https://github.com/Andre601/mrjulsen-wiki
 repo_name: Andre601/mrjulsen-wiki
 
 theme:
-  name: material
+  name: materialx
   custom_dir: theme
   palette:
     scheme: slate
@@ -20,7 +20,7 @@ theme:
     - content.footnote.tooltips
   icon:
     admonition:
-      note: octicons/tag-24
+      note: octicons/pencil-24
       abstract: octicons/checklist-24
       info: octicons/info-24
       tip: octicons/thumbsup-24
@@ -44,9 +44,13 @@ extra_javascript:
 
 plugins:
   - search
-  - tags:
-      tags_hierarchy: true
-  - meta
+  - awesome-nav
+  - blog:
+      blog_dir: dragonlib/blog
+  - categories:
+      category_separator: '/'
+      verbose: true
+      disable_categories_section: true
   - glightbox:
       skip_classes:
         - arrow
@@ -137,55 +141,102 @@ extra:
     'mc': 'https://minecraft.wiki/w/{page}'
     'c': 'https://create.fandom.com/wiki/{page}'
 
-nav:
-  - Home:
-    - index.md
-    - contribute.md
-    - Categories:
-      - categories/index.md
-      - categories/createrailwaysnavigator.md
-      - categories/trafficcraft.md
-  - Create Railways Navigator:
-    - createrailwaysnavigator/index.md
-    - createrailwaysnavigator/train_schedule_features.md
-    - Blocks:
-      - createrailwaysnavigator/blocks/advanced_displays.md
-      - createrailwaysnavigator/blocks/train_station_clock.md
-    - Items:
-      - createrailwaysnavigator/items/navigator.md
-  - TrafficCraft:
-    - trafficcraft/index.md
-    - Blocks:
-      - trafficcraft/blocks/asphalt.md
-      - trafficcraft/blocks/asphalt_slope.md
-      - trafficcraft/blocks/bitumen_block.md
-      - trafficcraft/blocks/bitumen_ore.md
-      - trafficcraft/blocks/concrete.md
-      - trafficcraft/blocks/concrete_barrier.md
-      - trafficcraft/blocks/concrete_slope.md
-      - trafficcraft/blocks/delineators.md
-      - trafficcraft/blocks/guardrail.md
-      - trafficcraft/blocks/manhole.md
-      - trafficcraft/blocks/paint_bucket.md
-      - trafficcraft/blocks/salt.md
-      - trafficcraft/blocks/signs.md
-      - trafficcraft/blocks/street_lamps.md
-      - trafficcraft/blocks/traffic_blocks.md
-      - trafficcraft/blocks/traffic_light.md
-      - trafficcraft/blocks/traffic_light_controller.md
-      - trafficcraft/blocks/traffic_light_request_button.md
-      - trafficcraft/blocks/traffic_sign_post.md
-      - trafficcraft/blocks/traffic_sign_workbench.md
-    - Items:
-      - trafficcraft/items/color_palette.md
-      - trafficcraft/items/hammer.md
-      - trafficcraft/items/iron_plate.md
-      - trafficcraft/items/iron_rod.md
-      - trafficcraft/items/paint_brush.md
-      - trafficcraft/items/pattern_catalogue.md
-      - trafficcraft/items/raw_bitumen.md
-      - trafficcraft/items/road_construction_tool.md
-      - trafficcraft/items/road_salt.md
-      - trafficcraft/items/street_lamp_config_card.md
-      - trafficcraft/items/traffic_light_linker.md
-      - trafficcraft/items/wrench.md
+not_in_nav: |
+  /assets/**/*.md
+
+#nav:
+#  - Home:
+#    - index.md
+#    - contribute.md
+#    - Categories:
+#      - categories/index.md
+#      - Create Railways Navigator:
+#        - Create Railways Navigator: categories/create-railways-navigator.md
+#      - DragonLib:
+#        - DragonLib: categories/dragonlib.md
+#      - TrafficCraft:
+#        - TrafficCraft: categories/trafficcraft.md
+#        - Paintable: categories/trafficcraft-paintable.md
+#        - Wrenchable: categories/trafficcraft-wrenchable.md
+#  - Create Railways Navigator:
+#    - createrailwaysnavigator/index.md
+#    - createrailwaysnavigator/train_schedule_features.md
+#    - Blocks:
+#      - createrailwaysnavigator/blocks/advanced_displays.md
+#      - createrailwaysnavigator/blocks/train_station_clock.md
+#    - Items:
+#      - createrailwaysnavigator/items/navigator.md
+#  - DragonLib 3:
+#    - dragonlib/index.md
+#    - dragonlib/getting_started.md
+#    - Blog:
+#      - dragonlib/blog/index.md
+#    - Developers:
+#      - dragonlib/developers/index.md
+#      - Client:
+#        - GUI:
+#          - dragonlib/developers/client/gui/index.md
+#          - dragonlib/developers/client/gui/component_renderer.md
+#          - dragonlib/developers/client/gui/dlguigraphics.md
+#          - dragonlib/developers/client/gui/dlsprite.md
+#          - dragonlib/developers/client/gui/dltexture.md
+#          - dragonlib/developers/client/gui/guiutils.md
+#          - dragonlib/developers/client/gui/layout.md
+#          - dragonlib/developers/client/gui/rendering.md
+#          - dragonlib/developers/client/gui/windows.md
+#        - dragonlib/developers/client/block_entity_renderers.md
+#        - dragonlib/developers/client/custom_models.md
+#        - dragonlib/developers/client/obj_models.md
+#        - dragonlib/developers/client/texture_sheets.md
+#      - Data:
+#        - dragonlib/developers/data/timesystem.md
+#      - Events:
+#        - dragonlib/developers/events/index.md
+#      - Extensions:
+#        - dragonlib/developers/extensions/index.md
+#      - Networking:
+#        - dragonlib/developers/networking/index.md
+#      - Utilities:
+#        - dragonlib/developers/utilities/index.md
+#        - dragonlib/developers/utilities/cache.md
+#        - dragonlib/developers/utilities/dlcolor.md
+#        - dragonlib/developers/utilities/dltime.md
+#        - dragonlib/developers/utilities/properties.md
+#        - dragonlib/developers/utilities/textutils.md
+#    - Tutorials: dragonlib/tutorials/index.md
+#  - TrafficCraft:
+#    - trafficcraft/index.md
+#    - Blocks:
+#      - trafficcraft/blocks/asphalt.md
+#      - trafficcraft/blocks/asphalt_slope.md
+#      - trafficcraft/blocks/bitumen_block.md
+#      - trafficcraft/blocks/bitumen_ore.md
+#      - trafficcraft/blocks/concrete.md
+#      - trafficcraft/blocks/concrete_barrier.md
+#      - trafficcraft/blocks/concrete_slope.md
+#      - trafficcraft/blocks/delineators.md
+#      - trafficcraft/blocks/guardrail.md
+#      - trafficcraft/blocks/manhole.md
+#      - trafficcraft/blocks/paint_bucket.md
+#      - trafficcraft/blocks/salt.md
+#      - trafficcraft/blocks/signs.md
+#      - trafficcraft/blocks/street_lamps.md
+#      - trafficcraft/blocks/traffic_blocks.md
+#      - trafficcraft/blocks/traffic_light.md
+#      - trafficcraft/blocks/traffic_light_controller.md
+#      - trafficcraft/blocks/traffic_light_request_button.md
+#      - trafficcraft/blocks/traffic_sign_post.md
+#      - trafficcraft/blocks/traffic_sign_workbench.md
+#    - Items:
+#      - trafficcraft/items/color_palette.md
+#      - trafficcraft/items/hammer.md
+#      - trafficcraft/items/iron_plate.md
+#      - trafficcraft/items/iron_rod.md
+#      - trafficcraft/items/paint_brush.md
+#      - trafficcraft/items/pattern_catalogue.md
+#      - trafficcraft/items/raw_bitumen.md
+#      - trafficcraft/items/road_construction_tool.md
+#      - trafficcraft/items/road_salt.md
+#      - trafficcraft/items/street_lamp_config_card.md
+#      - trafficcraft/items/traffic_light_linker.md
+#      - trafficcraft/items/wrench.md

@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Traffic Light Request Button
 
 The **Traffic Light Request Button** is a Block that can be linked to a [[Traffic Light]] or a [[Traffic Light Controller]] and allows to trigger a schedule to be executed, if configured.

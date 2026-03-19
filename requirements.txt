@@ -1,4 +1,8 @@
-mkdocs-material==9.7.5
+properdocs==1.6.6
+mkdocs-materialx==10.1.0
 mkdocs-redirects==1.2.2
 mkdocs-macros-plugin==1.5.0
 mkdocs-glightbox==0.5.2
+#mkdocs-categories-plugin==0.6.0
+git+https://github.com/Andre601/mkdocs-categories-plugin.git@feature/disable-categories-apending
+mkdocs-awesome-nav==3.3.0

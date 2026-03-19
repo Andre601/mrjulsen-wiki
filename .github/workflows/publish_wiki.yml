@@ -10,7 +10,7 @@ on:
           - "hooks/**"
           - "macros/**"
           - "theme/**"
-          - "mkdocs.yml"
+          - "properdocs.yml"
           - "requirements.txt"
         tags-ignore: ["**"]
 
@@ -42,7 +42,7 @@ jobs:
             - name: "Install dependencies"
               run: "pip install -r requirements.txt"
             - name: "Build Wiki"
-              run: "mkdocs build"
+              run: "properdocs build"
             - name: "Configure GitHub Pages"
               uses: actions/configure-pages@v5
             - name: "Upload Pages Artifact"

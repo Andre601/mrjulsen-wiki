@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Guardrail
 
 The **Guardrail** is a Block that can be placed in your world and that has a Collission box of 1.5 blocks.

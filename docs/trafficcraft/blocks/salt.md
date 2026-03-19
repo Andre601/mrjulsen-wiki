@@ -1,3 +1,8 @@
+---
+categories:
+  - TrafficCraft
+---
+
 # Salt
 
 **Salt** is a Block that generates naturally in the world.
