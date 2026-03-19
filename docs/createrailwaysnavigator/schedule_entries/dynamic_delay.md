@@ -8,7 +8,7 @@ Since trains can now officially be delayed, the problem arises that trains can n
 
 Dynamic delays, on the other hand, provide some buffer time and simply allow a delayed train to depart earlier to compensate the delay, until the minimum waiting time is reached. In addition, trains that arrive too early simply wait longer at the station so that they can then depart on time at the scheduled time.
 
-/// warn
+/// warning
 As soon as one dynamic delay exists in the schedule with a buffer time `> 0`, the travel times are no longer automatically updated after each section. If used incorrectly, this can result in permanent delays that a train cannot compensate.
 ///
 

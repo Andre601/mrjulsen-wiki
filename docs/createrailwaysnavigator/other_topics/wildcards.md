@@ -19,6 +19,7 @@ If you now have several stations (see data source) and want the train to have th
 - `My Station 6` is not valid, since there is `My ` in front of the `Station` text. With the pattern `* Station *` (or `*Station*`) this entry would be valid.
 
 Other examples are:
+
 | Pattern | Valid Entries |
 | - | - |
 | `Station *b` | `Station 3b` |

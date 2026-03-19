@@ -10,6 +10,6 @@ This list contains all train stations that should not be used in the navigation 
 
 This list contains all trains that should not be shown in the navigation or on the displays. The navigator does not suggest routes that require these trains and acts as if they don't exist at all. This feature can be used for all train contraptions that should not be part of the passenger rail network, e.g. freight trains, construction trains, etc.
 
-/// warn
+/// warning
 Stations and trains are excluded by their name, which means that all other stations and trains with the same name will be excluded as well! If this is a problem, use different names for the stations and trains you want to exclude.
 ///

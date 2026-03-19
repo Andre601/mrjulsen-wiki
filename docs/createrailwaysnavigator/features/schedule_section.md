@@ -8,6 +8,7 @@ Train sections are defined in the schedule and must always be added **before** t
 #### Example
 In the following route:
 `A B C D E F G`
+
 - **There should be a section with `A B C` and `D E F G`.**
 
     In this case, a new section must be created before `A` and `D` without any further settings. It is important to note that there won't be o train connection between `C` - `D` or `G` - `A`, as they are not in any section. Since `C` is the final stop and `D` is the beginning, you cannot get from `C` to `D`.
