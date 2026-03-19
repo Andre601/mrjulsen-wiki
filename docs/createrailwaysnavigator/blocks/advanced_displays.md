@@ -63,7 +63,7 @@ Glob Patterns can be used to include multiple stations. Some examples:
 ### Static Text
 
 Allows to display static text.  
-The provided text can either be a simple String or a supported json [[mc:text component format]]. The `Rich Text` option allows defining up to 50 separate text lines, each with own customization settings, like scaling, offset, etc.
+The provided text can either be a simple String or a supported json [[mc:Text component format]]. The `Rich Text` option allows defining up to 50 separate text lines, each with own customization settings, like scaling, offset, etc.
 
 Static text also supports placeholders to display dynamic data. See [[Placeholders]] for more information.
 

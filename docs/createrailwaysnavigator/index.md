@@ -30,6 +30,8 @@ categories:
 -   ### [[Advanced Displays]]
     An improved version of the [[c:Display Board]] from create, specifically designed for trains and stations.  
     Display next stops or trains arriving on/departing from a Station.
--   ### [[Train Schedule Features|New Schedule Instructions]]
-    Distribute your trains evenly along a route, use a more advanced version of wildcards with prioritized Destination, or set a Train line and category for your train to show.
+-   ### New Schedule Features
+    Define new features in schedules such as [[Dynamic Delay|dynamic delays]], [[Prioritized Destination Instruction|prioritized destinations]] and more.
+-   ### Additional Features
+    New features to [[Blacklists|blacklist trains and stations]], [[Train Lines|define train lines]] and more.
 ///

@@ -1,6 +1,7 @@
 # Train validation
 
 The mod only takes valid trains into account. Here is an overview of the criteria that must be met for the navigator to accept a train.
+
 - The train must be assembled
 - The train needs it's own train schedule (with loop enabled) and should at least run one cycle
 - The train is not manual driven

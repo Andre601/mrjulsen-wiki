@@ -17,11 +17,11 @@ The pattern `Station *` adds the entries `Station 1`, `Station 2`, `Station 3b` 
 There is an additional feature for Station Tags that the wildcards in the station string can be used to automatically set the platform string.
 So you can write `Station *` / `Pl. *` or simply `Station *` / `*`
 
-- For each element from the data source that matches the station string pattern, the text, which is represented by the placeholder, is inserted into the placeholder of the platform string.
-Example: `Station *` / `Pl. *` will result in `Station 1` / `Pl. 1`, `Station 2` / `Pl. 2`, `Station 3b` / `Pl. 3b`
-- In the case of multiple wildcards, the text parts of the individual placeholders in the station string are individually inserted into the placeholders of the platform string in the same order. Placeholder 1 goes in placeholder 1, 2 in 2, etc.
-Example: `St*n *` / `* Pl. *` will result in `Station 1` / `atio Pl. 1`, `Station 2` / `atio Pl. 2`, `Station 3b` / `atio Pl. 3b`
-- If the platform string has less placeholders than the station string, all remaining text parts are inserted into the last placeholder in the platform string.
-Example: `St*n *` / `Pl. *` will result in `Station 1` / `Pl. atio1`, `Station 2` / `Pl. atio2`, `Station 3b` / `Pl. atio3b`
-- If the station string has less placeholders than the platform string, all remaining placeholders in the platform string will be removed.
-Example: `Station *` / `* Pl. *` will result in `Station 1` / `1 Pl.`, `Station 2` / `2 Pl.`, `Station 3b`, `3b Pl.`
+-   For each element from the data source that matches the station string pattern, the text, which is represented by the placeholder, is inserted into the placeholder of the platform string.  
+    Example: `Station *` / `Pl. *` will result in `Station 1` / `Pl. 1`, `Station 2` / `Pl. 2`, `Station 3b` / `Pl. 3b`
+-   In the case of multiple wildcards, the text parts of the individual placeholders in the station string are individually inserted into the placeholders of the platform string in the same order. Placeholder 1 goes in placeholder 1, 2 in 2, etc.  
+    Example: `St*n *` / `* Pl. *` will result in `Station 1` / `atio Pl. 1`, `Station 2` / `atio Pl. 2`, `Station 3b` / `atio Pl. 3b`
+-   If the platform string has less placeholders than the station string, all remaining text parts are inserted into the last placeholder in the platform string.  
+    Example: `St*n *` / `Pl. *` will result in `Station 1` / `Pl. atio1`, `Station 2` / `Pl. atio2`, `Station 3b` / `Pl. atio3b`
+-   If the station string has less placeholders than the platform string, all remaining placeholders in the platform string will be removed.  
+    Example: `Station *` / `* Pl. *` will result in `Station 1` / `1 Pl.`, `Station 2` / `2 Pl.`, `Station 3b`, `3b Pl.`
