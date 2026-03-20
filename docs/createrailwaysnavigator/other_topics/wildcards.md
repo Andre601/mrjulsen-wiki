@@ -14,7 +14,7 @@ Note that Glob Patterns are only supported for Create 6 and CRN 0.9.0 and newer.
 These examples are about wildcards and Glob Patterns in [[c:Train Schedule|Train Schedules]]. The same applies to display links and other places supporting these.
 ///
 
-The following examples assume the following Data sources: `Station 1`,` Station 2`, `Station 3b`,` Station4`, `Depot 5`,` My Station 6`
+The following examples assume the following Data sources: `Station 1`, ` Station 2`, `Station 3b`, ` Station4`, `Depot 5`, ` My Station 6`
 
 ### No Wildcard/Glob Pattern
 
@@ -28,8 +28,6 @@ All Stations whos name starts with `Station` (Including the space!) are valid, m
 - `Station4` is not valid due to not having a space between `Station` and the number. `Station*` would consider this name valid too.
 - `Depot 5` is not valid due to its name not starting with `Station`.
 - `My Station 6` is not valud due to its name starting with `My` and not `Station`.
-
-We have a data source: `Station 1`,` Station 2`, `Station 3b`,` Station4`, `Depot 5`,` My Station 6`
 
 ### Glob Patterns
 
