@@ -63,7 +63,14 @@ Glob Patterns can be used to include multiple stations. Some examples:
 ### Static Text
 
 Allows to display static text.  
-The provided text can either be a String or a supported Chat Component. The `Rich Text` option allows defining up to 50 separate text lines, each with own scaling, offset, etc.
+The provided text can either be a simple String or a supported json [[mc:Text component format]]. The `Rich Text` option allows defining up to 50 separate text lines, each with own customization settings, like scaling, offset, etc.
+
+Static text also supports placeholders to display dynamic data. See [[Placeholders]] for more information.
+
+### Other data sources
+
+The Advanced Displays are also capable of displaying data from other sources, such as boiler status. Please note, however, that the format is very simple, and the information is presented as plain static text. The Advanced Displays are optimized and designed for trains and are not meant to be used for other purposes.
+
 
 ## Options
 

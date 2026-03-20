@@ -1,17 +1,35 @@
-{% set list = namespace(blocks = [], items = []) %}
+{% set list = namespace(blocks = [], features = [], items = [], other = [], schedule = []) %}
 {% for p in nav.pages %}
-  {% if p.url.startswith("createrailwaysnavigator/") and p.url not in ["createrailwaysnavigator/", "createrailwaysnavigator/blocks/", "createrailwaysnavigator/items/"] %}
+  {% if p.url.startswith("createrailwaysnavigator/") and p.url != "createrailwaysnavigator/" %}
     {% if p.url.startswith("createrailwaysnavigator/blocks/") %}
       {% if p.url == page.url %}
         {% set list.blocks = list.blocks + ["<strong>" ~ p.title ~ "</strong>"]%}
       {% else %}
         {% set list.blocks = list.blocks + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
       {% endif %}
+    {% elif p.url.startswith("createrailwaysnavigator/features/") %}
+      {% if p.url == page.url %}
+        {% set list.features = list.features + ["<strong>" ~ p.title ~"</strong>"] %}
+      {% else %}
+        {% set list.features = list.features + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
+      {% endif %}
     {% elif p.url.startswith("createrailwaysnavigator/items/") %}
       {% if p.url == page.url %}
         {% set list.items = list.items + ["<strong>" ~ p.title ~ "</strong>"]%}
       {% else %}
         {% set list.items = list.items + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
+      {% endif %}
+    {% elif p.url.startswith("createrailwaysnavigator/other_topics/") %}
+      {% if p.url == page.url %}
+        {% set list.other = list.other + ["<strong>" ~ p.title ~"</strong>"] %}
+      {% else %}
+        {% set list.other = list.other + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
+      {% endif %}
+    {% elif p.url.startswith("createrailwaysnavigator/schedule_entries/") %}
+      {% if p.url == page.url %}
+        {% set list.schedule = list.schedule + ["<strong>" ~ p.title ~"</strong>"] %}
+      {% else %}
+        {% set list.schedule = list.schedule + ["<a href='" ~ p.url|url ~ "'>" ~ p.title ~ "</a>"] %}
       {% endif %}
     {% endif %}
   {% endif %}
@@ -26,8 +44,20 @@
         <td>{{ list.blocks | join(" • ") }}</td>
       </tr>
       <tr>
+        <td><strong>Features</strong></td>
+        <td>{{ list.features | join(" • ") }}</td>
+      </tr>
+      <tr>
         <td><strong>Items</strong></td>
         <td>{{ list.items | join(" • ") }}</td>
+      </tr>
+      <tr>
+        <td><strong>Other topics</strong></td>
+        <td>{{ list.other | join(" • ") }}</td>
+      </tr>
+      <tr>
+        <td><strong>Schedule entries</strong></td>
+        <td>{{ list.schedule | join(" • ") }}</td>
       </tr>
     </tbody>
   </table>

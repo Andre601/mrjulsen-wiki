@@ -10,6 +10,8 @@ nav:
         - categories/dragonlib*.md
       - TrafficCraft:
         - categories/trafficcraft*.md
+  - Blog:
+    - blog/index.md
   - Create Railways Navigator:
     - createrailwaysnavigator/index.md
     - createrailwaysnavigator/*
