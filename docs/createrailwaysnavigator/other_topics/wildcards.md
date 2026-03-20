@@ -25,8 +25,8 @@ If you now have several stations (see data source) and want the train to have th
 
 Other examples are:
 
-| Pattern | Valid Entries |
-| - | - |
-| `Station *b` | `Station 3b` |
-| `S*n*` | `Station 1`, `Station 2`, `Station 3b`, `Station4` |
-| `*5` | `Depot 5` |
+| Pattern      | Valid Entries                                      |
+|--------------|----------------------------------------------------|
+| `Station *b` | `Station 3b`                                       |
+| `S*n*`       | `Station 1`, `Station 2`, `Station 3b`, `Station4` |
+| `*5`         | `Depot 5`                                          |
