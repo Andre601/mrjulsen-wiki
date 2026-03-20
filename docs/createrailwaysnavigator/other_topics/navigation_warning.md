@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Navigation warning
 
 If a warning is displayed in the Navigator that some routes cannot be suggested correctly, this means that CRN has not yet initialized all trains.

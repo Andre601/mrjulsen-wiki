@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Schedule Feature
+---
+
 # Train separation
 
 This feature allows the trains on a route to be better distributed in order to create a consistent frequency.

@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Scheduled Time and Real Time
 
 There are two types of times: scheduled times and real-time data. The scheduled time is calculated at a specific point from the real-time data available at that moment and then stored as a reference value for delays, dynamic waiting times, etc.

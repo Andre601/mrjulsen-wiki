@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Placeholders
 
 On [[Advanced Displays]] with static text you can use various placeholders to display all kinds of data. Placeholders are always enclosed in `%`, e.g. `%time%`.

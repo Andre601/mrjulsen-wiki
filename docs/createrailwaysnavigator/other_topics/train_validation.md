@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Train validation
 
 The mod only takes valid trains into account. Here is an overview of the criteria that must be met for the navigator to accept a train.

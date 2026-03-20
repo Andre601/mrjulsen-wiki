@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Settings
+---
+
 # Station Tag
 
 Station tags can be used for grouping several train stations with a custom display name. They are also essential for navigation between different trains at stations with multiple platforms. All train stations in a station tag are considered as one single station with the name of the tag.

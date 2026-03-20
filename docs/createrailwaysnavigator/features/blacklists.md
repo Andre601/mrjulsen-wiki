@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Settings
+---
+
 # Blacklists
 
 Blacklists are used in CRN to hide certain information from navigation or displays.

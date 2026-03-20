@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Schedule Feature
+---
+
 # Dynamic Delay
 
 This is a condition for the [[c:Train Schedule]] of Create.

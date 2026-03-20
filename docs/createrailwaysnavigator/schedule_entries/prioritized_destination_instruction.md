@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Schedule Feature
+---
+
 # Prioritized Destination Instruction
 
 This is an instruction for the [[c:Train Schedule]] of Create.

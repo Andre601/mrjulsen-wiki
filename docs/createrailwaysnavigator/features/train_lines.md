@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Settings
+---
+
 # Train Lines
 
 Train Lines can be used to group multiple trains and override their train name with a custom name. This means that all trains that travel the same route or serve the same line, can have the same name, while all the individual trains can have any name. Train Lines are created in the `Global Settings`, but must be assigned to trains in a `New Schedule Section` entry in the train schedule. This means that a train can change its train line during its journey if desired. 

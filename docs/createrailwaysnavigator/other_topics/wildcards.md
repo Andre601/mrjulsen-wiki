@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Wildcards
 
 Wildcards (`*`) are placeholders for any number of characters in a text. All entries from a data source are valid that matches the corresponding pattern.

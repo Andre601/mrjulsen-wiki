@@ -1,4 +1,10 @@
-## Schedule Section
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Schedule Feature
+---
+
+# Schedule Section
 
 This is an instruction for the [[c:Train Schedule]] of Create.
 

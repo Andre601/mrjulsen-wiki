@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Permissions
 
 Some entries in the global settings (e.g. Station Tags, Train Lines) can be protected for modifications with permissions. This might be useful for larger servers to prevent players from editing settings of other players and causing problems. Server Owners can restrict the permissions to operators only, which means that players cannot change any of to the global settings.

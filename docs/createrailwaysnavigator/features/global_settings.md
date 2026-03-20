@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Settings
+---
+
 # Global Settings
 
 The Global Settings are (as the name suggests) settings for Create Railways Navigator that apply globally to the entire server/world and not to individual trains or stations. The settings there are then used for navigation or the displays. Since these settings can fundamentally impact the behavior of CRN, you can change the [[mc:permission level]] required to change these settings in the `common-config` of the server.

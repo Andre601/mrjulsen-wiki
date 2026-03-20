@@ -1,3 +1,9 @@
+---
+categories:
+  - Create Railways Navigator
+  - Create Railways Navigator/Settings
+---
+
 # Train Category
 
 Train categories are only used to filter the search results when navigating and have no other functionality.

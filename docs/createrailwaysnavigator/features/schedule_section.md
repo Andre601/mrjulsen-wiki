@@ -1,3 +1,8 @@
+---
+categories:
+  - Create Railways Navigator
+---
+
 # Schedule Section
 
 Schedule sections allow you to divide a train's schedule into several small parts. For each of these sections, you can then define your own settings that influence the navigation and behavior of the train. This feature also allows to specify the final stop by yourself that should be shown on the displays or in the navigator as the train destination.
