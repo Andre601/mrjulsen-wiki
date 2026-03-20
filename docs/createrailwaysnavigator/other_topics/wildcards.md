@@ -61,3 +61,7 @@ This means `Station 1`, and `Station 2` are valid selections for the Train.
 | `Station *b` | `Station 3b`                                       |
 | `S*n*`       | `Station 1`, `Station 2`, `Station 3b`, `Station4` |
 | `*5`         | `Depot 5`                                          |
+
+## Additional Resources
+
+The [Create Glob Tester](https://tobi-blackscale.github.io/Create-Glob-Tester/6.0.5.html){ target="_blank" rel="nofollow" } can be used to create and test Glob Patterns for Create.
