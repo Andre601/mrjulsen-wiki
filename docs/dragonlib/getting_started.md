@@ -6,11 +6,15 @@ categories:
 
 # Getting Started
 
-Welcome to DragonLib 3! This page explains how to add DragonLib to your project.
+This page explains how to add DragonLib to your project.
 
 ## Versions
 
-You can search for a version on the CurseForge or Modrinth pages.
+You can search for a version on the [Maven GitHub repository](https://github.com/MisterJulsen/mod-resources/tree/main/maven/de/mrjulsen/mcdragonlib).
+
+/// warning
+The current version, which is documented here, is DragonLib 3.x.x. DragonLib 2.x.x is no longer supported and not compatible with newer versions.
+///
 
 ## Setup
 
@@ -20,7 +24,6 @@ Add this to the `build.gradle` of your root project:
 
 ```groovy
 repositories {
-    // Other repos
     maven { url = "https://maven.mrjulsen.net" } // DragonLib
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" } // Forge Config API Port
 }
@@ -29,8 +32,9 @@ repositories {
 Add this to the `build.gradle` of your sub-projects:
 ```groovy
 dependencies {
-    // Other dependencies
     modImplementation("de.mrjulsen.mcdragonlib:dragonlib-{modloader}:{minecraft_version}-{dragonlib_version}")
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.4.1"))
+    implementation("io.github.llamalad7:mixinextras-forge:0.4.1")
 }
 ```
 
