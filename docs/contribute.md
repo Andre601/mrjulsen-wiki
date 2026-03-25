@@ -8,7 +8,7 @@ This page acts as a source of info regarding how you can contribute changes and 
 This wiki is build using [ProperDocs](https://properdocs.org){ target="_blank" rel="nofollow" } and the following additional dependencies:
 
 /// html | div.grid.cards
--   [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){ target="_blank" rel="nofollow" }
+-   [MaterialX for MkDocs](https://jaywhj.github.io/mkdocs-materialx/index.html){ target="_blank" rel="nofollow" }
     
     ----
 
@@ -44,6 +44,12 @@ This wiki is build using [ProperDocs](https://properdocs.org){ target="_blank" r
 
     Currently using a [Fork](https://github.com/Andre601/mkdocs-categories-plugin){ target="_blank" rel="nofollow" } for additional config options.  
     Allows to add pages to categories and auto-generate them.
+
+-   [mkdocs-awesome-nav](https://lukasgeiter.github.io/mkdocs-awesome-nav/){ target="_blank" rel="nofollow" }
+
+    ----
+
+    Adds a more advanced way of creating a nav, allowing more automated structuring.
 ///
 
 To contribute to the wiki, we suggest to fork the repository, clone it to your desktop and install the necessary dependencies.  
@@ -109,16 +115,46 @@ The site has a very distinct structure that needs to be followed:
 - `docs/assets/img/` contains images used for various parts in the Wiki, such as recipe displays.
 - `docs/assets/items/` contains assets - primarely JSON files - related to Items used in crafting recipes and similar.
 
-Should you add any new page to the wiki itself, is the `nav` section in `properdocs.yml` to be updated accordingly. Make sure that pages are sorted alphabetically and properly categorized (i.e. Blocks are to be stored in a sub-page named blocks.).  
-Categories are to be added to a page via the YAML frontmatter using the `categories` key:   
+### Adding pages
+
+Pages added to existing sub-directories should not require any modifications to the `.nav.yml` file within the `docs/` directory.  
+Any pages added that are not part of such sub-directiories should be added to the nav.
+
+If a new mod is added, is the following structure to be followed in the `nav` section:
+```yaml
+nav:
+  # Other entries
+  - Modname:
+    - modname/index.md
+    - modname/*
+```
+
+This ensures that the index page is at the top of the nav to be used as the section index page, while every other page of the sub-folder is added afterwards.
+
+### Adding Categories
+
+Categories are added to the page by adding entries to its `categories` frontmatter:
 ```yaml
 categories:
   - modname
-  - modname/some_category
+  - modname/subcategory
 ```
 
-/// note | Notes
-- There always needs to be a category matching the Mod name (including spaces and casing).
-- Every additional category that is part of the mod needs to start with the Mod name (following above criterias) followed by a forward slash.
-- Any newly made category needs to be added to the `nav` to avoid any reports of pages not included in the nav. The categories plugin should tell you what pages it created, allowing you to add them to the list (i.e. if it reports `[TrafficCraft](./trafficcraft.md)` add `categories/trafficcraft.md` to the nav).
+For mod pages are you required to always add a category matching the display name of the mod, including capitalization.  
+Optional sub-categories may be added by using the mod name followed by a `/` and the name of the sub-category.
+
+/// note
+Newly created Categories need to have their pages added to the `.nav.yml` file to avoid warnings in the console.  
+The Categories plugin always creates separate pages for each category, with text being lowercased and `/` and spaces being replaced by `-`.
+
+The following should be added to the `nav` section when adding a new category:
+```yaml
+nav:
+  # Other entries
+  - Categories:
+    - categories/index.md
+    # Other entries
+    - Mod Name:
+      - categories/modname*.md
+```
 ///
