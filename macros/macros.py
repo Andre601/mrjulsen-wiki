@@ -122,7 +122,7 @@ def define_env(env):
         strings.extend([
             f'<img src="/assets/img/recipes/{"create-arrow" if create_recipe else "arrow"}.png" class="arrow" alt="" draggable="false">',
             '<span class="shapeless" data-minetip-title="This recipe is shapeless">' if "shapeless" in crafting and crafting["shapeless"] else "",
-            '<img src="/assets/img/recipes/shapeless.png" alt="" draggable="false">' if "shapeless" in crafting and crafting["shapeless"] else "",
+            '<img src="/assets/img/recipes/shapeless.png" class="no-glight" alt="" draggable="false">' if "shapeless" in crafting and crafting["shapeless"] else "",
             "</span>" if "shapeless" in crafting and crafting["shapeless"] else "",
             "</div>",
             "</td>",
