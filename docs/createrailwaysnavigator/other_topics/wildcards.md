@@ -64,4 +64,4 @@ This means `Station 1`, and `Station 2` are valid selections for the Train.
 
 ## Additional Resources
 
-The [Create Glob Tester](https://tobi-blackscale.github.io/Create-Glob-Tester/6.0.5.html){ target="_blank" rel="nofollow" } can be used to create and test Glob Patterns for Create.
+The [Create Glob Tester](https://tobi-blackscale.github.io/Create-Glob-Tester/GlobRegExTest.html){ target="_blank" rel="nofollow" } can be used to create and test Glob Patterns for Create.
