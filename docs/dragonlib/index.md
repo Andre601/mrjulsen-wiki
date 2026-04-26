@@ -29,6 +29,15 @@ The following is a non-exhaustive list of features in DragonLib:
 Since DragonLib is based on the Architectury API, you'll need some of its features too (e.g. registries, mod events). Read the [Architectury documentation](https://docs.architectury.dev/start){ target="_blank" rel="nofollow" } for more information.
 ///
 
+## For Players
+
+Due to **major changes in the codebase** with the introduction of **v3**, there are several **compatibility considerations** to keep in mind.
+
+- Versions `< 3.0.0` are **__INCLUDED__** in my mods! **__NO MANUAL INSTALLATION REQUIRED!__** Delete DragonLib if it is in your pack in order to play older versions of my mods.
+- Versions `> 3.0.0` **__MUST BE INSTALLED SEPARATELY!__** You need it to play newer versions of my mods
+
+[Please read **this** to see which versions of my mods are compatible with each other](https://wiki.mrjulsen.net/blog/2026/03/01/dragonlib-3-compatibility/).
+
 ## How to use
 
 DragonLib can easily be integrated into your project via gradle. Further information can be found in [Getting started](getting_started.md).
