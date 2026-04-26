@@ -11,6 +11,8 @@ nav:
         - categories/dragonlib*.md
       - TrafficCraft:
         - categories/trafficcraft*.md
+      - Create Pantographs & Wires:
+        - categories/create-pantographs-and-wires*.md
   - Blog:
     - blog/index.md
   - Create Railways Navigator:
@@ -22,4 +24,7 @@ nav:
   - TrafficCraft:
     - trafficcraft/index.md
     - trafficcraft/*
+  - Create Pantographs & Wires:
+    - create-pantographs-and-wires/index.md
+    - create-pantographs-and-wires/*
     

@@ -1,0 +1,16 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "pantographsandwires:copper_wire",
+            "2": "pantographsandwires:copper_wire",
+            "3": "pantographsandwires:copper_wire",
+            "4": "pantographsandwires:copper_wire",
+            "5": "pantographsandwires:empty_wire_coil",
+            "6": "pantographsandwires:copper_wire",
+            "7": "pantographsandwires:copper_wire",
+            "8": "pantographsandwires:copper_wire",
+            "9": "pantographsandwires:copper_wire"
+        }
+    },
+    "name": "Wire Coil"
+}

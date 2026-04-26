@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "pantographsandwires:wire_coil_used_25",
+            "2": "pantographsandwires:wire_coil_used_50",
+            "4": "pantographsandwires:wire_coil_used_25"
+        },
+        "shapeless": true
+    },
+    "name": "Wire Coil"
+}

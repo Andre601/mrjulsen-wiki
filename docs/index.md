@@ -2,8 +2,6 @@
 
 This Wiki hosts information for all of MrJulsen's mods, including crafting recipes, functionalities and various Guides.
 
-## Mods
-
 /// html | div.grid.cards
 - <div class="mod-card">
     <a href="createrailwaysnavigator">
@@ -21,6 +19,12 @@ This Wiki hosts information for all of MrJulsen's mods, including crafting recip
     <a href="trafficcraft">
       <img src="https://cdn.modrinth.com/data/Y1PXWvWn/ef2dca01949b6b24630864f81a6786458cf00e91_96.webp">
       <span>TrafficCraft</span>
+    </a>
+</div>
+- <div class="mod-card">
+    <a href="create-pantographs-and-wires">
+      <img src="https://cdn.modrinth.com/data/VzdCnMqW/86d874140963047f059c1d9cf88db55037d76a08_96.webp">
+      <span>Create: Pantographs & Wires</span>
     </a>
   </div>
 ///
