@@ -158,3 +158,70 @@ nav:
       - categories/modname*.md
 ```
 ///
+
+### Adding Items
+
+JSON files containing information about an item are added in the `docs/assets/items/` directory where a folder is used for the item's namespace and the file name itself as the Item's ID.  
+Both are used in Macros such as for [Recipes](#recipes) by using `<namespace>:<id>`.
+
+A JSON file provides the following options:
+
+- **name:** A string containing the displayed name of the Item, shown on Hover.
+- **lore:** A string containing the Item's lore. Optional.
+- **gif:** A boolean to set whether the image associated with the item is a gif or not. Defaults to `false` when not set.
+- **crafting:** Contains values for the Crafting recipe.
+    - **ingredients:** Contains the individual ingredients used to craft the item. Each entry is a key-value pair of `"<slot>": "<item>"` where `<slot>` is the crafting slot (1-9 for vanilla and 1-12 for create crafting grid) and `<item>` is the item in the same `<namespace>:<item>` format.
+    - **amount:** A number to set how many items you get from the crafring. Defaults to `1` when not set.
+    - **shapeless:** A boolean to set whether the recipe is shapeless or not. Defaults to `false` when not set.
+- **smelting:** Contains values for the Smelting recipe.
+    - **input:** The input item that would be smelted.
+    - **experience:** A number to set how much experience you get per smelted item. Defaults to `0` when not set.
+- **smithing:** Contains values for the Smithing recipe.
+    - **template:** The Template item that is used (I.e. Nether Upgrade Template). Format is `<namespace>:<item>`.
+    - **item:** The base item that is upgraded. Format is `<namespace>:<id>`.
+    - **material:** The material/addition to apply to the base item. Format is `<namespace>:<id>`.
+
+Here's an example for the `createrailwaysnavigator:advanced_display` item:  
+```json
+{
+    "name": "Advanced Display Board",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary",
+    "crafting": {
+        "ingredients": {
+            "1": "create:andesite_alloy",
+            "2": "create:sturdy_sheet",
+            "3": "create:andesite_alloy",
+            "4": "create:display_board",
+            "5": "create:display_board",
+            "6": "create:display_board",
+            "7": "create:andesite_alloy",
+            "8": "create:sturdy_sheet",
+            "9": "create:andesite_alloy"
+        },
+        "amount": 6
+    }
+}
+```
+
+### Adding Advancements
+
+JSON files containing information about advancements are added in the `docs/assets/advancements/` directory where a folder is used for the advancement's namespace and the file name itself as the advancement's ID.  
+Both are used in Macros such as for [Advancement displays](#advancements) by using `<namespace>:<id>`.
+
+A JSON file provides the following options:
+
+- **name:** The name of the advancement to display, as shown in the Game's Advancement Screen, Chat and Toas Notification.
+- **icon:** The item that is displayed in the Advancement. Format is `<namespace>:<id>`.
+- **type:** The type this advancement is. Can be `normal`, `goal` and `challenge`. Defaults to `normal` if not set.
+- **description:** The description the Advancement has, when viewing it in the Game's Advancement Screen, or while hovering over it in chat.
+- **requirements:** A description, explaining how to actually obtain the advancement, if its description isn't covering this already.
+
+Here's an example for the `Not quite 4k` Advancement from `Create: Railways Navigator`:  
+```json
+{
+    "name": "Not quite 4k",
+    "icon": "createrailwaysnavigator:advanced_display",
+    "description": "Upgrade your display boards to display more information and even place them in your train.",
+    "requirements": "Have an Advanced Display Board in your inventory."
+}
+```
