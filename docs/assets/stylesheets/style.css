@@ -77,3 +77,28 @@
 .dl-icon img {
     width: 48px;
 }
+
+
+/* home page mod cards */
+.mod-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mod-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.mod-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
