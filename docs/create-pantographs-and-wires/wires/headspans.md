@@ -54,6 +54,8 @@ Next, a registration arm must be attached to the dropper, to which the catenary 
 
 ![](../../assets/img/ui/pantographsandwires/headspan_registration_arm.png)
 
+Finally, with a Wire Coil and with Catenary Wire type selected, right-click on a dropper with a registration arm to use it as a connection point for the Catenary wire.
+
 /// tip
 The type of registration arm specified in the cantilever settings is also used for the registration arm on the dropper. Consequently, the contact wire is positioned as centered, left-shifted, or right-shifted. The direction in which the wire is shifted depends on the relative viewing angle to the headspan wire and can be determined from the preview icon within the cantilever settings.
 
