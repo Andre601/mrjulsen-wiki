@@ -9,6 +9,10 @@ The Wire Coil item is the basic item for all wire connections. It allows you to 
 
 ## Usage
 
+/// note
+Versions before `beta-0.2.1` require you to shift-right-click to open the GUI.
+///
+
 Right-click in the air with the item to open a GUI where you can select the wire types. Once you have selected a type, you can place a wire between the connection points (e.g. a connector block for power wires) by clicking on them. Which points those are and how many depend on the selected wire type.
 If you want to clear your saved connection data, use Shift + right-click in the air.
 

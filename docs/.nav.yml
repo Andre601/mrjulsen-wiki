@@ -16,15 +16,11 @@ nav:
   - Blog:
     - blog/index.md
   - Create Railways Navigator:
-    - createrailwaysnavigator/index.md
     - createrailwaysnavigator/*
+  - Create Pantographs & Wires:
+    - create-pantographs-and-wires/*
   - DragonLib 3:
-    - dragonlib/index.md
     - dragonlib/*
   - TrafficCraft:
-    - trafficcraft/index.md
     - trafficcraft/*
-  - Create Pantographs & Wires:
-    - create-pantographs-and-wires/index.md
-    - create-pantographs-and-wires/*
     
