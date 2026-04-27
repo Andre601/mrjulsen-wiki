@@ -1,3 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MrJulsen's Mods Wiki",
+  "url": "https://wiki.mrjulsen.net/"
+}
+</script>
+
 # Welcome to MrJulsen's Mods Wiki
 
 This Wiki hosts information for all of MrJulsen's mods, including crafting recipes, functionalities and various Guides.
