@@ -41,6 +41,8 @@ These placeholders only work on assembled trains. For some of them, the train mu
     - `departure` - departure time in in-game `hh:mm` format
     - `arrival_eta` - arrival time as an eta
     - `departure_eta` - departure time as an eta
+    - `delay_time` - the train delay as formatted text
+    - `delay_reason` - the reason for the delay
 
 ## Station placeholders
 
@@ -59,3 +61,15 @@ These placeholders only work on displays in the world. For some of them, the tra
     - `destination` - where the train will end its journey
     - `carriages` - the amount of carriages a train has
     - `stopN` - the following stops, where `N=0` is the next stop
+
+## Elevator placeholders
+
+These placeholders only work on elevators.
+
+- `elevator.` followed by:
+    - `current.short` - short name of the current floor eg. `0`
+    - `current.long` - long name of the current floor eg. `Main Lobby`
+    - `destination.short` - short name of the floor the elevator is heading to, eg. `21`
+    - `destination.long` - long name of the floor the elevator is heading, eg. `Gym`
+    - `sign` - arrows indicating if the elevator is moving up or down
+    - `sign.triangle` - the same thing as above but using a different pair of characters.
