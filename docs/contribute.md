@@ -125,11 +125,10 @@ If a new mod is added, is the following structure to be followed in the `nav` se
 nav:
   # Other entries
   - Modname:
-    - modname/index.md
     - modname/*
 ```
 
-This ensures that the index page is at the top of the nav to be used as the section index page, while every other page of the sub-folder is added afterwards.
+This includes all pages in the `modname` folder, sorted alphabetically. The `index.md` page will automatically be set as the section index page.
 
 ### Adding Categories
 
