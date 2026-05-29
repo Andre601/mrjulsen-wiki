@@ -102,3 +102,10 @@
   height: 64px;
   object-fit: contain;
 }
+
+/* Blog Post images */
+img.thumb {
+    width: 25%;
+    max-width: 25%;
+    float: right;
+}

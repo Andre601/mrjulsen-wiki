@@ -1,6 +1,8 @@
 ---
 date: 2026-03-01
 description: An overview of which of my mods are compatible with each other and which version of dragonLib is required.
+authors:
+  - mrjulsen
 categories:
   - DragonLib
 ---
