@@ -25,34 +25,17 @@ These placeholders only work on assembled trains. For some of them, the train mu
 - `via` - a comma separated list of all stopovers
 - `line` - the train name or, if defined, the line name
 - `carriages` - the amount of carriages this train has
-- `origin.` where the train started its journey **OR**
-
-    `destination.` where the train will end its journey **OR**
-
-    `next.` the next stop, includes the destination **OR**
-
-    `stopN.` the following stops, where `N=0` is the next stop, excludes the destination,
-    
-    followed by:
-
-    - `station_name` - the arrival station
-    - `platform` - the arrival platform number
-    - `arrival` - arrival time in in-game `hh:mm` format
-    - `departure` - departure time in in-game `hh:mm` format
-    - `arrival_eta` - arrival time as an eta
-    - `departure_eta` - departure time as an eta
+- `origin.<option>` - see [Stopover options](#stopover-options) for options
+- `destination.<option>` - see [Stopover options](#stopover-options) for options
+- `next.<option>` - see [Stopover options](#stopover-options) for options
+- `stopN.<option>` - see [Stopover options](#stopover-options) for options
 
 ## Station placeholders
 
 These placeholders only work on displays in the world. For some of them, the train must also be in service.
 
-- `trainN.`, followed by:
-    - `station_name` - the arrival station
-    - `platform` - the arrival platform number
-    - `arrival` - arrival time in in-game `hh:mm` format
-    - `departure` - departure time in in-game `hh:mm` format
-    - `arrival_eta` - arrival time as an eta
-    - `departure_eta` - departure time as an eta
+- `trainN.<option>`, available options are as follows:
+    - any option under [Stopover options](#stopover-options)
     - `via` - a comma separated list of all stopovers
     - `line` - the train name or, if defined, the line name
     - `origin` - where the train started its journey
@@ -62,11 +45,20 @@ These placeholders only work on displays in the world. For some of them, the tra
     - `delay_time` - the train delay as formatted text
     - `delay_reason` - the reason for the delay
 
+## Stopover options
+
+- `station_name` - the arrival station
+- `platform` - the arrival platform number
+- `arrival` - arrival time in in-game `hh:mm` format
+- `departure` - departure time in in-game `hh:mm` format
+- `arrival_eta` - arrival time as an eta
+- `departure_eta` - departure time as an eta
+
 ## Elevator placeholders
 
 These placeholders only work on elevators.
 
-- `elevator.` followed by:
+- `elevator.<option>`, available options are as follows:
     - `current.short` - short name of the current floor eg. `0`
     - `current.long` - long name of the current floor eg. `Main Lobby`
     - `destination.short` - short name of the floor the elevator is heading to, eg. `21`
