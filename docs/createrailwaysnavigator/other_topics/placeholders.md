@@ -22,7 +22,9 @@ These placeholders always work.
 
 These placeholders only work on assembled trains. For some of them, the train must also be in service.
 
+- `title` - the schedule title, if set, otherwise the destination
 - `via` - a comma separated list of all stopovers
+- `via:<delimiter>` - a list of all stopovers with a custom delimiter (separator)
 - `line` - the train name or, if defined, the line name
 - `carriages` - the amount of carriages this train has
 - `origin.<option>` - see [Stopover options](#stopover-options) for options
@@ -37,12 +39,12 @@ These placeholders only work on displays in the world. For some of them, the tra
 - `trainN.<option>`, available options are as follows:
     - any option under [Stopover options](#stopover-options)
     - `via` - a comma separated list of all stopovers
+    - `via:<delimiter>` - a list of all stopovers with a custom delimiter (separator)
     - `line` - the train name or, if defined, the line name
     - `origin` - where the train started its journey
     - `destination` - where the train will end its journey
     - `carriages` - the amount of carriages a train has
     - `stopN` - the following stops, where `N=0` is the next stop
-    - `delay_time` - the train delay as formatted text
     - `delay_reason` - the reason for the delay
 
 ## Stopover options
@@ -53,6 +55,7 @@ These placeholders only work on displays in the world. For some of them, the tra
 - `departure` - departure time in in-game `hh:mm` format
 - `arrival_eta` - arrival time as an eta
 - `departure_eta` - departure time as an eta
+- `delay_time` - the train delay as formatted text
 
 ## Elevator placeholders
 
