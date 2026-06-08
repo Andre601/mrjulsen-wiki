@@ -7,8 +7,9 @@ categories:
 
 On [[Advanced Displays]] with static text you can use various placeholders to display all kinds of data. Placeholders are always enclosed in `%`, e.g. `%time%`.
 
-/// note
-`n` is the index of the entry, starting with `0`. `0` = the first entry (e.g. the next train), `4` = the 5th entry (e.g. the 5th next train) and so on.
+/// note | Notes
+- With the exception of `time` are all placeholders here only available in `Beta-0.9.0` and newer!
+- `n` is the index of the entry, starting with `0`. `0` = the first entry (e.g. the next train), `4` = the 5th entry (e.g. the 5th next train) and so on.
 ///
 
 ## Generic placeholders
