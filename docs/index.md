@@ -20,7 +20,7 @@ This Wiki hosts information for all of MrJulsen's mods, including crafting recip
   </div>
 - <div class="mod-card">
     <a href="dragonlib">
-      <img src="https://cdn.modrinth.com/data/sbIsGaOV/5d4f1cd7b034f0e40cdd37096f2bf40c739db800_96.webp">
+      <img src="https://cdn.modrinth.com/data/sbIsGaOV/46976dc21a3c0995e763739e763109019a05bb2f_96.webp">
       <span>DragonLib</span>
     </a>
 </div>
