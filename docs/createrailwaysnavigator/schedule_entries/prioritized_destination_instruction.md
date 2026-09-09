@@ -8,7 +8,9 @@ categories:
 
 This is an instruction for the [[c:Train Schedule]] of Create.
 
-The Prioritized Destination Instructation is similar to wildcards in the Destination Instruction, with the difference that you can decide at which stations the train can arrive and in what order the stations should be selected. Wildcards are often very random because the train selects the best way and can not properly predicted in many cases in large stations. With this instruction you can create a list of priorities containing all the desired stations. You can even combine stations that are not possible with wildcards because they have a completely different name. The first available station will be chosen.
+The Prioritized Destination Instruction is similar to wildcards in the Destination Instruction, with the difference that you can define a precise order the train should attempt to select stations from.  
+Wildcards can often time create random selections due to the Train trying to take the route with the least obstacles (See [the Penalty System in the Penalty Anchor page](../blocks/penalty_anchor.md)). With this instruction can you create a list of Stations to prioritize.  
+The first available station in the list will be selected to route towards.
 
 /// tip
 You can also use wildcards for the entries. If such an entry is then used as the destination, all stations that match the pattern can be accessed (just like normal). This feature is a good fallback option if there is nothing better available.
