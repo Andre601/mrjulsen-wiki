@@ -1,0 +1,10 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "create:train_casing",
+            "2": "minecraft:ender_eye"
+        }
+    },
+    "name": "Penalty Anchor",
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+}
