@@ -2,6 +2,12 @@
 {% if "\u003ch1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}
+{% if page.meta and page.meta.status and "unreleased" in page.meta.status %}
+<div class="admonition unreleased">
+<p class="admonition-title">Unreleased Content</p>
+<p>The Content on this Page has not yet been released and should be considered <b>Work in Progress</b> and <b>incomplete</b>.</p>
+</div>
+{% endif %}
 {{ page.content }}
 {% if page.url.startswith("trafficcraft/") and page.url not in ["trafficcraft/", "trafficcraft/blocks/", "trafficcraft/items/"] %}
   {% include "partials/nav_list/trafficcraft.html" %}

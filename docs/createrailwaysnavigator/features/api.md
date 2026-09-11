@@ -1,7 +1,5 @@
 ---
-unreleased: true
-
-title: API
+status: unreleased
 categories:
   - Create Railways navigator
 ---

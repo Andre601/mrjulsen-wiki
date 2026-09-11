@@ -1,7 +1,5 @@
 ---
-unreleased: true
-
-title: Penalty Anchor
+status: unreleased
 categories:
   - Create Railways Navigator
 ---

@@ -33,6 +33,46 @@ theme:
       bug: octicons/bug-24
       example: octicons/beaker-24
       quote: octicons/quote-24
+  admonition:
+    # Default Admonitions
+    note:
+      icon: "octicons/pencil-24"
+    abstract:
+      icon: "octicons/checklist-24"
+    info:
+      icon: "octicons/info-24"
+    tip:
+      icon: "octicons/light-bulb-24"
+    success:
+      icon: "octicons/check-24"
+    question:
+      icon: "octicons/question-24"
+    warning:
+      icon: "octicons/alert-24"
+    failure:
+      icon: "octicons/x-circle-24"
+    danger:
+      icon: "octicons/zap-24"
+    bug:
+      icon: "octicons/bug-24"
+    example:
+      icon: "octicons/beaker-24"
+    quote:
+      icon: "octicons/quote-24"
+
+    # Custom Admonitions
+    redirect:
+      icon: "octicons/git-pull-request-24"
+      color: "#9e9e9e"
+    nav:
+      icon: "octicons/file-directory-24"
+      color: "#448aff"
+    options:
+      icon: "octicons/gear-24"
+      color: "#e2e4e9"
+    unreleased:
+      icon: "octicons/hourglass-24"
+      color: "#ff9100"
 
 extra_css:
   - assets/stylesheets/tooltip.css
@@ -141,6 +181,8 @@ extra:
   interwiki:
     'mc': 'https://minecraft.wiki/w/{page}'
     'c': 'https://create.fandom.com/wiki/{page}'
+  status:
+    unreleased: "Not yet Released"
 
 not_in_nav: |
   /assets/**/*.md
