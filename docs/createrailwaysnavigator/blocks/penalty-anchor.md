@@ -47,4 +47,4 @@ The following Trains and Blocks have a Penalty Value:
 
 ### Crafting
 
-No crafting recipe is currently known for obtaining a Penalty Anchor
+{{ crafting_recipe("createrailwaysnavigator:train_station_clock") }}
