@@ -64,10 +64,10 @@ Below can you find a List of all the known Blocks and Trains with a Penalty valu
     attrs: {id: wait-time}
 
 The wait time for a Train waiting at a signal is either the number of seconds a Train has waited on the Signal, or 1,000.  
-Whichever number is lower will be selected, which means the max value cannot go abover 1,050.
+Whichever number is lower will be selected, which means the max value cannot go above 1,050.
 ///
 
-## Manipulating Penaly Values
+## Manipulating Penalty Values
 
 Knowing the values of Blocks and Trains allows us to try an manipulate the penalty value to our advantage.  
 
