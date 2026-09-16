@@ -52,7 +52,7 @@ Below can you find a List of all the known Blocks and Trains with a Penalty valu
 
 ### Trains
 
-| Block          | Description                                            | Value                        |
+| Train          | Description                                            | Value                        |
 |----------------|--------------------------------------------------------|-----------------------------:|
 | Manual Train   | A Train controlled by a Player                         | 200                          |
 | Idle Train     | A Train with a paused or no Schedule                   | 700                          |
@@ -69,7 +69,7 @@ Whichever number is lower will be selected, which means the max value cannot go 
 
 ## Manipulating Penalty Values
 
-Knowing the values of Blocks and Trains allows us to try an manipulate the penalty value to our advantage.  
+Knowing the values of Blocks and Trains allows us to try and manipulate the penalty value to our advantage.  
 
 ### Using Stations
 
