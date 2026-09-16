@@ -1,0 +1,12 @@
+## {{ texts.schemas }}
+
+{% for name, definition in handler.get_schemas() %}
+
+/// details | {{ name }}
+    type: http-get
+    open: true
+
+{% include "partial/type.html" %}
+///
+
+{% endfor %}

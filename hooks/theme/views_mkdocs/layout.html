@@ -1,0 +1,38 @@
+<div class="admonition info">
+    <p class="admonition-title">The content of this page was automatically generated <a hre="https://github.com/Andre601/mrjulsen-wiki/blob/master/docs/assets/openapi.json">from an OpenAPI JSON file</a>.</p>
+</div>
+
+{% include "partial/info.html" %}
+
+{%- if servers %}
+{% include "partial/servers.html" %}
+{% endif -%}
+
+{% include "partial/path-items.html" %}
+
+---
+{%- if components %}
+{%- if components.schemas %}
+{% include "partial/components/schemas.html" %}
+{% endif -%}
+
+{%- if components.responses %}
+{% include "partial/components/responses.html" %}
+{% endif -%}
+
+{%- if components.parameters %}
+{% include "partial/components/parameters.html" %}
+{% endif -%}
+
+{%- if components.securitySchemes %}
+{% include "partial/components/security-schemes.html" %}
+{% endif -%}
+{% endif -%}
+
+{%- if tags %}
+{% include "partial/tags.html" %}
+{% endif -%}
+
+{%- if externalDocs %}
+{% include "partial/components/external-docs.html" %}
+{% endif -%}

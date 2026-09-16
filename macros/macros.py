@@ -1,5 +1,13 @@
 import posixpath
 import json
+import sys, os
+import re
+
+from mkdocs.plugins import get_plugin_logger
+from openapidocs.mk.v3 import OpenAPIV3DocumentationHandler
+from openapidocs.mk.jinja import Jinja2DocumentsWriter
+from openapidocs.utils.source import read_from_source
+from re import Match
 
 def define_env(env):
 
