@@ -11,6 +11,7 @@ requirements.txt
 docs/
 └── ...
 hooks/
+├── api_docs.py
 └── wikilinks.py
 macros/
 └── macros.py
@@ -24,20 +25,33 @@ theme/
 ```
 
 - The `docs` folder is where the main Wiki content is located in.  
-  It contains markdown files which get converted into HTML files through ProperDocs and using the Material for MkDocs theme.
-- `hooks` contains python hook files (currently only `wikilinks.py`) which are used in ProperDocs for quick functionality to be added.
+  It contains markdown files which get converted into HTML files through ProperDocs and using the MaterialX for MkDocs theme.
+- `hooks` contains python hook files which are used in ProperDocs for quick functionality to be added.
 - `macros` contains the `macros.py` file which itself contains the individual macros used through the MkDocs Macros plugin, to insert features like displaying a crafting recipe.
 - `theme` contains theme overrides/extensions used to customize certain aspects of the Wiki.
 
 ## Contributions
 
-Any contributions are welcome! Just make sure to follow any necessary instructions provided to you through additional README files or pages. The [Contribute](https://wiki.mrjulsen.net/contribute/) path may also help you with certain questions.
+Any contributions are welcome! Just make sure to follow any necessary instructions provided to you through additional README files or pages. The [Contribute](https://wiki.mrjulsen.net/contribute/) page may also help you with certain questions.
 
 In order for you to use this wiki, make sure you install all required dependencies through `pip`.  
 The easiest way to install them is through the requirements.txt file:
 ```shell
 pip install -r requirements.txt
 ```
+
+The creation of a virtual Environment is recommended:
+
+1. Run `python -m venv venv` (You may need to replace `python3`, `py` or whatever other command python registers on your OS)
+2. Activate the Environment:
+    - **Windows:** `. venv/Scripts/activate`
+    - **Linux/MacOS:** `. venv/bin/activate`
+
+If your terminal shows `(venv)` did activation succeed.  
+To deactivate the environment, write `deactivate` in the terminal.
+
+> [!NOTE]
+> You have to install any dependencies in a virtual environment again. Treat it as a "blank slate" for python dependencies.
 
 ## License
 
