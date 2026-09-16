@@ -1,0 +1,48 @@
+:root {
+    --color-http-get: #448aff;
+    --color-http-post: #00c853;
+}
+
+.md-typeset .http-get {
+    border-color: var(--color-http-get);
+}
+
+.md-typeset .http-post {
+    border-color: var(--color-http-post);
+}
+
+.md-typeset .http-get > summary,
+.md-typeset .http-post > summary {
+    padding-left: .4rem;
+}
+
+.md-typeset .http-get > summary::before,
+.md-typeset .http-post > summary::before {
+    background-color: transparent;
+    -webkit-mask-image: none;
+            mask-image: none;
+    width: 0;
+}
+
+summary > .http-get,
+summary > .http-post {
+    padding: .1rem .3rem;
+    border-radius: .2em;
+    margin-right: .3em;
+}
+
+summary > .http-get {
+    background-color: var(--color-http-get);
+}
+
+summary > .http-post {
+    background-color: var(--color-http-post);
+}
+
+.api-required {
+    color: #ff2525;
+}
+
+.small-note.twemoji {
+    color: #ff9100;
+}

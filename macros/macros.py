@@ -1,5 +1,13 @@
 import posixpath
 import json
+import sys, os
+import re
+
+from mkdocs.plugins import get_plugin_logger
+from openapidocs.mk.v3 import OpenAPIV3DocumentationHandler
+from openapidocs.mk.jinja import Jinja2DocumentsWriter
+from openapidocs.utils.source import read_from_source
+from re import Match
 
 def define_env(env):
 
@@ -472,10 +480,3 @@ def define_env(env):
                 return json.load(file)
         except FileNotFoundError:
             return None
-
-def on_pre_page_macros(env):
-    unreleased = env.page.meta.get("unreleased", False)
-    if unreleased:
-        header = '<div class="admonition unreleased">\n<p class="admonition-title">Unreleased Content</p>\n<p>The following page covers content not yet released for this mod.<br>Any information is to be treated as incomplete and Work in Progress!</p></div>\n\n'
-
-        env.markdown = header + env.markdown

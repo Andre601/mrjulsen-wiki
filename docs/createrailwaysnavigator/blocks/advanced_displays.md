@@ -85,7 +85,7 @@ Only the pre-made colors can be selected.
 
 ### Carriage Index Offset
 
-/// info | Available for [`Train Destination (Detailed mode)`](#train-destination) and [`Passenger Information (Detailed with Schedule mode)`](#passenger-information)
+/// options | Available for [`Train Destination (Detailed mode)`](#train-destination) and [`Passenger Information (Detailed with Schedule mode)`](#passenger-information)
 ///
 
 Allows to offset the displayed carriage number by the specified value.  
@@ -93,7 +93,7 @@ When `Overwrite index` is enabled will the provided number instead be used as th
 
 ### Show 'Do not board' text
 
-/// info | Available for [`Train Destination`](#train-destination) and [`Passenger Information`](#passenger-information)
+/// options | Available for [`Train Destination`](#train-destination) and [`Passenger Information`](#passenger-information)
 ///
 
 When enabled, displays a `Do not board` message whenever the train reaches the final stop in its schedule. This setting is ignored if the train is about to enter a non-navigable Schedule Section.
@@ -105,7 +105,7 @@ The train line color is configured through the global settings and applied throu
 
 ### Train Name Width
 
-/// info | Available for [`Train Destination (Compact and Extended mode)`](#train-destination), [`Platform Display (Focus and Table mode)`](#platform-display) and [`Departure Board`](#departure-board)
+/// options | Available for [`Train Destination (Compact and Extended mode)`](#train-destination), [`Platform Display (Focus and Table mode)`](#platform-display) and [`Departure Board`](#departure-board)
 ///
 
 Sets the max width that the displayed train name should have.  
@@ -113,7 +113,7 @@ Any text beyond the max width will result in the text scrolling.
 
 ### Platform Width
 
-/// info | Available for [`Platform Display (Focus and Table mode)`](#platform-display)
+/// options | Available for [`Platform Display (Focus and Table mode)`](#platform-display)
 ///
 
 Sets the max width that the displayed platform should have.  
@@ -121,7 +121,7 @@ Any text beyond the max width will result in the text scrolling.
 
 ### Stopovers Section Width
 
-/// info | Available for [`Departure Board`](#departure-board)
+/// options | Available for [`Departure Board`](#departure-board)
 ///
 
 Sets the max width that the displayed stopovers should have.  
@@ -129,7 +129,7 @@ Any text beyond the max width will result in the text scrolling.
 
 ### Info Section Width
 
-/// info | Available for [`Departure Board`](#departure-board)
+/// options | Available for [`Departure Board`](#departure-board)
 ///
 
 Sets the max width that any info about the train (i.e. delays) should have.  
@@ -137,7 +137,7 @@ Any text beyond the max width will result in the text scrolling.
 
 ### Time Display
 
-/// info | Available for [`Passenger Information (Detailed with Schedule mode)`](#passenger-information) and [`Departure Board`](#departure-board)
+/// options | Available for [`Passenger Information (Detailed with Schedule mode)`](#passenger-information) and [`Departure Board`](#departure-board)
 ///
 
 Sets the time displayed for when the train arrives at the (next) station.  
@@ -145,14 +145,14 @@ Available options are `ABS` (default) for absolute time (i.e. `13:00`) or `ETA` 
 
 ### Show train stats
 
-/// info | Available for [`Passenger Information`](#passenger-information)
+/// options | Available for [`Passenger Information`](#passenger-information)
 ///
 
 Sets whether Train statistics such as speed should be displayed.
 
 ### Show exit direction
 
-/// info | Available for [`Passenger Information`](#passenger-information)
+/// options | Available for [`Passenger Information`](#passenger-information)
 ///
 
 Sets whether the display should display possible exit directions using an arrow.  
@@ -160,14 +160,14 @@ The direction will be displayed when "Next Stop: ..." is shown.
 
 ### Show next connections
 
-/// info | Available for [`Passenger Information`](#passenger-information)
+/// options | Available for [`Passenger Information`](#passenger-information)
 ///
 
 Sets whether the display should display connections for the station it arrives at.
 
 ### Show train multiple times
 
-/// info | Available for [`Passenger Information`](#passenger-information), [`Departure Board`](#departure-board)
+/// options | Available for [`Passenger Information`](#passenger-information), [`Departure Board`](#departure-board)
 ///
 
 Sets whether the same train can be displayed multiple times in the next connections (i.e. when arriving from different sides).
@@ -184,7 +184,7 @@ Sets what text component should be displayed.
 
 ### Show time and date
 
-/// info | Available for [`Passenger Information (Scrolling text mode)`](#passenger-information)
+/// options | Available for [`Passenger Information (Scrolling text mode)`](#passenger-information)
 ///
 
 Sets whether the current ingame time and number of ingame days since world creation should be displayed.
@@ -203,7 +203,7 @@ Sets what kind of train stop should be displayed.
 
 ### Displayed Text
 
-/// info | Available only for [Static Text](#static-text)
+/// options | Available only for [Static Text](#static-text)
 ///
 
 Allows you to set the text that should be displayed on the Display.  
@@ -211,7 +211,7 @@ The input field accepts normal text, but also Chat Components.
 
 ### X/Y Position
 
-/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+/// options | Available only for [Static Text (Rich Text mode)](#static-text)
 ///
 
 Sets the X and Y position of the text.  
@@ -219,14 +219,14 @@ The X offset is based on the current [Text Alignment](#text-alignment) with Righ
 
 ### Text Alignment
 
-/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+/// options | Available only for [Static Text (Rich Text mode)](#static-text)
 ///
 
 Allows to set the text to either be on the left, center or right of the Display.
 
 ### Minimum X Scale/X Scale/Y Scale
 
-/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+/// options | Available only for [Static Text (Rich Text mode)](#static-text)
 ///
 
 Sets the Minimum X scale and maximum X and Y scale for the text.  
@@ -234,14 +234,14 @@ The text will be scaled as close as possible and if not possible, apply the conf
 
 ### Text Max Width
 
-/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+/// options | Available only for [Static Text (Rich Text mode)](#static-text)
 ///
 
 Sets the max width of the text. The text will be scaled as close as possible and if not possible, apply the configured [Boundary Behaviour](#boundary-behaviour) to the text.
 
 ### Boundary Behaviour
 
-/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+/// options | Available only for [Static Text (Rich Text mode)](#static-text)
 ///
 
 Sets how text going beyond the [Max text width](#text-max-width) should be handled.
@@ -254,7 +254,7 @@ Sets how text going beyond the [Max text width](#text-max-width) should be handl
 
 ### Label Background Color
 
-/// info | Available only for [Static Text (Rich Text mode)](#static-text)
+/// options | Available only for [Static Text (Rich Text mode)](#static-text)
 ///
 
 Sets the background color that should be used for the text. Custom colors using the Hex Code format are supported.  
