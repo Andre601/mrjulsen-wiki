@@ -21,7 +21,7 @@ categories:
 - ### [:simple-curseforge: CurseForge](https://www.curseforge.com/minecraft/mc-mods/create-railways-navigator){ target="_blank" rel="nofollow" }
 ///
 
-## Content
+## Highlighted Content
 
 /// html | div.grid.cards
 -   ### [[Navigator]]
@@ -32,6 +32,6 @@ categories:
     Display next stops or trains arriving on/departing from a Station.
 -   ### New Schedule Features
     Define new features in schedules such as [[Dynamic Delay|dynamic delays]], [[Prioritized Destination Instruction|prioritized destinations]] and more.
--   ### Additional Features
-    New features to [[Blacklists|blacklist trains and stations]], [[Train Lines|define train lines]] and more.
+-   ### Web API
+    Access the data from CRN and Create via the built-in [Web API](web/index.md) to use it in your own web services.
 ///
