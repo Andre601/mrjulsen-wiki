@@ -12,5 +12,9 @@
             "9": "trafficcraft:raw_bitumen"
         }
     },
-    "name": "Bitumen Block"
+    "name": "Bitumen Block",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
 }

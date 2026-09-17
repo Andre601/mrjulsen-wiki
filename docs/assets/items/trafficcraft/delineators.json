@@ -1,0 +1,22 @@
+{
+    "name": "Delineators",
+    "variants": [
+        "trafficcraft:white_delineator",
+        "trafficcraft:yellow_delineator",
+        "trafficcraft:red_delineator",
+        "trafficcraft:small_white_delineator",
+        "trafficcraft:small_yellow_delineator",
+        "trafficcraft:reflector"
+    ],
+    "attributes": {
+        "stack_size": {
+            "White Delineator": 64,
+            "Yellow Delineator": 64,
+            "Red Delineator": 64,
+            "Small White Delineator": 64,
+            "Small Yellow Delineator": 64,
+            "Reflector": 64
+        },
+        "tool": "Any Tool"
+    }
+}

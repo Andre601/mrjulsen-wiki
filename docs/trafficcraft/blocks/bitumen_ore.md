@@ -5,6 +5,8 @@ categories:
 
 # Bitumen Ore
 
+{{ infobox("trafficcraft:bitumen_ore") }}
+
 **Bitumen Ore** is a Block that spawns naturally in the World. It exists in a normal and deepslate variant.
 
 ## Generation

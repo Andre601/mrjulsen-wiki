@@ -20,5 +20,4 @@ Mining the Block with a Pickaxe enchanted with [[mc:Silk Touch]] yields the Ore 
 
 ### Smelting
 
-{{ smelting_recipe("trafficcraft:raw_bitumen", footer=False) }}
-{{ smelting_recipe("trafficcraft:raw_bitumen_2", header=False) }}
+{{ smelting_recipe("trafficcraft:raw_bitumen") }}

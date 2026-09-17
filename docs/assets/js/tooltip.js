@@ -22,6 +22,54 @@
 
 		if (!contentText) return;
 
+		/*
+		 * Animated Icons.
+		 * Original Source: https://minecraft.wiki/w/MediaWiki:Gadget-site.js?oldid=3480362#L-424--L-471
+		 */
+
+		const advanceFrame = (parentElem, selector) => {
+			const curFrame = parentElem.querySelector(selector + ' > .animated-active');
+
+			if (curFrame) {
+				curFrame.classList.remove('animated-active');
+			}
+
+			const nextFrame = curFrame?.nextElementSibling || parentElem.firstElementChild;
+
+			if (nextFrame) {
+				nextFrame.classList.add('animated-active');
+			}
+
+			return nextFrame;
+		}
+
+		let hidden;
+		if (typeof document.hidden !== 'undefined') {
+			hidden = 'hidden';
+		} else if (typeof document.msHidden !== 'undefined') {
+			hidden = 'msHidden';
+		} else if (typeof document.webkitHidden !== 'undefined') {
+			hidden = 'webkitHidden';
+		}
+
+		setInterval(() => {
+			if (hidden && document[hidden]) return;
+
+			document.querySelectorAll('.animated').forEach((el) => {
+				if (el.classList.contains('animated-paused')) return;
+
+				const nextFrame = advanceFrame(el, '.animated');
+
+				if (nextFrame?.classList.contains('animated-subframe')) {
+					advanceFrame(nextFrame, '.animated-subframe')
+				}
+			});
+		}, 1500);
+
+		/*
+		 * End Animated Icon Code
+		 */
+
 		const escapeHTML = (str) =>
 				str.replace(/[&<>"]/g, (m) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[m]));
 

@@ -1,0 +1,11 @@
+{
+    "name": "Concrete Slope",
+    "variants": [
+        "trafficcraft:concrete_slope",
+        "trafficcraft:concrete_curb_slope"
+    ],
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
+}
