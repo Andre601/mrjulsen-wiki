@@ -1,3 +1,14 @@
 {
-    "name": "Bitumen Ore"
+    "name": "Bitumen Ore",
+    "variants": [
+        "trafficcraft:bitumen_ore",
+        "trafficcraft:deepslate_bitumen_ore"
+    ],
+    "attributes": {
+        "stack_size": {
+            "Bitumen Ore": 64,
+            "Deepslate Bitumen Ore": 64
+        },
+        "tool": "stone_pickaxe"
+    }
 }

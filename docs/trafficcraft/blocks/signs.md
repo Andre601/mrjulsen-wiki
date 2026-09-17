@@ -10,6 +10,8 @@ categories:
 /// redirect | `Traffic Sign`, `Town Sign`, `Street Sign` and `House Number Sign` redirect to here.
 ///
 
+{{ infobox("trafficcraft:signs") }}
+
 This page covers the **Traffic Sign**, **Town Sign**, **Street Sign** and **House Number Sign** available in TrafficCraft.
 
 ## Usage
@@ -43,6 +45,10 @@ Right-clicking it with a Paint Brush containing color will apply the color to th
 {{ crafting_recipe("trafficcraft:town_sign", header=False, footer=False) }}
 {{ crafting_recipe("trafficcraft:street_sign", header=False, footer=False) }}
 {{ crafting_recipe("trafficcraft:house_number_sign", header=False) }}
+
+### Mining
+
+Street Sign and House Number Sign can be broken with a Pickaxe of Wood Tier or better where Traffic Sign and Town Sign require a Pickaxe of Iron Tier or better.
 
 ## Advancements
 

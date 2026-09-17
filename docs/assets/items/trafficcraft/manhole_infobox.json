@@ -1,0 +1,16 @@
+{
+    "name": "Mahole",
+    "variants": [
+        "trafficcraft:manhole",
+        "trafficcraft:manhole_cover",
+        "trafficcraft:road_gully"
+    ],
+    "attributes": {
+        "stack_size": {
+            "Manhole": 64,
+            "Manhole Cover": 64,
+            "Road Gully": 64
+        },
+        "tool": "wooden_pickaxe"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "crafting": {
+        "ingredients": {
+            "1": "ender_eye",
+            "2": "create:railway_casing"
+        },
+        "shapeless": true,
+        "amount": 2
+    },
+    "name": "Penalty Anchor"
+}

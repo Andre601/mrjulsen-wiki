@@ -1,0 +1,14 @@
+{
+    "name": "Asphalt",
+    "variants": [
+        "trafficcraft:asphalt",
+        "trafficcraft:asphalt_curb"
+    ],
+    "attributes": {
+        "stack_size": {
+            "Asphalt": 64,
+            "Asphalt with Curb": 64
+        },
+        "tool": "stone_pickaxe"
+    }
+}

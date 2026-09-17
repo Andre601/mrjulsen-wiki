@@ -1,5 +1,17 @@
 {
     "name": "Any Wooden Slab",
     "lore": "<gray>Accepts Tag:\n<gray>#minecraft:wooden_slabs",
-    "gif": true
+    "variants": [
+        "acacia_slab",
+        "bamboo_slab",
+        "birch_slab",
+        "cherry_slab",
+        "crimson_slab",
+        "dark_oak_slab",
+        "jungle_slab",
+        "mangrove_slab",
+        "oak_slab",
+        "spruce_slab",
+        "warped_slab"
+    ]
 }
