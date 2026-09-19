@@ -13,6 +13,9 @@
             "Street Sign": 64,
             "House Number Sign": 64
         },
-        "tool": "iron_pickaxe"
+        "tool": {
+            "Street Sign & House Number Sign": "wooden_pickaxe",
+            "Traffic Sign & Town Sign": "iron_pickaxe"
+        }
     }
 }

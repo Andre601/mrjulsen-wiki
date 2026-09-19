@@ -7,6 +7,8 @@ categories:
 
 # Traffic Light
 
+{{ infobox("trafficcraft:traffic_light") }}
+
 The **Traffic Light** is a decorative block that can be used for roads, crosswalks and similar.  
 It can display colored lights or symbols, or white symbols if set to *Tram* mode.
 

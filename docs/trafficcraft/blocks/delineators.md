@@ -9,7 +9,7 @@ categories:
 /// redirect | `White Delineator`, `Yellow Delineator`, `Red Delineator`, `Small White Delineator`, `Small Yellow Delineator` and `Reflector` redirect to this page.
 ///
 
-{{ infobox("trafficcraft:delineators") }}
+{{ infobox("trafficcraft:white_delineator", "trafficcraft:yellow_delineator", "trafficcraft:red_delineator", "trafficcraft:small_white_delineator", "trafficcraft:small_yellow_delineator", "trafficcraft:reflector") }}
 
 This page collectively covers the **White Delineator**, **Yellow Delineator**, **Red Delineator**, **Small White Delineator**, **Small Yellow Delineator** and the **Reflector**, which are all decorative blocks with emissive Texture Features.
 

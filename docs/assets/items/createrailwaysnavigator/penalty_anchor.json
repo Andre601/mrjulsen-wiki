@@ -7,5 +7,9 @@
         "shapeless": true,
         "amount": 2
     },
-    "name": "Penalty Anchor"
+    "name": "Penalty Anchor",
+    "attributes": {
+        "stack_size": 64,
+        "Wrenchable": true
+    }
 }

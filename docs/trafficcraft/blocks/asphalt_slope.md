@@ -9,7 +9,7 @@ categories:
 /// redirect | `Asphalt with Curb Slope` redirects here.
 ///
 
-{{ infobox("trafficcraft:asphalt_slope_infobox") }}
+{{ infobox("trafficcraft:asphalt_slope", "trafficcraft:asphalt_curb_slope") }}
 
 **Asphalt Slope** is a Block that can be painted with the [[Paint Brush]] and stacked similar to [[mc:Snow]].
 

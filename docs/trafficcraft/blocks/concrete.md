@@ -9,7 +9,7 @@ categories:
 /// redirect | `Concrete with Curb` redirects here.
 ///
 
-{{ infobox("trafficcraft:concrete_infobox") }}
+{{ infobox("trafficcraft:concrete", "trafficcraft:concrete_curb") }}
 
 **Concrete** is a Block that can be painted with the [[Paint Brush]]
 

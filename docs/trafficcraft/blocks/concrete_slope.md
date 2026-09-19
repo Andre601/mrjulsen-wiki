@@ -9,7 +9,7 @@ categories:
 /// redirect | `Concrete with Curb Slope` redirects here.
 ///
 
-{{ infobox("trafficcraft:concrete_slope_infobox") }}
+{{ infobox("trafficcraft:concrete_slope", "trafficcraft:concrete_curb_slope") }}
 
 **Concrete Slope** is a Block that can be painted with the [[Paint Brush]] and stacked similar to [[mc:Snow]].
 

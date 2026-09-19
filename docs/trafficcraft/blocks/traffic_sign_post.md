@@ -5,6 +5,8 @@ categories:
 
 # Traffic Sign Post
 
+{{ infobox("trafficcraft:traffic_sign_post") }}
+
 **Traffic Sign Post** is a Block that [[Signs|Street Signs, Traffic Signs, Traffic Lights and all Street Lamps]] can attach to.
 
 ## Usage

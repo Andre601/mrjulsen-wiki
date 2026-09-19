@@ -8,6 +8,8 @@ categories:
 /// redirect | All Advanced Display Blocks redirect to here.
 ///
 
+{{ infobox("createrailwaysnavigator:advanced_display", "createrailwaysnavigator:advanced_display_block", "createrailwaysnavigator:advanced_display_small", "createrailwaysnavigator:advanced_display_panel", "createrailwaysnavigator:advanced_display_slab", "createrailwaysnavigator:advanced_display_half_panel", "createrailwaysnavigator:advanced_display_sloped") }}
+
 **Advanced Displays** are blocks that appear similar to monitors and can display data similar to a [[c:Display Board]] from Create.
 
 ## Usage

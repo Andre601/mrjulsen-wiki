@@ -5,6 +5,8 @@ categories:
 
 # Pattern Catalogue
 
+{{ infobox("trafficcraft:pattern_catalogue") }}
+
 The **Pattern Catalogue** is an item that is used to store [[Signs|Traffic Sign]] Patterns and apply them to Traffic Signs.  
 A creative variant exists which has all default pattern available by default.
 

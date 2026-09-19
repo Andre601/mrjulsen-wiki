@@ -9,5 +9,8 @@
         }
     },
     "name": "Color Palette",
-    "lore": "<gray>No colors stored"
+    "lore": "<gray>No colors stored",
+    "attributes": {
+        "stack_size": 1
+    }
 }

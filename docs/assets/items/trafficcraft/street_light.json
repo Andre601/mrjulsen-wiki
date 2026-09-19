@@ -10,5 +10,9 @@
         },
         "amount": 4
     },
-    "name": "Steet Light"
+    "name": "Steet Light",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

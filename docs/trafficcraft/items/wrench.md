@@ -5,6 +5,8 @@ categories:
 
 # Wrench
 
+{{ infobox("trafficcraft:wrench") }}
+
 The **Wrench** is an item that can be used to configure various TrafficCraft Blocks.
 
 /// info | New since `v1.2.0-beta.2`

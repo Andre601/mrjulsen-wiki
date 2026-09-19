@@ -11,5 +11,9 @@
         },
         "amount": 3
     },
-    "name": "Traffic Sign"
+    "name": "Traffic Sign",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

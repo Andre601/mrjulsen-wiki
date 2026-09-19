@@ -12,5 +12,9 @@
             "9": "any_log"
         }
     },
-    "name": "Traffic Sign Workbench"
+    "name": "Traffic Sign Workbench",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

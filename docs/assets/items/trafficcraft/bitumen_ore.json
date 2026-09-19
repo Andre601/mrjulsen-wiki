@@ -5,10 +5,7 @@
         "trafficcraft:deepslate_bitumen_ore"
     ],
     "attributes": {
-        "stack_size": {
-            "Bitumen Ore": 64,
-            "Deepslate Bitumen Ore": 64
-        },
+        "stack_size": 64,
         "tool": "stone_pickaxe"
     }
 }

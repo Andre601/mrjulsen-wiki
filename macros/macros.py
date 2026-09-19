@@ -3,101 +3,63 @@ import json
 
 def define_env(env):
     @env.macro
-    def infobox(id: str) -> str:
-        if not id:
-            return admo_warning("No ID specified!")
+    def infobox(*ids: str) -> str:
+        if not ids:
+            return admo_warning("No IDs specified!")
+
+        if len(ids) == 1:
+            id = ids[0]
+
+            item_path = get_item_path(id)
+            if not item_path:
+                return admo_warning(f"No valid Item Path found for <code>{id}</code>!")
+            
+            item = read_json(f"docs/assets/items/{item_path}.json")
+            if not item:
+                return admo_warning(f"No Item File found for <code>assets/items/{item_path}.json</code>!")
+            
+            strings = [
+                '<div class="infobox">',
+                f'<p class="title">{item["name"] if "name" in item else env.page.get("title", "")}</p>'
+            ]
+
+            strings.extend(
+                get_item_table(id, item, item_path)
+            )
+
+            strings.append('</div>')
+
+            return '\n'.join(strings)
         
-        result = get_item_path(id)
-        if not result:
-            return admo_warning(f"No Item found for <code>{id}</code>!")
-        
-        json_data = read_json(f"docs/assets/items/{result}.json")
-        if not json_data:
-            return admo_warning(f"Couldn't find <code>assets/items/{result}.json</code>!")
+        entries = []
+
+        for id in ids:
+            item_path = get_item_path(id)
+
+            if not item_path:
+                return admo_warning(f"No valid Item Path found for <code>{id}</code>!")
+            
+            item = read_json(f"docs/assets/items/{item_path}.json")
+            if not item:
+                return admo_warning(f"No Item File found for <code>assets/items/{item_path}.json</code>")
+            
+            entries.append((id, item_path, item))
         
         strings = [
-            '<div style="float: right; margin-left: .75rem;">',
-            '<table>',
-            '<thead>',
-            '<tr>',
-            f'<th style="text-align: center;" colspan="2">{json_data["name"] if "name" in json_data else env.get("page", {}).get("title", "")}</th>',
-            '</tr>',
-            '</thead>',
-            '<tbody>',
-            '<tr>',
-            '<td colspan="2" style="text-align: center;">'
+            html_block('div.infobox'),
+            html_block('p.title', env.page.title, 1),
         ]
 
-        if isinstance(json_data.get("variants"), list):
-            strings.append('<span class="animated">')
-            for i, variant in enumerate(json_data["variants"]):
-                strings.append(f'<img src="/assets/img/icons/{get_item_path(variant)}.png" class="{"animated-active" if i == 0 else ""}" loading="eager" alt="{id}" style="max-width: 250px;">')
-            strings.append('</span>')
-        else:
-            strings.append(f'<img src="/assets/img/icons/{result}.{"gif" if "gif" in json_data and json_data["gif"] else "png"}" loading="lazy" alt="{id}" style="max-width: 250px;">')
+        for id, item_path, item in entries:
+            strings.append(f'//// tab | {item.get("name", id)}')
+
+            strings.extend(get_item_table(id, item, item_path))
+
+            strings.append("////")
         
-        strings.extend([
-            '</td>',
-            '</tr>'
-        ])
+        strings.append(close_block())
 
-        if isinstance(json_data.get("attributes"), dict):
-            for key, value in json_data["attributes"].items():
-                strings.append('<tr>')
-                if key.lower() == "stack_size":
-                    strings.append('<td><b>Stackable</b></td>')
-                else:
-                    strings.append(f'<td><b>{key.replace("_", " ").title()}</b></td>')
-                
-                if isinstance(value, dict):
-                    values = []
-                    for vKey, vValue in value.items():
-                        if key.lower() == "stack_size":
-                            values.append(f"{vKey}: {f"Yes ({vValue})" if isinstance(vValue, int) and vValue > 1 else "No"}")
-                        else:
-                            values.append(f"{vKey}: {vValue}")
-                    
-                    strings.append(f'<td>{"<br>".join(values)}</td>')
-                elif isinstance(value, list):
-                    strings.append(f'<td>{"<br>".join(value)}</td>')
-                else:
-                    if key.lower() == "stack_size" and isinstance(value, int):
-                        strings.append(f'<td>{f"Yes ({value})" if value > 1 else "No"}</td>')
-                    elif key.lower() == "tool":
-                        tool = read_json(f"docs/assets/items/{get_item_path(value)}.json")
-                        if tool:
-                            slot = [
-                                '<td>',
-                                f'<span class="{"animated " if isinstance(tool.get("variants"), list) else ""}invslot-item" data-minetip-title="',
-                                tool.get("name", value.replace("_", " ").title()),
-                                '"',
-                                f' data-minetip-text="{tool["lore"]}">' if "lore" in tool else ">"
-                            ]
-
-                            if isinstance(tool.get("variants"), list):
-                                for i, variant in enumerate(tool["variants"]):
-                                    slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{value}">')
-                            else:
-                                slot.append(f'<img src="/assets/img/items/{get_item_path(value)}.png" class="no-glight" loading="lazy" alt={value}">')
-                            
-                            slot.extend([
-                                '</span>',
-                                '</td>'
-                            ])
-
-                            strings.append(''.join(slot))
-                        else:
-                            strings.append(f'<td>{value}</td>')
-                    else:
-                        strings.append(f'<td>{value}</td>')
-        
-        strings.extend([
-            '</tbody>',
-            '</table>',
-            '</div>'
-        ])
-
-        return "\n".join(strings)
+        return '\n'.join(strings)
 
     @env.macro
     def crafting_recipe(id: str, header = True, footer = True) -> str:
@@ -598,3 +560,109 @@ def define_env(env):
     
     def admo_warning(text: str) -> str:
         return f'<div class="admonition warning"><p class="admonition-title">{text}</p></div>'
+    
+    def invslot(data, fallback: str) -> str:
+        slot = [
+            f'<span class="{"animated " if isinstance(data.get("variants"), list) else ""}invslot-item" data-minetip-title="',
+            data.get("name", fallback.replace("_", " ").title()),
+            '"',
+            f' data-minetip-text="{data["lore"]}">' if "lore" in data else ">"
+        ]
+
+        if isinstance(data.get("variants"), list):
+            for i, variant in enumerate(data["variants"]):
+                slot.append(f'<img src="/assets/img/items/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{fallback}">')
+        else:
+            slot.append(f'<img src="/assets/img/items/{get_item_path(fallback)}.{"gif" if "gif" in data and data["gif"] else "png"}" class="no-glight" loading="lazy" alt="{fallback}">')
+        
+        slot.append('</span>')
+
+        return ''.join(slot)
+    
+    def html_block(element: str, content: str = "", level: int = 0) -> str:
+        slashes = "/" * (3 + level)
+
+        if content:
+            return '\n'.join([
+                f'{slashes} html | {element}',
+                content,
+                slashes
+            ])
+        
+        return f'{slashes} html | {element}'
+    
+    def close_block(level: int = 0) -> str:
+        return "/" * (3 + level)
+    
+    def get_item_table(id: str, json_data: dict, item_path: str) -> list[str]:
+        strings = []
+        
+        strings.extend([
+            '<table>',
+            '<tbody>',
+            '<tr>',
+            '<td colspan="2" style="text-align: center;">'
+        ])
+        
+        if isinstance(json_data.get("variants"), list):
+            strings.append('<span class="animated">')
+            
+            for i, variant in enumerate(json_data["variants"]):
+                strings.append(f'<img src="/assets/img/icons/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{id}" style="max-width: 250px">')
+            
+            strings.append('</span>')
+        else:
+            strings.append(f'<img src="/assets/img/icons/{item_path}.png" class="no-glight" loading="lazy" alt="{id}" style="max-width: 250px;">')
+        
+        strings.extend([
+            '</td>',
+            '</tr>'
+        ])
+        
+        if isinstance(json_data.get("attributes"), dict):
+            for key, value in json_data["attributes"].items():
+                strings.extend([
+                    '<tr>',
+                    f'<td><b>{"Stackable" if key.lower() == "stack_size" else key.replace("_", " ").title()}</b></td>'
+                ])
+
+                if isinstance(value, dict):
+                    values = []
+
+                    for vKey, vValue in value.items():
+                        if key.lower() == "stack_size":
+                            values.append(f"{vKey}: {f"Yes ({vValue})" if isinstance(vValue, int) and vValue > 1 else "No"}")
+                        elif key.lower() == "tool":
+                            tool = read_json(f"docs/assets/items/{get_item_path(vValue)}.json")
+
+                            values.append(f"{vKey}:{f"<br>{invslot(tool, vValue)}" if tool else f" {vValue}"}")
+                        else:
+                            values.append(f"{vKey}: {vValue}")
+                    
+                    cell_content = "<br>".join(values)
+                elif isinstance(value, bool):
+                    cell_content = "Yes" if value else "No"
+                elif isinstance(value, list):
+                    cell_content = "<br>".join(value)
+                else:
+                    if key.lower() == "stack_size" and isinstance(value, int):
+                        cell_content = f"Yes ({value})" if value > 1 else "No"
+                    elif key.lower() == "tool":
+                        tool = read_json(f"docs/assets/items/{get_item_path(value)}.json")
+
+                        cell_content = invslot(tool, value) if tool else str(value)
+                    else:
+                        cell_content = str(value)
+                
+                strings.extend([
+                    f'<td>{cell_content}</td>',
+                    '</tr>'
+                ])
+        
+        strings.extend([
+            '</tbody>',
+            '</table>'
+        ])
+
+        return strings
+        

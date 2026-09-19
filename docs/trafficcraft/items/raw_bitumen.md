@@ -5,6 +5,8 @@ categories:
 
 # Raw Bitumen
 
+{{ infobox("trafficcraft:raw_bitumen") }}
+
 **Raw Bitumen** is an item used in crafting recipes of other TrafficCraft items.
 
 ## Obtaining

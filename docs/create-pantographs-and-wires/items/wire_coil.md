@@ -5,6 +5,8 @@ categories:
 
 # Wire Coil
 
+{{ infobox("pantographsandwires:wire_coil") }}
+
 The Wire Coil item is the basic item for all wire connections. It allows you to place all different types of wires, from catenary wires to the headspan wire.
 
 ## Usage

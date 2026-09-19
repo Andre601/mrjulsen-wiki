@@ -73,6 +73,11 @@ The wiki supports wikimedia-inspired links:
 Links to unknown Wiki pages will be displayed as non-clickable red-links. Example: <code>\[\[Unknown]]</code> shows as [[Unknown]].  
 External sites are defined in the `properdocs.yml` in the `interwiki` section under `extra`.
 
+### Infobox
+
+A macro for displaying an infobox is made available through {% raw %}`{{ infobox("namespace:id") }}`{% endraw %}, allowing to display some additional information.  
+Note that when used, will it take images from `assets/img/icons/<namespace>/<id>` instead of `assets/img/items/<namespace>/<id>`.
+
 ### Recipes
 
 Macros for displaying crafting, smelting and smithing recipes have been created that are implemented using the following formats:
@@ -88,6 +93,7 @@ Macros for displaying crafting, smelting and smithing recipes have been created 
 /// note | Notes
 - The namespace can be omitted in which case the `minecraft` one is assumed.
 - An optional `header` and `footer` option exist to enable the prepending and appending of a table start (header row) and table end respectively. Default is `True`.
+- Images of the item and for any ingredients are taken from `assets/img/items/<namespace>/<id>`
 ///
 
 In order for a recipe to be displayed, are certain criterias to be met:
@@ -179,6 +185,11 @@ A JSON file provides the following options:
     - **template:** The Template item that is used (I.e. Nether Upgrade Template). Format is `<namespace>:<item>`.
     - **item:** The base item that is upgraded. Format is `<namespace>:<id>`.
     - **material:** The material/addition to apply to the base item. Format is `<namespace>:<id>`.
+- **variants:** Contains a List of Strings for images to cycle through. Entries are in the format `<namespace>:<id>`
+- **attributes:** Contains key-value pairs for displaying additional info in the {% raw %}`{{ infobox("...") }}`{% endraw %} macro.
+    - If the Key is named `stack_size` will it be displayed as `Stackable` with nummerical values showing as `Yes (<value>)` for numbers above 1 and `No` for anything else. This also applies to values in nested objects.
+    - If the Value is a Boolean, will show `Yes` for true and `No` for false.
+    - If the Value is a List or Object (Set of key-value pairs) will it list each entry in a new line with objects being formatted as `<key>: <value>`
 
 Here's an example for the `createrailwaysnavigator:advanced_display` item:  
 ```json

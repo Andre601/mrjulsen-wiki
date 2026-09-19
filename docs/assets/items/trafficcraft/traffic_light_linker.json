@@ -13,5 +13,8 @@
         "shapeless": false
     },
     "name": "Traffic Light Linker",
-    "lore": "<gray>Not linked\n<gray>Mode: <green>Link\n<white><italic>Sneak + Scroll</italic> <gray>to change mode."
+    "lore": "<gray>Not linked\n<gray>Mode: <green>Link\n<white><italic>Sneak + Scroll</italic> <gray>to change mode.",
+    "attributes": {
+        "stack_size": 1
+    }
 }

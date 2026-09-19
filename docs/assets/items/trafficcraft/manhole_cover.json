@@ -5,5 +5,9 @@
             "5": "trafficcraft:manhole"
         }
     },
-    "name": "Mahole Cover"
+    "name": "Mahole Cover",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "wooden_pickaxe"
+    }
 }
