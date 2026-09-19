@@ -6,5 +6,9 @@
         },
         "amount": 8
     },
-    "name": "Concrete Slope"
+    "name": "Concrete Slope",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
 }

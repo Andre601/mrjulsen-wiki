@@ -5,6 +5,8 @@ categories:
 
 # Traffic Sign Workbench
 
+{{ infobox("trafficcraft:traffic_sign_workbench") }}
+
 The **Traffic Sign Workbench** is a block that allows you to create designs for [[Signs|Traffic Signs]] using a [[Pattern Catalogue]].
 
 ## Usage

@@ -5,6 +5,8 @@ categories:
 
 # Iron Plate
 
+{{ infobox("trafficcraft:iron_plate") }}
+
 **Iron Plate** is an item that is used within crafting recipes of other TrafficCraft Items.
 
 ## Obtaining

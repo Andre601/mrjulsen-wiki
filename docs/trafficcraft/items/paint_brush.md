@@ -5,6 +5,8 @@ categories:
 
 # Paint Brush
 
+{{ infobox("trafficcraft:paint_brush") }}
+
 The **Paint Brush** is an item that can be used to paint patterns on [[Asphalt]] and [[Concrete]] Blocks and Slopes or apply color to other specific TrafficCraft blocks.
 
 ## Usage

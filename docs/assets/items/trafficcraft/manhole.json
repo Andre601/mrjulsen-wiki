@@ -13,5 +13,9 @@
         },
         "amount": 3
     },
-    "name": "Mahole"
+    "name": "Mahole",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "wooden_pickaxe"
+    }
 }

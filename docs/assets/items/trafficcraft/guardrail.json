@@ -8,5 +8,9 @@
         },
         "amount": 6
     },
-    "name": "Guardrail"
+    "name": "Guardrail",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

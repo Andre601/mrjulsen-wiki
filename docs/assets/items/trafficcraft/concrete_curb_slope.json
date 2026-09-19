@@ -6,5 +6,9 @@
         },
         "amount": 8
     },
-    "name": "Concrete with Curb Slope"
+    "name": "Concrete with Curb Slope",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
 }

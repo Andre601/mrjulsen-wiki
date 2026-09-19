@@ -6,5 +6,8 @@
         },
         "amount": 6
     },
-    "name": "Traffic Sign Post"
+    "name": "Traffic Sign Post",
+    "attributes": {
+        "stack_size": 64
+    }
 }

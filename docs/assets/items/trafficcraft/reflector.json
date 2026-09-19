@@ -7,5 +7,9 @@
         },
         "amount": 2
     },
-    "name": "Reflector"
+    "name": "Reflector",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

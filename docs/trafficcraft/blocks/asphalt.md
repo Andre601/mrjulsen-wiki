@@ -9,6 +9,8 @@ categories:
 /// redirect | `Asphalt with Curb` redirects here.
 ///
 
+{{ infobox("trafficcraft:asphalt", "trafficcraft:asphalt_curb") }}
+
 **Asphalt** is a Block that can be painted with the [[Paint Brush]].
 
 ## Usage

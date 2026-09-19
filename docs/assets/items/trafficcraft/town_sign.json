@@ -5,5 +5,9 @@
         },
         "shapeless": true
     },
-    "name": "Town Sign"
+    "name": "Town Sign",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

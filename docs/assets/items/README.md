@@ -1,3 +1,7 @@
+---
+render_macros: false
+---
+
 # Items Data folder
 
 This folder contains various JSON files representing individual items.  
@@ -29,6 +33,14 @@ Here is an example of a JSON files possible structure:
         "template": "<item>",
         "item": "<item>",
         "material": "<item>"
+    },
+    "variants": [
+        "<string>",
+        "<string>",
+        "..."
+    ],
+    "attributes": {
+        "<key>": <value>
     }
 }
 ```
@@ -49,6 +61,12 @@ Here is an example of a JSON files possible structure:
     - `template`: The [Item ID](#item-ids) of the Item used as the template ingredient.
     - `item`: The [Item ID](#item-ids) of the Item used to apply the template and material on.
     - `material`: The [Item ID](#item-ids) of the Item used as the material to apply on the item.
+- `variants`?: List of Strings matching `<namespace>:<id>`. Used to display multiple images (variants) that the page is cycling through.
+- `attributes`?: Collection of key-value pairs used in the `{{ infobox() }}` macro.
+    - If the Key is called `stack_size` will it be displayed as `Stackable`. If the Value is a number greater than 1 will it show as `Yes (<value>)` else `No`
+    - If the Value is a Boolean will it be displayed as `Yes` for true and `No` for false.
+    - If the Value is a List, will each entry be displayed on a new line.
+    - If the Value is a JSON object will it be displayed as `<key>: <value>` on separate lines. If the main key is also `stack_size` will the same rules for number values apply. 
 
 ### Item IDs
 

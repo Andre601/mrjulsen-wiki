@@ -9,5 +9,9 @@
         },
         "amount": 4
     },
-    "name": "Street Sign"
+    "name": "Street Sign",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "wooden_pickaxe"
+    }
 }

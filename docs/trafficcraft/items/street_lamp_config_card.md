@@ -5,6 +5,8 @@ categories:
 
 # Street Lamp Configuration Card
 
+{{ infobox("trafficcraft:street_lamp_config_card") }}
+
 The **Street Lamp Configuration Card** is an item that can be used to configure [[Street Lamps]] turning on and off at specific times of the day.
 
 ## Functionality

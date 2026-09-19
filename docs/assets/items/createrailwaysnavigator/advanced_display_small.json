@@ -7,5 +7,10 @@
         "amount": 4
     },
     "name": "Small Advanced Display",
-    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary",
+    "attributes": {
+        "stack_size": 64,
+        "wrenchable": true,
+        "copycat block": true
+    }
 }

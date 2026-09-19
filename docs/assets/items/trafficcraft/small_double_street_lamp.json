@@ -6,5 +6,9 @@
         },
         "shapeless": true
     },
-    "name": "Small Double Street Lamp"
+    "name": "Small Double Street Lamp",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

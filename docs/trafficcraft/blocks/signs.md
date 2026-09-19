@@ -10,6 +10,8 @@ categories:
 /// redirect | `Traffic Sign`, `Town Sign`, `Street Sign` and `House Number Sign` redirect to here.
 ///
 
+{{ infobox("trafficcraft:traffic_sign", "trafficcraft:town_sign", "trafficcraft:street_sign", "trafficcraft:house_number_sign") }}
+
 This page covers the **Traffic Sign**, **Town Sign**, **Street Sign** and **House Number Sign** available in TrafficCraft.
 
 ## Usage

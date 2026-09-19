@@ -8,5 +8,9 @@
         },
         "amount": 3
     },
-    "name": "Small Street Lamp"
+    "name": "Small Street Lamp",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

@@ -8,5 +8,9 @@
             "8": "iron_nugget"
         }
     },
-    "name": "House Number Sign"
+    "name": "House Number Sign",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "wooden_pickaxe"
+    }
 }

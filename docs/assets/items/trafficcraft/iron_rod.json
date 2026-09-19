@@ -8,5 +8,7 @@
         "shapeless": false
     },
     "name": "Iron Rod",
-    "lore": ""
+    "attributes": {
+        "stack_size": 64
+    }
 }

@@ -9,5 +9,7 @@
         "shapeless": false
     },
     "name": "Paint Brush",
-    "lore": ""
+    "attributes": {
+        "stack_size": 1
+    }
 }

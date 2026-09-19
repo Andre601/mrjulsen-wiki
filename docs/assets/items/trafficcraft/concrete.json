@@ -8,5 +8,9 @@
         },
         "amount": 4
     },
-    "name": "Concrete"
+    "name": "Concrete",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
 }

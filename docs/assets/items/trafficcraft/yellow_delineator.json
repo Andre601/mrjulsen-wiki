@@ -6,5 +6,9 @@
         },
         "shapeless": true
     },
-    "name": "Yellow Delineator"
+    "name": "Yellow Delineator",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

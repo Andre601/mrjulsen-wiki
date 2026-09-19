@@ -10,5 +10,7 @@
         "shapeless": false
     },
     "name": "Wrench",
-    "lore": ""
+    "attributes": {
+        "stack_size": 1
+    }
 }

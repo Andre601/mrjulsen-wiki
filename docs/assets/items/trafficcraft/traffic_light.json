@@ -15,5 +15,9 @@
         "shapeless": false
     },
     "name": "Traffic Light",
-    "lore": ""
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe",
+        "wrenchable": true
+    }
 }

@@ -6,5 +6,9 @@
             "8": "trafficcraft:raw_bitumen"
         }
     },
-    "name": "Traffic Bollard"
+    "name": "Traffic Bollard",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

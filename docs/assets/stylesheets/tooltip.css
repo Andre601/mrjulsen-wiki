@@ -263,6 +263,10 @@
 	grid-area: slot12;
 }
 
+.animated > *:not(.animated-active) {
+	display: none;
+}
+
 #minetip-tooltip {
 	color: #FBFBFB;
 	text-shadow: 0.175em 0.175em 0 color-mix(in srgb, currentColor 25%, #000 75%);

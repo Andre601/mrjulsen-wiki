@@ -6,6 +6,8 @@ categories:
 
 # Traffic Light Controller
 
+{{ infobox("trafficcraft:traffic_light_controller") }}
+
 The **Traffic Light Controller** is a block that allows you to handle multiple [[Traffic Light|Traffic Lights]].
 
 ## Functionality
@@ -36,3 +38,7 @@ The *Status* button can be clicked to toggle the Traffic Light Controller's stat
 ### Crafting
 
 {{ crafting_recipe("trafficcraft:traffic_light_controller") }}
+
+## Advancements
+
+{{ advancement("trafficcraft:remote-controlled") }}
