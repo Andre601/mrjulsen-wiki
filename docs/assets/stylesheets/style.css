@@ -145,8 +145,32 @@ img.thumb {
     margin: 0;
 }
 
-.infobox .md-typeset__table {
-    padding: 0;
-    margin: 0;
-    width: fit-content;
+.infobox-table {
+    display: table;
+    border-collapse: initial;
+    border-spacing: 0;
+    width: 100%;
+    border: .05rem solid var(--md-typeset-table-color);
+    border-radius: .1rem;
+    font-size: .64rem;
+    overflow: auto;
+}
+
+table.infobox-table tbody tr {
+    transition: background-color 125ms;
+}
+
+table.infobox-table tbody tr:nth-of-type(2n+1) {
+    background-color: var(--md-typeset-table-row-color);
+}
+
+table.infobox-table tbody tr:hover {
+    background-color: var(--md-typeset-table-color--light);
+    box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
+}
+
+table.infobox-table td {
+    border-top: .05rem solid var(--md-typeset-table-color);
+    padding: .9375em 1.25em;
+    vertical-align: middle;
 }

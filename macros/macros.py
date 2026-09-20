@@ -20,7 +20,7 @@ def define_env(env):
             
             strings = [
                 '<div class="infobox">',
-                f'<p class="title">{item["name"] if "name" in item else env.page.get("title", "")}</p>'
+                f'<div class="title">{item["name"] if "name" in item else env.page.get("title", "")}</div>'
             ]
 
             strings.extend(
@@ -595,28 +595,18 @@ def define_env(env):
         return "/" * (3 + level)
     
     def get_item_table(id: str, json_data: dict, item_path: str) -> list[str]:
-        strings = []
-        
-        strings.extend([
-            '<table>',
-            '<tbody>',
-            '<tr>',
-            '<td colspan="2" style="text-align: center;">'
-        ])
+        strings = [f'<div class="{"animated " if isinstance(json_data.get("variants"), list) else ""}icon">']
         
         if isinstance(json_data.get("variants"), list):
-            strings.append('<span class="animated">')
-            
             for i, variant in enumerate(json_data["variants"]):
-                strings.append(f'<img src="/assets/img/icons/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{id}" style="max-width: 250px">')
-            
-            strings.append('</span>')
+                strings.append(f'<img src="/assets/img/icons/{get_item_path(variant)}.png" class="{"animated-active " if i == 0 else ""}no-glight" loading="eager" alt="{id}">')
         else:
-            strings.append(f'<img src="/assets/img/icons/{item_path}.png" class="no-glight" loading="lazy" alt="{id}" style="max-width: 250px;">')
+            strings.append(f'<img src="/assets/img/icons/{item_path}.png" class="no-glight" loading="lazy" alt="{id}">')
         
         strings.extend([
-            '</td>',
-            '</tr>'
+            '</div>',
+            '<table class="infobox-table">',
+            '<tbody>',
         ])
         
         if isinstance(json_data.get("attributes"), dict):
