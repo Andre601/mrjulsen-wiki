@@ -33,5 +33,5 @@ categories:
 -   ### New Schedule Features
     Define new features in schedules such as [[Dynamic Delay|dynamic delays]], [[Prioritized Destination Instruction|prioritized destinations]] and more.
 -   ### Web API
-    Access the data from CRN and Create via the built-in [Web API](web/index.md) to use it in your own web services.
+    Access the data from CRN and Create via the built-in [Web API](web_features/index.md) to use it in your own web services.
 ///
