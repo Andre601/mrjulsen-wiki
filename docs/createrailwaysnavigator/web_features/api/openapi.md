@@ -1,5 +1,5 @@
 ---
-title: API
+title: OpenAPI
 status: unreleased
 categories:
   - Create Railways navigator

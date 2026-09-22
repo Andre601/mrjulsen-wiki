@@ -1,7 +1,8 @@
 ---
+title: API
 status: unreleased
 categories:
-  - Create Railways Navigator
+  - Create Railways navigator
 ---
 
 # REST API

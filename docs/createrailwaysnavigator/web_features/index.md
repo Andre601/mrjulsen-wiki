@@ -1,7 +1,7 @@
 ---
 status: unreleased
 categories:
-  - Create Railways Navigator
+  - Create Railways navigator
 ---
 
 # Web Features
@@ -35,3 +35,9 @@ Anyone who can reach the port can read all data the API exposes. There is **no l
 - To only allow access from the same machine (for example behind a reverse proxy), set `web.bind_address` to `127.0.0.1`. Use `0.0.0.0` to allow any machine on the internet to access your API.
 - The server speaks plain **HTTP** only. For HTTPS, put a reverse proxy (nginx, Caddy, ...) in front of it.
 - `web.cors_allowed_origins` only controls which websites a **browser** lets read the responses. It is not an access restriction for other clients.
+
+# Dependencies
+
+This project uses the Open Source project **Eclipse Jetty** to provide its web server and HTTP functionality. Jetty is available under the [Eclipse Public License 2.0](https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt) and the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
+You can find the official source code and documentation here:
+https://github.com/jetty/jetty.project
