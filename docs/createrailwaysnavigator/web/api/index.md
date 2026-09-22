@@ -20,12 +20,12 @@ If gzip is enabled and the client sends `Accept-Encoding: gzip`, larger response
 
 Every response accepts a set of query parameters to trim and order the output. They can be combined freely and can always be used in addition to the endpoint-specific parameters.
 
-| Parameter | Type      | Applies to    | Description                                                            | Example                |
-|-----------|-----------|---------------|------------------------------------------------------------------------|------------------------|
-| `fields`  | `string`  | any response  | Comma-separated list of fields to keep. Use dots for nested fields.    |`fields=id,position.x`. |
-| `sort`    | `string`  | list response | Comma-separated sort keys. Prefix a key with `-` for descending order. | `sort=-delay,name`.    |
-| `limit`   | `integer` | list response | Maximum number of entries to return.                                   | `limit=12`             |
-| `offset`  | `integer` | list response | Number of entries to skip before `limit` is applied.                   | `offset=7`             |
+| Parameter | Type      | Applies to    | Description                                                            | Example                 |
+|-----------|-----------|---------------|------------------------------------------------------------------------|-------------------------|
+| `fields`  | `string`  | any response  | Comma-separated list of fields to keep. Use dots for nested fields.    | `fields=id,position.x`. |
+| `sort`    | `string`  | list response | Comma-separated sort keys. Prefix a key with `-` for descending order. | `sort=-delay,name`.     |
+| `limit`   | `integer` | list response | Maximum number of entries to return.                                   | `limit=12`              |
+| `offset`  | `integer` | list response | Number of entries to skip before `limit` is applied.                   | `offset=7`              |
 
 When `limit` or `offset` is used, the response also carries `X-Total-Count`, `X-Offset` and `X-Limit` headers describing the full result set.
 
