@@ -32,6 +32,7 @@ When `limit` or `offset` is used, the response also carries `X-Total-Count`, `X-
 
 /// details | Example
     type: example
+
 ```
 GET /crn/api/v1/trains?fields=id,name,speed&sort=-speed&limit=10
 ```
