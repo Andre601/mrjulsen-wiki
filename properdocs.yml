@@ -103,6 +103,7 @@ plugins:
   - redirects:
       redirect_maps:
         # Create Railways Navigator
+        'createrailwaysnavigator/features/api.md': 'createrailwaysnavigator/web/api/index.md'
         'createrailwaysnavigator/blocks/advanced_display.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
         'createrailwaysnavigator/blocks/advanced_display_block.md': 'createrailwaysnavigator/blocks/advanced_displays.md'
         'createrailwaysnavigator/blocks/advanced_display_half_panel.md': 'createrailwaysnavigator/blocks/advanced_displays.md'

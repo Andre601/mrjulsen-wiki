@@ -20,7 +20,7 @@ def define_env(env):
             
             strings = [
                 '<div class="infobox">',
-                f'<div class="title">{item["name"] if "name" in item else env.page.get("title", "")}</div>'
+                f'<div class="title">{item["name"] if "name" in item else env.page.title}</div>'
             ]
 
             strings.extend(
