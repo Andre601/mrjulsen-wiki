@@ -10,5 +10,9 @@
         },
         "amount": 2
     },
-    "name": "Traffic Barrel"
+    "name": "Traffic Barrel",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

@@ -8,5 +8,9 @@
             "8": "iron_nugget"
         }
     },
-    "name": "Paint Bucket"
+    "name": "Paint Bucket",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

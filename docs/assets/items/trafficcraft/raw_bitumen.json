@@ -10,5 +10,8 @@
         "item": "trafficcraft:bitumen_ore",
         "exp": 0.1
     },
-    "name": "Raw Bitumen"
+    "name": "Raw Bitumen",
+    "attributes": {
+        "stack_size": 64
+    }
 }

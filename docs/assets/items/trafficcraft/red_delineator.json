@@ -8,5 +8,9 @@
         },
         "amount": 2
     },
-    "name": "Red Delineator"
+    "name": "Red Delineator",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

@@ -6,5 +6,9 @@
         },
         "amount": 2
     },
-    "name": "Small White Delineator"
+    "name": "Small White Delineator",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

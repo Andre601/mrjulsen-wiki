@@ -9,5 +9,9 @@
         },
         "amount": 6
     },
-    "name": "Concrete Barrier"
+    "name": "Concrete Barrier",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "wooden_pickaxe"
+    }
 }

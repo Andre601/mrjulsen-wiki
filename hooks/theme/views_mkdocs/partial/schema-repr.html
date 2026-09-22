@@ -1,0 +1,15 @@
+{%- if is_reference(schema) -%}
+{%- with type_name = schema["$ref"].replace("#/components/schemas/", "") -%}
+Schema(<a href="#{{ type_name.lower() | link }}" class="ref-link">{{ type_name }}</a>)
+{%- endwith -%}
+{%- endif -%}
+
+{%- if schema.type -%}
+{%- with type_name = schema["type"] -%}
+{%- if type_name is iterable and (type_name is not string and type_name is not mapping) -%}
+{{ type_name | join(" &#124; ") }}
+{%- else -%}
+{{ type_name }}
+{%- endif -%}
+{%- endwith -%}
+{%- endif -%}

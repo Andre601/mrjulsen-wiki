@@ -5,13 +5,15 @@ categories:
 
 # Navigator
 
+{{ infobox("createrailwaysnavigator:navigator") }}
+
 The **Navigator** is an Item allowing you to look up train connections to get from one station to another.  
 It also allows you to edit the [Global Settings](#global-settings).
 
 ## Usage
 
 Right-clicking with the Item in hand opens up a GUI where you can set the start station and target station.  
-The button next to the input field for the Start station inputs the closest station at your current station, where the button below it starts a search. The double arrows between the text bars allow to swap the start and target station.
+The button next to the input field for the Start station inputs the closest station at your current location, where the button below it starts a search. The double arrows between the text bars allow to swap the start and target station.
 
 At the bottom can buttons be found for closing the GUI, opening the Global Settings, open saved routes and getting available Train lines for a specified Station.
 

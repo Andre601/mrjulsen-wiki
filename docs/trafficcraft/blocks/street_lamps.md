@@ -9,6 +9,8 @@ categories:
 /// redirect | `Street Lamp`, `Double Street Lamp`, `Small Street Lamp`, `Small Double Street Lamp`, `Street Light` and `Fluorescent Tube Lamp` redirect here.
 ///
 
+{{ infobox("trafficcraft:street_lamp", "trafficcraft:double_street_lamp", "trafficcraft:small_street_lamp", "trafficcraft:small_double_street_lamp", "trafficcraft:street_light", "trafficcraft:fluorescent_tube_lamp") }}
+
 This page is a collection of the **Street Lamp**, **Double Street Lamp**, **Small Street Lamp**, **Small Double Street Lamp**, **Street Light** and **Fluorescent Tube Lamp** which all provide the same functionality of providing light when toggled on, or when scheduled to do so.
 
 ## Usage

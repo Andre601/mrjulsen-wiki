@@ -13,5 +13,9 @@
         },
         "amount": 3
     },
-    "name": "Fluorescent Tube Lamp"
+    "name": "Fluorescent Tube Lamp",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

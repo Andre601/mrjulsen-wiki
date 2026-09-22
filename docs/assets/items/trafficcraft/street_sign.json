@@ -1,13 +1,15 @@
 {
     "crafting": {
         "ingredients": {
-            "2": "iron_nugget",
-            "4": "iron_nugget",
-            "5": "quartz",
-            "6": "iron_nugget",
-            "8": "iron_nugget"
+            "4": "quartz",
+            "5": "trafficcraft:iron_plate",
+            "6": "quartz"
         },
         "amount": 4
     },
-    "name": "Street Sign"
+    "name": "Street Sign",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "wooden_pickaxe"
+    }
 }

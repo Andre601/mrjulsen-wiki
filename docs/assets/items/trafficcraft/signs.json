@@ -1,0 +1,21 @@
+{
+    "name": "Signs",
+    "variants": [
+        "trafficcraft:traffic_sign",
+        "trafficcraft:town_sign",
+        "trafficcraft:street_sign",
+        "trafficcraft:house_number_sign"
+    ],
+    "attributes": {
+        "stack_size": {
+            "Traffic Sign": 64,
+            "Town Sign": 64,
+            "Street Sign": 64,
+            "House Number Sign": 64
+        },
+        "tool": {
+            "Street Sign & House Number Sign": "wooden_pickaxe",
+            "Traffic Sign & Town Sign": "iron_pickaxe"
+        }
+    }
+}

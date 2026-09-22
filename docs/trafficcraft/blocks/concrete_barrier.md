@@ -6,6 +6,8 @@ categories:
 
 # Concrete Barrier
 
+{{ infobox("trafficcraft:concrete_barrier") }}
+
 The **Concrete Barrier** is a decorative block with a 1 block high collission box.
 
 ## Usage

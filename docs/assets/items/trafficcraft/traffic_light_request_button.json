@@ -10,5 +10,9 @@
             "8": "trafficcraft:traffic_sign_post"
         }
     },
-    "name": "Traffic Light Request Button"
+    "name": "Traffic Light Request Button",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "iron_pickaxe"
+    }
 }

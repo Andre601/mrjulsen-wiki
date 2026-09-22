@@ -12,5 +12,9 @@
         "shapeless": false
     },
     "name": "Diamond Road Construction Tool",
-    "lore": "<gray>When in Main Hand:\n  <dark_green>4.5 Attack Damage\n  <dark_green>1 Attack Speed"
+    "lore": "<gray>When in Main Hand:\n  <dark_green>4.5 Attack Damage\n  <dark_green>1 Attack Speed",
+    "attributes": {
+        "stack_size": 1,
+        "durability": 9366
+    }
 }

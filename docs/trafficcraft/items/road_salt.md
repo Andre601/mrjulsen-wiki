@@ -5,6 +5,8 @@ categories:
 
 # Road Salt
 
+{{ infobox("trafficcraft:road_salt") }}
+
 **Road Salt** is an item obtained from breaking [[Salt]].
 
 ## Usage

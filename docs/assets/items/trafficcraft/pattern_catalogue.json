@@ -9,5 +9,8 @@
             "8": "paper"
         }
     },
-    "name": "Pattern Catalogue"
+    "name": "Pattern Catalogue",
+    "attributes": {
+        "stack_size": 1
+    }
 }

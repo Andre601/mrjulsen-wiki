@@ -13,5 +13,9 @@
         },
         "amount": 3
     },
-    "name": "Road Barrier Fence"
+    "name": "Road Barrier Fence",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

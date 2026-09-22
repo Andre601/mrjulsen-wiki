@@ -14,5 +14,10 @@
         "amount": 6
     },
     "name": "Advanced Display Board",
-    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary"
+    "lore": "<dark_gray>Hold [<gray>Shift</gray>] for Summary",
+    "attributes": {
+        "stack_size": 64,
+        "wrenchable": true,
+        "copycat block": true
+    }
 }

@@ -13,5 +13,9 @@
         },
         "amount": 8
     },
-    "name": "Asphalt"
+    "name": "Asphalt",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
 }

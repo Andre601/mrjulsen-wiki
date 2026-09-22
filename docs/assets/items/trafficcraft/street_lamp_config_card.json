@@ -9,5 +9,8 @@
         "shapeless": false
     },
     "name": "Street Lamp Configuration Card",
-    "lore": "<gray>Undefined"
+    "lore": "<gray>Undefined",
+    "attributes": {
+        "stack_size": 1
+    }
 }

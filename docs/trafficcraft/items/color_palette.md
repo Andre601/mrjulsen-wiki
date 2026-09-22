@@ -5,6 +5,8 @@ categories:
 
 # Color Palette
 
+{{ infobox("trafficcraft:color_palette") }}
+
 The **Color Palette** is an Item that can be used in the [[Traffic Sign Workbench]] to store and load colors.  
 It allows to store up to 7 colors at once.
 

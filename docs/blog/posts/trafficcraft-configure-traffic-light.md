@@ -7,6 +7,8 @@ categories:
   - TrafficCraft
 ---
 
+# TrafficCraft Configure Traffic Light
+
 [[Traffic Light|Traffic Lights]] can be used in your road or railway setup to add a bit more life to it.  
 They also allow you to configure a schedule that the Traffic Light executes either on a continous loop, or only once.
 

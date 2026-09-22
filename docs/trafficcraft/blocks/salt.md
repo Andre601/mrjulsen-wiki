@@ -5,6 +5,8 @@ categories:
 
 # Salt
 
+{{ infobox("trafficcraft:salt") }}
+
 **Salt** is a Block that generates naturally in the world.
 
 ## Generation

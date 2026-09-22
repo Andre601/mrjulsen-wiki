@@ -8,5 +8,7 @@
         "shapeless": true
     },
     "name": "Iron Plate",
-    "lore": ""
+    "attributes": {
+        "stack_size": 64
+    }
 }

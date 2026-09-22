@@ -7,5 +7,9 @@
         },
         "amount": 3
     },
-    "name": "Asphalt"
+    "name": "Asphalt with Curb",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "stone_pickaxe"
+    }
 }

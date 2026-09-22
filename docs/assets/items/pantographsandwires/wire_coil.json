@@ -13,5 +13,8 @@
         }
     },
     "name": "Wire Coil",
-    "lore": "Type: Energy Wire<br>Amount: 400m"
+    "lore": "Type: Energy Wire<br>Amount: 400m",
+    "attributes": {
+        "stack_size": 1
+    }
 }

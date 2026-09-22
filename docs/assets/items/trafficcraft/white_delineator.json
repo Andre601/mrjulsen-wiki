@@ -7,5 +7,9 @@
         },
         "amount": 2
     },
-    "name": "White Delineator"
+    "name": "White Delineator",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }

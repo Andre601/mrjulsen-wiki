@@ -10,5 +10,9 @@
             "9": "trafficcraft:raw_bitumen"
         }
     },
-    "name": "Traffic Cone"
+    "name": "Traffic Cone",
+    "attributes": {
+        "stack_size": 64,
+        "tool": "Any Tool"
+    }
 }
