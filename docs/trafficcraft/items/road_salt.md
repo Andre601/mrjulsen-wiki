@@ -1,4 +1,6 @@
 ---
+description: Road Salt is an item obtained from breaking Salt.
+item_icon: trafficcraft/road_salt
 categories:
   - TrafficCraft
 ---

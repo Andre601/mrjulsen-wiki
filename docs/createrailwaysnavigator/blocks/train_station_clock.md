@@ -1,4 +1,6 @@
 ---
+description: Train Station Clock is a decorative block that displays the current ingame time.
+item_icon: createrailwaysnavigator/train_station_clock
 categories:
   - Create Railways Navigator
 ---
@@ -7,7 +9,7 @@ categories:
 
 {{ infobox("createrailwaysnavigator:train_station_clock") }}
 
-The **Train Station Clock** is a decorative block that displays the current ingame time.
+**Train Station Clock** is a decorative block that displays the current ingame time.
 
 ## Usage
 

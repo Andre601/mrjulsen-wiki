@@ -1,4 +1,6 @@
 ---
+description: Concrete Slope is a Block that can be painted with the Paint Brush and stacked similar to Snow.
+item_icon: trafficcraft/concrete_slope
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable

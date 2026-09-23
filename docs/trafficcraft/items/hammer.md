@@ -1,4 +1,6 @@
 ---
+description: Hammer is a tool that is used in crafting recipes, but can also be used on Asphalt Slopes and Concrete Slopes.
+item_icon: trafficcraft/hammer
 categories:
   - TrafficCraft
 ---
@@ -7,7 +9,7 @@ categories:
 
 {{ infobox("trafficcraft:hammer") }}
 
-The **Hammer** is a tool that is used in crafting recipes, but can also be used on [[Asphalt Slope|Asphalt Slopes]] and [[Concrete Slope|Concrete Slopes]].
+**Hammer** is a tool that is used in crafting recipes, but can also be used on [[Asphalt Slope|Asphalt Slopes]] and [[Concrete Slope|Concrete Slopes]].
 
 ## Usage
 

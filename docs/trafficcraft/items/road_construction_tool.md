@@ -1,4 +1,6 @@
 ---
+description: Road Construction Tool is an item that can be used for the quick creation of roads, including slopes.
+item_icon: trafficcraft/wood_road_construction_tool
 categories:
   - TrafficCraft
 ---
@@ -7,7 +9,7 @@ categories:
 
 {{ infobox("trafficcraft:wood_road_construction_tool", "trafficcraft:stone_road_construction_tool", "trafficcraft:iron_road_construction_tool", "trafficcraft:gold_road_construction_tool", "trafficcraft:diamond_road_construction_tool", "trafficcraft:netherite_road_construction_tool") }}
 
-The **Road Construction Tool** is an item that can be used for the quick creation of roads, including slopes.  
+**Road Construction Tool** is an item that can be used for the quick creation of roads, including slopes.  
 The item comes in [[mc:Tiers|Tool tiers]] Wood, Stone, Iron, Gold, Diamond and Netherite which each offer higher durability.
 
 ## Functionality

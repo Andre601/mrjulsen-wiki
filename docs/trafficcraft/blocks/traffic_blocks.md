@@ -1,4 +1,6 @@
 ---
+description: This page is a collection of the Traffic Cone, Traffic Bollard, Traffic Barrel and Road Barrier Fence which all provide the same functionality, being a decorative block having a 1.5 block high collission block similar to a Fence.
+item_icon: trafficcraft/traffic_cone
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable

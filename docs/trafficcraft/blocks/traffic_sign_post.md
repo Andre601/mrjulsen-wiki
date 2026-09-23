@@ -1,4 +1,5 @@
 ---
+description: Traffic Sign Post is a Block that Street Signs, Traffic Signs, Traffic Lights and all Street Lamps can attach to.
 categories:
   - TrafficCraft
 ---
@@ -7,7 +8,7 @@ categories:
 
 {{ infobox("trafficcraft:traffic_sign_post") }}
 
-**Traffic Sign Post** is a Block that [[Signs|Street Signs, Traffic Signs, Traffic Lights and all Street Lamps]] can attach to.
+**Traffic Sign Post** is a Block that [[Signs|Street Signs, Traffic Signs]], [[Traffic Light|Traffic Lights]] and all [[Street Lamps]] can attach to.
 
 ## Usage
 

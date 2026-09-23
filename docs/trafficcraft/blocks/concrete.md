@@ -1,4 +1,6 @@
 ---
+description: Concrete is a Block that can be painted with the Paint Brush
+item_icon: trafficcraft/concrete
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable

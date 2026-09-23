@@ -8,3 +8,45 @@
   This wiki is <b>Work In Progress!</b> Expect missing pages, broken links and other issues while browsing.
 </span>
 {% endblock %}
+
+{% block extrahead %}
+  {% set title = config.site_name %}
+  {% if page and page.meta and page.meta.title %}
+    {% set title = page.meta.title ~ " - " ~ config.site_name %}
+  {% elif page and page.title and not page.is_homepage %}
+    {% set title = title ~ " - " ~ page.title|striptags %}
+  {% endif %}
+
+  <meta property="og:title" content="{{ title }}">
+  <meta name="twitter:title" content="{{ title }}">
+
+  {% set description = config.site_description %}
+  {% if page and page.meta and page.meta.description %}
+    {% set description = page.meta.description %}
+  {% endif %}
+
+  <meta property="og:description" content="{{ description }}">
+  <meta name="twitter:description" content="{{ description }}">
+
+  <meta name="theme-color" content="#303b74">
+
+  {% set icon = config.site_url|url ~ "assets/img/favicons/android-chrome-512x512.png"%}
+  {% if page and page.meta and page.meta.item_icon %}
+    {% set icon = config.site_url|url ~ "assets/img/icons/" ~ page.meta.item_icon ~ ".png" %}
+  {% endif %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ icon }}">
+  <meta property="og:image:type" content="image/png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="MrJulsen Community">
+  <meta name="twitter:image" content="{{ icon }}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ config.site_url | url }}assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ config.site_url | url }}assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ config.site_url | url }}assets/img/favicons/favicon-16x16.png">
+  
+  <link rel="manifest" href="{{ config.site_url | url }}assets/site.webmanifest">
+{% endblock %}

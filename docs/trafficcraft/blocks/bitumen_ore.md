@@ -1,4 +1,6 @@
 ---
+description: Bitumen Ore is a Block that spawns naturally in the World. It exists in a normal and deepslate variant.
+item_icon: trafficcraft/bitumen_ore
 categories:
   - TrafficCraft
 ---

@@ -1,4 +1,6 @@
 ---
+description: Advanced Displays are blocks that appear similar to monitors and can display data similar to a Display Board from Create.
+item_icon: createrailwaysnavigator/advanced_display
 categories:
   - Create Railways Navigator
 ---

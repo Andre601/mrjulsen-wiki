@@ -1,4 +1,6 @@
 ---
+description: Salt is a Block that generates naturally in the world.
+item_icon: trafficcraft/salt
 categories:
   - TrafficCraft
 ---

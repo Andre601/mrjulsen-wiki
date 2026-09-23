@@ -1,4 +1,6 @@
 ---
+description: This page is a collection of the Street Lamp, Double Street Lamp, Small Street Lamp, Small Double Street Lamp, Street Light and Fluorescent Tube Lamp which all provide the same functionality of providing light when toggled on, or when scheduled to do so.
+item_icon: trafficcraft/street_lamp
 categories:
   - TrafficCraft
   - TrafficCraft/Wrenchable

@@ -1,4 +1,6 @@
 ---
+description: Wrench is an item that can be used to interact with various TrafficCraft Blocks.
+item_icon: trafficcraft/wrench
 categories:
   - TrafficCraft
 ---
@@ -7,7 +9,7 @@ categories:
 
 {{ infobox("trafficcraft:wrench") }}
 
-The **Wrench** is an item that can be used to configure various TrafficCraft Blocks.
+**Wrench** is an item that can be used to interact with various TrafficCraft Blocks.
 
 /// info | New since `v1.2.0-beta.2`
 Any Item that has the `#c:wrenches` tag may be used to edit TrafficCraft Blocks.

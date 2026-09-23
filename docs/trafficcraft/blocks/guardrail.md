@@ -1,4 +1,6 @@
 ---
+description: Guardrail is a Block that can be placed in your world and that has a collission box of 1.5 blocks.
+item_icon: trafficcraft/guardrail
 categories:
   - TrafficCraft
 ---
@@ -7,7 +9,7 @@ categories:
 
 {{ infobox("trafficcraft:guardrail") }}
 
-The **Guardrail** is a Block that can be placed in your world and that has a Collission box of 1.5 blocks.
+**Guardrail** is a Block that can be placed in your world and that has a Collission box of 1.5 blocks.
 
 ## Usage
 

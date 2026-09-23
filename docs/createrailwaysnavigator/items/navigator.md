@@ -1,4 +1,6 @@
 ---
+description: Navigator is an Item allowing you to look up train connections to get from one station to another.
+item_icon: createrailwaysnavigator/navigator
 categories:
   - Create Railways Navigator
 ---
@@ -7,7 +9,7 @@ categories:
 
 {{ infobox("createrailwaysnavigator:navigator") }}
 
-The **Navigator** is an Item allowing you to look up train connections to get from one station to another.  
+**Navigator** is an Item allowing you to look up train connections to get from one station to another.  
 It also allows you to edit the [Global Settings](#global-settings).
 
 ## Usage

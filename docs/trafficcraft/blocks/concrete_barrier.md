@@ -1,4 +1,6 @@
 ---
+description: Concrete Barrier is a decorative block with a 1 Block high collission box.
+item_icon: trafficcraft/concrete_barrier
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable
@@ -8,7 +10,7 @@ categories:
 
 {{ infobox("trafficcraft:concrete_barrier") }}
 
-The **Concrete Barrier** is a decorative block with a 1 block high collission box.
+**Concrete Barrier** is a decorative block with a 1 block high collission box.
 
 ## Usage
 

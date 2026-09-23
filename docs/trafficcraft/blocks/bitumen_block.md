@@ -1,4 +1,6 @@
 ---
+description: Bitumen Block is a Block crafted from Raw Bitumen.
+item_icon: trafficcraft/bitumen_block
 categories:
   - TrafficCraft
 ---

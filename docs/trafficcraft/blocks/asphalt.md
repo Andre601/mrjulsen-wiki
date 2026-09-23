@@ -1,4 +1,6 @@
 ---
+description: Asphalt is a Block that can be painted with the Paint Brush.
+item_icon: trafficcraft/asphalt
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable

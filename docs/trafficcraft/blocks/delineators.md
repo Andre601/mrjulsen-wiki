@@ -1,4 +1,6 @@
 ---
+description: This page collectively covers the White Delineator, Yellow Delineator, Red Delineator, Small White Delineator, Small Yellow Delineator and the Reflector, which are all decorative blocks with emissive Texture Features.
+item_icon: trafficcraft/white_delineator
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable

@@ -1,4 +1,6 @@
 ---
+description: Raw Bitumen is an item used in crafting recipes of other TrafficCraft items.
+item_icon: trafficcraft/raw_bitumen
 categories:
   - TrafficCraft
 ---

@@ -1,4 +1,6 @@
 ---
+description: This page covers the Traffic Sign, Town Sign, Street Sign and House Number Sign available in TrafficCraft.
+item_icon: trafficcraft/traffic_sign
 categories:
   - TrafficCraft
   - TrafficCraft/Paintable

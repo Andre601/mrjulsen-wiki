@@ -1,4 +1,6 @@
 ---
+description: Traffic Light Controller is a Block that allows you to handle multiple Traffic Lights.
+item_icon: trafficcraft/traffic_light_controller
 categories:
   - TrafficCraft
   - TrafficCraft/Wrenchable
@@ -8,7 +10,7 @@ categories:
 
 {{ infobox("trafficcraft:traffic_light_controller") }}
 
-The **Traffic Light Controller** is a block that allows you to handle multiple [[Traffic Light|Traffic Lights]].
+**Traffic Light Controller** is a Block that allows you to handle multiple [[Traffic Light|Traffic Lights]].
 
 ## Functionality
 
