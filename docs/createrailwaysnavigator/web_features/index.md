@@ -36,7 +36,7 @@ Anyone who can reach the port can read all data the API exposes. There is **no l
 - The server speaks plain **HTTP** only. For HTTPS, put a reverse proxy (nginx, Caddy, ...) in front of it.
 - `web.cors_allowed_origins` only controls which websites a **browser** lets read the responses. It is not an access restriction for other clients.
 
-# Dependencies
+## Dependencies
 
 This project uses the Open Source project **Eclipse Jetty** to provide its web server and HTTP functionality. Jetty is available under the [Eclipse Public License 2.0](https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt) and the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
 You can find the official source code and documentation here:
