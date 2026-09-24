@@ -31,9 +31,6 @@
   <meta name="theme-color" content="#303b74">
 
   {% set icon = config.site_url|url ~ "assets/img/favicons/android-chrome-512x512.png"%}
-  {% if page and page.meta and page.meta.item_icon %}
-    {% set icon = config.site_url|url ~ "assets/img/icons/" ~ page.meta.item_icon ~ ".png" %}
-  {% endif %}
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.canonical_url }}">
@@ -49,4 +46,50 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ config.site_url | url }}assets/img/favicons/favicon-16x16.png">
   
   <link rel="manifest" href="{{ config.site_url | url }}assets/site.webmanifest">
+
+  <script id="discord:component-embed" type="application/json">{
+    "component": {
+      "type": 17,
+      "accent_color": 3160948,
+      "components": [
+        {
+          "type": 9,
+          "accessory": {
+            "type": 11,
+            "media": {
+              "url": "{{ icon }}"
+            },
+            "description": "Website Logo"
+          },
+          "components": [
+            {
+              "type": 10,
+              "content": "## [{{ title }}]({{ page.canonical_url }})"
+            },
+            {
+              "type": 10,
+              "content": "{{ description }}"
+            }
+          ]
+        }{% if page and page.meta and page.meta.item_icon %},
+        {
+          "type": 14,
+          "divider": true,
+          "spacing": 1
+        },
+        {
+          "type": 12,
+          "items": [
+            {
+              "media": {
+                "url": {{ (config.site_url | url ~ "assets/img/icons/" ~ page.meta.item_icon ~ ".png") | tojson }}
+              },
+              "description": "Image of {{ page.meta.item_icon }}",
+              "spoiler": false
+            }
+          ]
+        }{% endif %}
+      ]
+    }
+  }</script>
 {% endblock %}
