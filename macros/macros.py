@@ -62,7 +62,7 @@ def define_env(env):
         return '\n'.join(strings)
 
     @env.macro
-    def crafting_recipe(id: str, header = True, footer = True) -> str:
+    def crafting_recipe(id: str, header: bool = True, footer: bool = True) -> str:
         """Generates a table displaying the required materials and also a crafting table example.
         
         This function performs the following checks in order:
@@ -212,7 +212,7 @@ def define_env(env):
         return '\n'.join(strings)
 
     @env.macro
-    def smithing_recipe(id: str, header = True, footer = True) -> str:
+    def smithing_recipe(id: str, header: bool = True, footer: bool = True) -> str:
         """Generates a table displaying the required materials and also a smithing recipe display.
         
         This function performs the following checks in order:
@@ -335,7 +335,7 @@ def define_env(env):
         return '\n'.join(strings)
     
     @env.macro
-    def smelting_recipe(id: str, header = True, footer = True) -> str:
+    def smelting_recipe(id: str, header: bool = True, footer: bool = True) -> str:
         """Generates a table displaying the required materials and also a smelting recipe display.
         
         This function performs the following checks in order:
@@ -435,7 +435,7 @@ def define_env(env):
         return '\n'.join(strings)
     
     @env.macro
-    def advancement(id: str, header = True, footer = True) -> str:
+    def advancement(id: str, header: bool = True, footer: bool = True) -> str:
         """Generates a table displaying an advancement with its icon, name, description and actual requirement (if provided).
         
         This function performs the following checks in order:

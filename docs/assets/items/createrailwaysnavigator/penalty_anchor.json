@@ -10,6 +10,7 @@
     "name": "Penalty Anchor",
     "attributes": {
         "stack_size": 64,
-        "Wrenchable": true
+        "Wrenchable": true,
+        "Version Added": "Beta 0.10.0"
     }
 }
