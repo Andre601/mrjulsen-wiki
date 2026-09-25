@@ -3,6 +3,7 @@ description: Train Station Clock is a decorative block that displays the current
 item_icon: createrailwaysnavigator/train_station_clock
 categories:
   - Create Railways Navigator
+  - Create Railways Navigator/Wrenchable
 ---
 
 # Train Station Clock

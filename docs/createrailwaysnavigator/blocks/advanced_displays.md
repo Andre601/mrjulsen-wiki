@@ -3,6 +3,7 @@ description: Advanced Displays are blocks that appear similar to monitors and ca
 item_icon: createrailwaysnavigator/advanced_display
 categories:
   - Create Railways Navigator
+  - Create Railways Navigator/Wrenchable
 ---
 
 # Advanced Displays

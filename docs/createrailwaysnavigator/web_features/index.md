@@ -1,7 +1,6 @@
 ---
-status: unreleased
 categories:
-  - Create Railways navigator
+  - Create Railways Navigator
 ---
 
 # Web Features

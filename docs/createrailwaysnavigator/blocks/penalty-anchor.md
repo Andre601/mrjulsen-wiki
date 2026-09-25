@@ -1,9 +1,9 @@
 ---
-status: unreleased
 description: Penalty Anchor is a Block that can be used to force a train to take a certain route by assigning a penalty value.
 item_icon: createrailwaysnavigator/penalty_anchor
 categories:
   - Create Railways Navigator
+  - Create Railways Navigator/Wrenchable
 ---
 
 # Penalty Anchor

@@ -77,12 +77,5 @@ By placing additional stations on a route, you can increase its penalty value by
 
 ### Penalty Anchor
 
-/// admonition | Unreleased Content
-    type: unreleased
-
-This section covers content that has not yet been released to Create Railways Navigator.  
-Any information is subject to change and not final!
-///
-
 Create Railways Navigator adds a Block called the [Penalty Anchor](../../createrailwaysnavigator/blocks/penalty-anchor.md).  
 This block allows you to easily define a penalty value that should be added for this part of the track, allowing you to force a Train to pick a certain path without having to use multiple dummy-stations.
