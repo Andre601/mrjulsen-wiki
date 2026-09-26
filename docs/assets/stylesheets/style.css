@@ -174,3 +174,48 @@ table.infobox-table td {
     padding: .9375em 1.25em;
     vertical-align: middle;
 }
+
+/* Version History Table */
+
+.version-history {
+    display: table;
+    border-collapse: initial;
+    border-spacing: 0;
+    width: 100%;
+    border: .05rem solid var(--md-typeset-table-color);
+    border-radius: .1rem;
+    font-size: .64rem;
+    overflow: auto;
+}
+
+table.version-history tbody th,
+table.version-history tbody td {
+    transition: background-color 125ms;
+}
+
+table.version-history tbody th:hover,
+table.version-history tbody td:hover {
+    background-color: var(--md-typeset-table-color--light);
+    box-shadow: 0 .05rem 0 var(--md-default-bg-color) inset;
+}
+
+table.version-history th {
+    font-weight: 700;
+    min-width: 3rem;
+    padding: .9375em 1.25em;
+    vertical-align: top;
+    background-color: var(--md-typeset-table-row-color);
+
+}
+
+table.version-history th.version {
+    border-top: .05rem solid var(--md-typeset-table-color);
+    background-color: var(--md-typeset-table-row-color);
+    text-align: left;
+}
+
+table.version-history td {
+    border-top: .05rem solid var(--md-typeset-table-color);
+    padding: .9375em 1.25em;
+    vertical-align: middle;
+}

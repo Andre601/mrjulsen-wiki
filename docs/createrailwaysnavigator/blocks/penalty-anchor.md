@@ -43,3 +43,11 @@ The Penalty System is explained in detail in the Blog Post [Train Penalty System
 ### Crafting
 
 {{ crafting_recipe("createrailwaysnavigator:penalty_anchor") }}
+
+## History
+
+{{ version_history({
+  "0.10.0-beta": [
+    "Added Penalty Anchor"
+  ]
+}) }}

@@ -1,5 +1,6 @@
 import posixpath
 import json
+from markupsafe import escape
 
 def define_env(env):
     @env.macro
@@ -528,6 +529,46 @@ def define_env(env):
             ])
 
         return '\n'.join(strings)
+    
+    @env.macro
+    def version_history(versions: dict):
+        rows = []
+
+        for version, entries in versions.items():
+            if isinstance(entries, str):
+                entries = [entries]
+            
+            rowspan = len(entries)
+
+            for index, entry in enumerate(entries):
+
+                if index == 0:
+                    rows.extend([
+                        "<tr>",
+                        f'<th rowspan="{rowspan}" class="version">{escape(version)}</th>',
+                        f'<td>{escape(entry)}</td>',
+                        "</tr>"
+                    ])
+                else:
+                    rows.extend([
+                        "<tr>",
+                        f'<td>{escape(entry)}</td>',
+                        "</tr>"
+                    ])
+        
+        return "\n".join([
+            '<table class="version-history">',
+            "<thead>",
+            "<tr>",
+            "<th>Version</th>",
+            "<th>Changes</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>",
+            "\n".join(rows),
+            "</tbody>",
+            "</table>"
+        ])
 
     def get_item_path(item: str) -> str:
         """Takes the provided item string and converts it from {namespace}:{id} to {namespace}/{id}.  
