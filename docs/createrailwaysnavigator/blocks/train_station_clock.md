@@ -15,6 +15,8 @@ categories:
 ## Usage
 
 Right-clicking the Clock with another Train Station Clock will change its display from a 2-sided Clock to a 4-sided one.  
+Clicking it with any Dye will change its color while clicking it with a Glow Ink Sac will make the texture emissive. Breaking the clock will remove any color and emissive texture set.
+
 Clicking it with any other item, or an empty hand, displays the current ingame time as an Actionbar text.
 
 ## Obtaining
