@@ -12,6 +12,15 @@ The REST API lets external websites and tools read data from your rail network v
 The API is currently **unauthenticated** which means that every enabled endpoint is public. Do not expose it to untrusted networks. See [Security](../index.md#security) for more information.
 ///
 
+/// details | Full URL Example
+    type: example
+
+This is an example for the full URL to the `trains` endpoint on your local machine with default settings:
+```
+http://localhost:25580/crn/api/v1/trains
+```
+///
+
 ## Response Compression
 
 If gzip is enabled and the client sends `Accept-Encoding: gzip`, larger responses are returned compressed.

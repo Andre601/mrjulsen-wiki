@@ -16,9 +16,18 @@ The web server is configured in the `common-config` of the server or singleplaye
 Once running, it listens on the configured address and port and serves the content under one of these URLs:
 
 ```
-http://<host>:<port>/crn
-http://<host>:<port>/createrailwaysnavigator
+http://<ip>:<port>/crn
+http://<ip>:<port>/createrailwaysnavigator
 ```
+
+/// details | URL Example
+    type: example
+
+If you are using the default settings and you are playing on singleplayer or a local server, the base URL will look like this:
+```
+http://localhost:25580/crn
+```
+///
 
 ## Configuration
 
